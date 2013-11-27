@@ -24,3 +24,8 @@ of that paper. AKA, some mathematical stuff.
 problems like this.
 3. That should suffice. And pickup what should be interesting for
 them, and share your "fun" with them
+
+
+## TODO ##
+1. Finish the modification of your presentation slides, within
+   today. The today is defined as, November 27th.
