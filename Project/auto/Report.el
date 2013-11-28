@@ -3,14 +3,6 @@
     (LaTeX-add-bibliographies
      "IEEEabrv"
      "Reference")
-    (LaTeX-add-labels
-     "Sec:Related Work"
-     "Sec:Technical Challenges"
-     "Sec:More Related Work"
-     "Fig:Sorted Final Socres"
-     "Fig:Increasing Classifier Accuracy"
-     "Sec:Our Research Methods"
-     "Sec:Conclusion")
     (TeX-run-style-hooks
      "hyperref"
      "url"

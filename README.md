@@ -29,3 +29,9 @@ them, and share your "fun" with them
 ## TODO ##
 1. Finish the modification of your presentation slides, within
    today. The today is defined as, November 27th.
+
+20131128 Lab 17:17
+1. Finish the Introduction part and the second section. Within today.
+2. Review what I have written.
+
+
