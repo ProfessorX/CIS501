@@ -1,0 +1,959 @@
+% 20131021 Home 11:33
+% Begin the draft writing, hope everything is safe and sound.
+% Always be self-motivating.
+
+% 20131021 Home 13:45
+% Will continue my work an hour later. As with no table in the
+% lab, it's really a tough situation. @OpenLab. Holycow...
+
+% 20131021 Home 19:30
+% Let's finish half of this.
+
+% 20131024 Home 8:30
+% For the former days, I do not even have the time and/or energy
+% to do the update of this......Modification time. In Linux, it's
+% called "mtime".
+
+% 20131024 Home 17:10
+% Almost finished my part. A few more paragraphs of "More Related Work"
+% can be added. But not today. The rest of the day will go to, Data Mining
+% homework, Information Security homework, Software Engineering feature development.
+% As with SE, some python course will be viewed. Okay, let's solve the Windows
+% problem. ---->After that, Data Mining homework time.
+
+% 20131031 Home 00:00
+% You have to do something. That's how you grow.
+% It is not hard. It is hard because you do not work hard.
+% Could you please use the up-to-date and more prestigious papers......
+
+
+
+
+
+
+
+
+
+%% bare_jrnl.tex
+%% V1.3
+%% 2007/01/11
+%% by Michael Shell
+%% see http://www.michaelshell.org/
+%% for current contact information.
+%%
+%% This is a skeleton file demonstrating the use of IEEEtran.cls
+%% (requires IEEEtran.cls version 1.7 or later) with an IEEE journal paper.
+%%
+%% Support sites:
+%% http://www.michaelshell.org/tex/ieeetran/
+%% http://www.ctan.org/tex-archive/macros/latex/contrib/IEEEtran/
+%% and
+%% http://www.ieee.org/
+
+
+
+% *** Authors should verify (and, if needed, correct) their LaTeX system  ***
+% *** with the testflow diagnostic prior to trusting their LaTeX platform ***
+% *** with production work. IEEE's font choices can trigger bugs that do  ***
+% *** not appear when using other class files.                            ***
+% The testflow support page is at:
+% http://www.michaelshell.org/tex/testflow/
+
+
+%%*************************************************************************
+%% Legal Notice:
+%% This code is offered as-is without any warranty either expressed or
+%% implied; without even the implied warranty of MERCHANTABILITY or
+%% FITNESS FOR A PARTICULAR PURPOSE!
+%% User assumes all risk.
+%% In no event shall IEEE or any contributor to this code be liable for
+%% any damages or losses, including, but not limited to, incidental,
+%% consequential, or any other damages, resulting from the use or misuse
+%% of any information contained here.
+%%
+%% All comments are the opinions of their respective authors and are not
+%% necessarily endorsed by the IEEE.
+%%
+%% This work is distributed under the LaTeX Project Public License (LPPL)
+%% ( http://www.latex-project.org/ ) version 1.3, and may be freely used,
+%% distributed and modified. A copy of the LPPL, version 1.3, is included
+%% in the base LaTeX documentation of all distributions of LaTeX released
+%% 2003/12/01 or later.
+%% Retain all contribution notices and credits.
+%% ** Modified files should be clearly indicated as such, including  **
+%% ** renaming them and changing author support contact information. **
+%%
+%% File list of work: IEEEtran.cls, IEEEtran_HOWTO.pdf, bare_adv.tex,
+%%                    bare_conf.tex, bare_jrnl.tex, bare_jrnl_compsoc.tex
+%%*************************************************************************
+
+% Note that the a4paper option is mainly intended so that authors in
+% countries using A4 can easily print to A4 and see how their papers will
+% look in print - the typesetting of the document will not typically be
+% affected with changes in paper size (but the bottom and side margins will).
+% Use the testflow package mentioned above to verify correct handling of
+% both paper sizes by the user's LaTeX system.
+%
+% Also note that the "draftcls" or "draftclsnofoot", not "draft", option
+% should be used if it is desired that the figures are to be displayed in
+% draft mode.
+%
+\documentclass[journal]{IEEEtran}
+%
+% If IEEEtran.cls has not been installed into the LaTeX system files,
+% manually specify the path to it like:
+% \documentclass[journal]{../sty/IEEEtran}
+
+
+
+
+
+% Some very useful LaTeX packages include:
+% (uncomment the ones you want to load)
+
+
+% *** MISC UTILITY PACKAGES ***
+%
+%\usepackage{ifpdf}
+% Heiko Oberdiek's ifpdf.sty is very useful if you need conditional
+% compilation based on whether the output is pdf or dvi.
+% usage:
+% \ifpdf
+%   % pdf code
+% \else
+%   % dvi code
+% \fi
+% The latest version of ifpdf.sty can be obtained from:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/oberdiek/
+% Also, note that IEEEtran.cls V1.7 and later provides a builtin
+% \ifCLASSINFOpdf conditional that works the same way.
+% When switching from latex to pdflatex and vice-versa, the compiler may
+% have to be run twice to clear warning/error messages.
+
+
+
+
+
+
+% *** CITATION PACKAGES ***
+%
+\usepackage[noadjust]{cite}
+% cite.sty was written by Donald Arseneau
+% V1.6 and later of IEEEtran pre-defines the format of the cite.sty package
+% \cite{} output to follow that of IEEE. Loading the cite package will
+% result in citation numbers being automatically sorted and properly
+% "compressed/ranged". e.g., [1], [9], [2], [7], [5], [6] without using
+% cite.sty will become [1], [2], [5]--[7], [9] using cite.sty. cite.sty's
+% \cite will automatically add leading space, if needed. Use cite.sty's
+% noadjust option (cite.sty V3.8 and later) if you want to turn this off.
+% cite.sty is already installed on most LaTeX systems. Be sure and use
+% version 4.0 (2003-05-27) and later if using hyperref.sty. cite.sty does
+% not currently provide for hyperlinked citations.
+% The latest version can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/cite/
+% The documentation is contained in the cite.sty file itself.
+
+
+
+
+
+
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\ifCLASSINFOpdf
+  \usepackage[pdftex]{graphicx}
+  % declare the path(s) where your graphic files are
+  \graphicspath{{../pdf/}{../jpeg/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+  % will default to the driver specified in the system graphics.cfg if no
+  % driver is specified.
+  \usepackage[dvips]{graphicx}
+  % declare the path(s) where your graphic files are
+  \graphicspath{{../eps/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  \DeclareGraphicsExtensions{.eps}
+\fi
+% graphicx was written by David Carlisle and Sebastian Rahtz. It is
+% required if you want graphics, photos, etc. graphicx.sty is already
+% installed on most LaTeX systems. The latest version and documentation can
+% be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/required/graphics/
+% Another good source of documentation is "Using Imported Graphics in
+% LaTeX2e" by Keith Reckdahl which can be found as epslatex.ps or
+% epslatex.pdf at: http://www.ctan.org/tex-archive/info/
+%
+% latex, and pdflatex in dvi mode, support graphics in encapsulated
+% postscript (.eps) format. pdflatex in pdf mode supports graphics
+% in .pdf, .jpeg, .png and .mps (metapost) formats. Users should ensure
+% that all non-photo figures use a vector format (.eps, .pdf, .mps) and
+% not a bitmapped formats (.jpeg, .png). IEEE frowns on bitmapped formats
+% which can result in "jaggedy"/blurry rendering of lines and letters as
+% well as large increases in file sizes.
+%
+% You can find documentation about the pdfTeX application at:
+% http://www.tug.org/applications/pdftex
+
+
+
+
+
+% *** MATH PACKAGES ***
+%
+\usepackage[cmex10]{amsmath}
+% A popular package from the American Mathematical Society that provides
+% many useful and powerful commands for dealing with mathematics. If using
+% it, be sure to load this package with the cmex10 option to ensure that
+% only type 1 fonts will utilized at all point sizes. Without this option,
+% it is possible that some math symbols, particularly those within
+% footnotes, will be rendered in bitmap form which will result in a
+% document that can not be IEEE Xplore compliant!
+%
+% Also, note that the amsmath package sets \interdisplaylinepenalty to 10000
+% thus preventing page breaks from occurring within multiline equations. Use:
+\interdisplaylinepenalty=2500
+% after loading amsmath to restore such page breaks as IEEEtran.cls normally
+% does. amsmath.sty is already installed on most LaTeX systems. The latest
+% version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/required/amslatex/math/
+
+
+
+
+
+% *** SPECIALIZED LIST PACKAGES ***
+%
+\usepackage{algorithmic}
+% algorithmic.sty was written by Peter Williams and Rogerio Brito.
+% This package provides an algorithmic environment for describing algorithms.
+% You can use the algorithmic environment in-text or within a figure
+% environment to provide for a floating algorithm. Do NOT use the algorithm
+% floating environment provided by algorithm.sty (by the same authors) or
+% algorithm2e.sty (by Christophe Fiorio) as IEEE does not use dedicated
+% algorithm float types and packages that provide these will not provide
+% correct IEEE style captions. The latest version and documentation of
+% algorithmic.sty can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/algorithms/
+% There is also a support site at:
+% http://algorithms.berlios.de/index.html
+% Also of interest may be the (relatively newer and more customizable)
+% algorithmicx.sty package by Szasz Janos:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/algorithmicx/
+
+
+
+
+% *** ALIGNMENT PACKAGES ***
+%
+\usepackage{array}
+% Frank Mittelbach's and David Carlisle's array.sty patches and improves
+% the standard LaTeX2e array and tabular environments to provide better
+% appearance and additional user controls. As the default LaTeX2e table
+% generation code is lacking to the point of almost being broken with
+% respect to the quality of the end results, all users are strongly
+% advised to use an enhanced (at the very least that provided by array.sty)
+% set of table tools. array.sty is already installed on most systems. The
+% latest version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/required/tools/
+
+
+\usepackage{mdwmath}
+\usepackage{mdwtab}
+% Also highly recommended is Mark Wooding's extremely powerful MDW tools,
+% especially mdwmath.sty and mdwtab.sty which are used to format equations
+% and tables, respectively. The MDWtools set is already installed on most
+% LaTeX systems. The lastest version and documentation is available at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/mdwtools/
+
+
+% IEEEtran contains the IEEEeqnarray family of commands that can be used to
+% generate multiline equations as well as matrices, tables, etc., of high
+% quality.
+
+
+\usepackage{eqparbox}
+% Also of notable interest is Scott Pakin's eqparbox package for creating
+% (automatically sized) equal width boxes - aka "natural width parboxes".
+% Available at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/eqparbox/
+
+
+
+
+
+% *** SUBFIGURE PACKAGES ***
+%\usepackage[tight,footnotesize]{subfigure}
+% subfigure.sty was written by Steven Douglas Cochran. This package makes it
+% easy to put subfigures in your figures. e.g., "Figure 1a and 1b". For IEEE
+% work, it is a good idea to load it with the tight package option to reduce
+% the amount of white space around the subfigures. subfigure.sty is already
+% installed on most LaTeX systems. The latest version and documentation can
+% be obtained at:
+% http://www.ctan.org/tex-archive/obsolete/macros/latex/contrib/subfigure/
+% subfigure.sty has been superceeded by subfig.sty.
+
+
+
+%\usepackage[caption=false]{caption}
+%\usepackage[font=footnotesize]{subfig}
+% subfig.sty, also written by Steven Douglas Cochran, is the modern
+% replacement for subfigure.sty. However, subfig.sty requires and
+% automatically loads Axel Sommerfeldt's caption.sty which will override
+% IEEEtran.cls handling of captions and this will result in nonIEEE style
+% figure/table captions. To prevent this problem, be sure and preload
+% caption.sty with its "caption=false" package option. This is will preserve
+% IEEEtran.cls handing of captions. Version 1.3 (2005/06/28) and later
+% (recommended due to many improvements over 1.2) of subfig.sty supports
+% the caption=false option directly:
+\usepackage[caption=false,font=footnotesize]{subfig}
+%
+% The latest version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/subfig/
+% The latest version and documentation of caption.sty can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/caption/
+
+
+
+
+% *** FLOAT PACKAGES ***
+%
+\usepackage{fixltx2e}
+% fixltx2e, the successor to the earlier fix2col.sty, was written by
+% Frank Mittelbach and David Carlisle. This package corrects a few problems
+% in the LaTeX2e kernel, the most notable of which is that in current
+% LaTeX2e releases, the ordering of single and double column floats is not
+% guaranteed to be preserved. Thus, an unpatched LaTeX2e can allow a
+% single column figure to be placed prior to an earlier double column
+% figure. The latest version and documentation can be found at:
+% http://www.ctan.org/tex-archive/macros/latex/base/
+
+
+
+%\usepackage{stfloats}
+% stfloats.sty was written by Sigitas Tolusis. This package gives LaTeX2e
+% the ability to do double column floats at the bottom of the page as well
+% as the top. (e.g., "\begin{figure*}[!b]" is not normally possible in
+% LaTeX2e). It also provides a command:
+%\fnbelowfloat
+% to enable the placement of footnotes below bottom floats (the standard
+% LaTeX2e kernel puts them above bottom floats). This is an invasive package
+% which rewrites many portions of the LaTeX2e float routines. It may not work
+% with other packages that modify the LaTeX2e float routines. The latest
+% version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/sttools/
+% Documentation is contained in the stfloats.sty comments as well as in the
+% presfull.pdf file. Do not use the stfloats baselinefloat ability as IEEE
+% does not allow \baselineskip to stretch. Authors submitting work to the
+% IEEE should note that IEEE rarely uses double column equations and
+% that authors should try to avoid such use. Do not be tempted to use the
+% cuted.sty or midfloat.sty packages (also by Sigitas Tolusis) as IEEE does
+% not format its papers in such ways.
+
+
+%\ifCLASSOPTIONcaptionsoff
+%  \usepackage[nomarkers]{endfloat}
+% \let\MYoriglatexcaption\caption
+% \renewcommand{\caption}[2][\relax]{\MYoriglatexcaption[#2]{#2}}
+%\fi
+% endfloat.sty was written by James Darrell McCauley and Jeff Goldberg.
+% This package may be useful when used in conjunction with IEEEtran.cls'
+% captionsoff option. Some IEEE journals/societies require that submissions
+% have lists of figures/tables at the end of the paper and that
+% figures/tables without any captions are placed on a page by themselves at
+% the end of the document. If needed, the draftcls IEEEtran class option or
+% \CLASSINPUTbaselinestretch interface can be used to increase the line
+% spacing as well. Be sure and use the nomarkers option of endfloat to
+% prevent endfloat from "marking" where the figures would have been placed
+% in the text. The two hack lines of code above are a slight modification of
+% that suggested by in the endfloat docs (section 8.3.1) to ensure that
+% the full captions always appear in the list of figures/tables - even if
+% the user used the short optional argument of \caption[]{}.
+% IEEE papers do not typically make use of \caption[]'s optional argument,
+% so this should not be an issue. A similar trick can be used to disable
+% captions of packages such as subfig.sty that lack options to turn off
+% the subcaptions:
+% For subfig.sty:
+% \let\MYorigsubfloat\subfloat
+% \renewcommand{\subfloat}[2][\relax]{\MYorigsubfloat[]{#2}}
+% For subfigure.sty:
+% \let\MYorigsubfigure\subfigure
+% \renewcommand{\subfigure}[2][\relax]{\MYorigsubfigure[]{#2}}
+% However, the above trick will not work if both optional arguments of
+% the \subfloat/subfig command are used. Furthermore, there needs to be a
+% description of each subfigure *somewhere* and endfloat does not add
+% subfigure captions to its list of figures. Thus, the best approach is to
+% avoid the use of subfigure captions (many IEEE journals avoid them anyway)
+% and instead reference/explain all the subfigures within the main caption.
+% The latest version of endfloat.sty and its documentation can obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/endfloat/
+%
+% The IEEEtran \ifCLASSOPTIONcaptionsoff conditional can also be used
+% later in the document, say, to conditionally put the References on a
+% page by themselves.
+
+
+
+
+
+% *** PDF, URL AND HYPERLINK PACKAGES ***
+%
+\usepackage{url}
+% url.sty was written by Donald Arseneau. It provides better support for
+% handling and breaking URLs. url.sty is already installed on most LaTeX
+% systems. The latest version can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/misc/
+% Read the url.sty source comments for usage information. Basically,
+% \url{my_url_here}.
+\usepackage{hyperref}
+\hypersetup{unicode}
+\hypersetup{colorlinks=true}
+\hypersetup{linkcolor=black}
+
+
+
+
+
+% *** Do not adjust lengths that control margins, column widths, etc. ***
+% *** Do not use packages that alter fonts (such as pslatex).         ***
+% There should be no need to do such things with IEEEtran.cls V1.6 and later.
+% (Unless specifically asked to do so by the journal or conference you plan
+% to submit to, of course. )
+
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\begin{document}
+%
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+%\title{Bare Demo of IEEEtran.cls for Journals}
+
+% Abraham: There will be a good title afterwards.
+\title{Getting The MAX out of Ensemble Selection}
+
+%
+%
+% author names and IEEE memberships
+% note positions of commas and nonbreaking spaces ( ~ ) LaTeX will not break
+% a structure at a ~ so this keeps an author's name from being broken across
+% two lines.
+% use \thanks{} to gain access to the first footnote area
+% a separate \thanks must be used for each paragraph as LaTeX2e's \thanks
+% was not built to handle multiple paragraphs
+%
+
+%\author{Michael~Shell,~\IEEEmembership{Member,~IEEE,}
+%        John~Doe,~\IEEEmembership{Fellow,~OSA,}
+%        and~Jane~Doe,~\IEEEmembership{Life~Fellow,~IEEE}% <-this % stops a space
+\author{Yanan~Xiao,~\IEEEmembership{Student Member,~IEEE,}
+Aziza~Al~Sawafi,~and~Mansoor~Al~Dosari%
+\thanks{Y. Xiao, A. Sawafi and M. Dosari are 1st year master students with the Department of
+Electrical Engineering and Computer Science, Masdar Institute of Science and Technology, Masdar City,
+Abu Dhabi, 54224 UAE. Email: \{yxiao,aalsawafi,maldosary@masdar.ac.ae\}.}%
+\thanks{MAX serves the group name at the same time.}}
+%\thanks{M. Shell is with the Department
+%of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta,
+%GA, 30332 USA e-mail: (see http://www.michaelshell.org/contact.html).}% <-this % stops a space
+%\thanks{J. Doe and J. Doe are with Anonymous University.}% <-this % stops a space
+%\thanks{Manuscript received April 19, 2005; revised January 11, 2007.}}
+%
+
+% note the % following the last \IEEEmembership and also \thanks -
+% these prevent an unwanted space from occurring between the last author name
+% and the end of the author line. i.e., if you had this:
+%
+% \author{....lastname \thanks{...} \thanks{...} }
+%                     ^------------^------------^----Do not want these spaces!
+%
+% a space would be appended to the last name and could cause every name on that
+% line to be shifted left slightly. This is one of those "LaTeX things". For
+% instance, "\textbf{A} \textbf{B}" will typeset as "A B" not "AB". To get
+% "AB" then you have to do: "\textbf{A}\textbf{B}"
+% \thanks is no different in this regard, so shield the last } of each \thanks
+% that ends a line with a % and do not let a space in before the next \thanks.
+% Spaces after \IEEEmembership other than the last one are OK (and needed) as
+% you are supposed to have spaces between the names. For what it is worth,
+% this is a minor point as most people would not even notice if the said evil
+% space somehow managed to creep in.
+
+
+
+% The paper headers
+%\markboth{Journal of \LaTeX\ Class Files,~Vol.~6, No.~1, January~2007}%
+%{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Journals}
+\markboth{Journal of Masdar Institute,~Vol.~1, No.~15, December~2013}%
+{Xiao \MakeLowercase{\textit{et al.}}: Data Mining Midterm Project Report}
+% The only time the second header will appear is for the odd numbered pages
+% after the title page when using the twoside option.
+%
+% *** Note that you probably will NOT want to include the author's ***
+% *** name in the headers of peer review papers.                   ***
+% You can use \ifCLASSOPTIONpeerreview for conditional compilation here if
+% you desire.
+
+
+
+
+% If you want to put a publisher's ID mark on the page you can do it like
+% this:
+%\IEEEpubid{0000--0000/00\$00.00~\copyright~2007 IEEE}
+% Remember, if you use this you must call \IEEEpubidadjcol in the second
+% column for its text to clear the IEEEpubid mark.
+
+
+
+% use for special paper notices
+%\IEEEspecialpapernotice{(Midterm Report)}
+
+
+
+
+% make the title area
+\maketitle
+
+
+\begin{abstract}
+%\boldmath
+%The abstract goes here.
+We present a detailed literature review of data mining techniques for customer relationship prediction (CRP). Papers are selected from various sources with different method discussed. Some main technical challenges are identified after reviewing even more papers. % This sentence requires modification.
+We find that Microsoft, SAP and some less famous research groups have conducted years of research in the area of customer relationship management. Elementary experiments demonstrate that ensemble selection is a good method to implement for next phase. We propose a set of well-defined research outlines and summarized each team member's contributions in the end.
+
+
+\end{abstract}
+% IEEEtran.cls defaults to using nonbold math in the Abstract.
+% This preserves the distinction between vectors and scalars. However,
+% if the journal you are submitting to favors bold math in the abstract,
+% then you can use LaTeX's standard command \boldmath at the very start
+% of the abstract to achieve this. Many IEEE journals frown on math
+% in the abstract anyway.
+
+% Note that keywords are not normally used for peerreview papers.
+\begin{IEEEkeywords}
+%IEEEtran, journal, \LaTeX, paper, template.
+Customer relationship prediction, modelling, ensemble selection, data mining.
+% The keywords may be changed later if we adopt another method.
+\end{IEEEkeywords}
+
+
+
+
+
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+\IEEEpeerreviewmaketitle
+
+
+
+\section{Introduction}
+% The very first letter is a 2 line initial drop letter followed
+% by the rest of the first word in caps.
+%
+% form to use if the first word consists of a single letter:
+% \IEEEPARstart{A}{demo} file is ....
+%
+% form to use if you need the single drop letter followed by
+% normal text (unknown if ever used by IEEE):
+% \IEEEPARstart{A}{}demo file is ....
+%
+% Some journals put the first two words in caps:
+% \IEEEPARstart{T}{his demo} file is ....
+%
+% Here we have the typical use of a "T" for an initial drop letter
+% and "HIS" in caps to complete the first word.
+%\IEEEPARstart{T}{his} demo file is intended to serve as a ``starter file''
+%for IEEE journal papers produced under \LaTeX\ using
+%IEEEtran.cls version 1.7 and later.
+% You must have at least 2 lines in the paragraph with the drop letter
+% (should never be an issue)
+%I wish you the best of success.
+
+%\hfill mds
+
+%\hfill January 11, 2007
+
+
+%\subsection{Subsection Heading Here}
+%Subsection text here.
+
+% needed in second column of first page if using \IEEEpubid
+%\IEEEpubidadjcol
+
+%\subsubsection{Subsubsection Heading Here}
+%Subsubsection text here.
+\IEEEPARstart{C}{ustomer} relationship management (CRM) is an essential model for managing the interactions between the company and its current and future customers. It takes up-to-date technologies to organize, automate, and synchronize CRM and marketing information system \cite{Ref:CustomerRelationshipManagement}. The KDD\footnote{ACM SIGKDD: Association for Computing Machinery, Special Interest Group, Knowledge Discovery from Data} Cup 2009 was organized to solve a marketing problem using data mining techniques that can proficiently build predictive models and use them to score new entries on a large database, respectively \cite{Ref:KDDCup2009}. It was an opportunity to work on large customer databases provided by Orange company (a French Telecom company) to predict customer behavior probabilities by evaluating three variables: churn, appetency and up-selling. Churn is the measure of clients that terminate their commitments to a service over a given time. Appetency is the client tendency to buy a new service or product. Up-selling is the attempt to persuade the client into inquiring a product to make additional profit for the business.
+\par
+KDD Cup 2009 had two challenges: the Fast challenge and the Slow challenge. The participants were given at most 5 days to submit their results after the labels on the training set was released, as with the Fast challenge. For the Slow challenge, an extra month was available for participants to submit their prediction.
+\par
+The data set was composed of 100,000 instances, spilt randomly into a pair of 50,000 instances each. There were 15,000 variables for use to make predictions, including 260 categorical ones. The majority of categorical variables as well as 333 numerical ones had missing values. All variables were scrambled due to confidential issues of customers. No description could be found of each variable's meaning.
+\par
+For the slow track, there was a much smaller number of variables, i.e. 230 provided, including 40 categorical ones. The scrambling of small data set was different from that of large one, and it was reported later that uncovering the links between them provided little help, if any \cite{Ref:WinningtheKDDCupIBMResearch}.
+\par
+% Here goes the structure of this paper.
+The structure of the rest of paper is as follows. Section \ref{Sec:Related Work} gives a broad discussion of problem addressed as well as solutions proposed in the area of data mining for customer relationship prediction. Section \ref{Sec:Technical Challenges} analyzes technical challenges shown in customer relationship prediction by way of data mining. Section \ref{Sec:More Related Work} presents a much more detailed discussion of papers that arouse our interests. Section \ref{Sec:Our Research Methods} proposes a course of research that we would use in the evaluation part. Finally section \ref{Sec:Conclusion} concludes this paper by summarizing our work up to now.
+
+\section{Related Work}\label{Sec:Related Work}
+%
+Implementing data mining in CRM will be the key to success of CRM, besides understanding customer consumption behavior patterns that helps in making marketing decisions and improving revenue. Data mining is used to analyze and classify various aspects in customer relationship management (e.g. customer groups, background, satisfaction, credit, churn, benefit, etc.), and the main target of data mining here is to find the hidden knowledge from customer data with huge dimensionality. In \cite{Ref:DataMiningApplicationInCRM}, the author enlisted the following practices as the main functions: clustering analysis; automatically prediction of behaviors and trends; concept description; correlation analysis and error detection.
+\par
+CRM applications that use data mining are called Analytic CRM, which provides valid predictions from customer data collected and stored with various attributes. There are a lot of data mining tools and methods to extract and analyze data generally, and customer data specifically. A naive step in doing so is to summarize the statistical attributes of the data (such as means and standard deviations) and use charts and graphs to review it visually \cite{Ref:DataMiningStrategiesforCRM}. However, in many situations customer relationship data volume is vast and massive. Therefore, more sophisticated methods are created and evaluated. In this field, we found the following techniques are most frequently employed: decision trees, support vector machines, artificial neural networks and bayesian classifiers.
+\par
+Data mining has powerful capability in processing and analyzing data; its key technologies that applied in CRM are categorized into three main categories; clustering, classification and forecast, and association rules \cite{Ref:ApplicationOfDataMiningInCRM}. Clustering is to group similar and create subgroups based on meaningful relation between the grouped objects. It aims to minimize the distance within the group and maximize it between different groups. In CRM, customers are clustering based on their different background, payments’ activities and habits, etc. That will significantly help in making more efficient marketing decisions and improve the customer-enterprise relationship. K-Means, K-Mediods, BIRCH, CURE, DBSCAN, and OPTICS are examples of clustering methods.
+\par
+Classification and forecast analysis classifies unknown data into the most proper pre-defined class based on category description that is obtained by training a set of data using certain algorithm. Key classification techniques are; decision-making tree, Bayesian statistics, BP neural networks, Genetic Algorithm, rough set theory, fuzzy set theory and so on. Classification methods in CRM can predict new customers’ behaviors and activities.
+\par
+According to \cite{Ref:ApplicationOfDataMiningInCRM}, association analysis aims to find out the most repeated pattern within the data set. The association is created when the values of two or more variables have certain rule. Example of such pattern is “70\% of customer buys commodity B together with commodity A in one shopping”. The association analysis realizes marketing strategy which can help to retain customers and improve their loyalty.
+\par
+In \cite{Ref:TargetingCustomers}, the researchers stated that classification analysis is the one that is widely used in classifying CRM data. It can be processed in two steps; learning phase and training phase [2]. In the learning phase the classification algorithm analyzes the training data set and learns it, then in the second phase the accuracy of the classifier will be estimated using the test data set. After that, the classifier can be used to predict and classify new data set. In order to obtain better accuracy, some preprocessing and filtering techniques can be applied to the data before going through the classification phases. Those techniques are; data cleaning, data discretization, and feature selection.
+
+\section{Technical Challenges}\label{Sec:Technical Challenges}
+Customer behavior classification and prediction is one of the most important issues in customer relationship management where organizations and companies cluster customers into predefined groups with similar behavior patterns. Business can market the right products to the right segments at the right time through the right delivery channels \cite{Ref:CRMBasedonDataMiningTechnique}.
+\par
+In \cite{Ref:CostSensitiveDataPreprocessing}, researchers stated the following challenges, which acted as good indicators, when carrying data mining on customer behavior data: the definition of appropriate distances between objects, the choice of appropriate clustering algorithm and the appropriate evaluation criteria of final results. They evaluated their framework on the KDD Cup 1998 dataset and demonstrated that it outperformed the methods of Cup winner. After further validating their methodology on a real dataset from a large Chinese mobile telecommunication company, they concluded that the genetic weighted k-means algorithm (a hybridization of a genetic and weighted k-means algorithms) performed better than the k-means in terms of quality and sensitivity to initial partitions. Additionally, the team used data distribution information (an equi-depth algorithm) to normalize all attributes' range in order to solve the problem of data imbalance distribution.
+\par
+In a recent paper \cite{Ref:ChallengesinKDDataMiningDatasets}, researchers pointed out some common challenges in knowledge discovery from data. They proved that customer classification and prediction is cost sensitive in nature. For example, if a valuable customer predicted as loyal but then that customer churns, the cost is higher than if a loyal customer is classified as one who will churn.
+\par
+Another interesting classification model mentioned in \cite{Ref:TowardsAnOptimalClassificationModel} was tested on a high-dimension data set, which is composed of highly imbalanced, corrupted and inaccurate records. Their proposed method dealt with the mentioned problems effectively. They adopted CFS (Correlation-based Feature Selection) method for preprocessing to remove the redundant and irrelevant features based on feature-class and inter-feature correlation. The proposed method showed great flexibility and provided accurate result with highest AUC and sensitivity claiming that this method is computationally efficient.
+
+
+
+
+
+\section{Further Analysis}\label{Sec:More Related Work}
+In this part, we followed the proceedings of KDD Cup 2009 and found it helped us a lot to figure out our course of research. We described our exploring process here.
+\par
+Guyon \emph{et. al} published their summary of KDD Cup in \cite{Ref:AnalysisOfTheKDDCup2009}. They stated that the challenge started on March 10, 2009 and ended on May 11, 2009. It attracted over 450 participants from 46 countries and the results of this challenge were discussed at the KDD conference (June 28, 2009). Their key conclusions are that ensemble methods are very effective. Moreover, from reports of winners they generalized that to predict customer relationship out of data that contains large numbers of instances with a great deal of attributes, mixed types of variables and missing values, ensemble of decision trees outperformed other methods. Particularly, as an throughout analysis of this challenge, some messages the researchers conveyed are enlightening:
+\begin{itemize}
+  \item KDD Cup 2009 could be regarded as a classification problem, and after years of research there are mature methods at hand which deal with relatively large data like this efficiently. It is confirmed by competitors that this problem is solvable either with compute clusters or individual desktop, laptops.
+  \item There seems to be an upper limit with performances of this problem. It's found that there was not a significant increase in results just after the first day.
+  \item There are many model evaluation methods, but cross-validation was found to be used by all top ranking participants. The standard process of k-fold cross-validation is to randomly partition the initial data into $D_{1},D_{2},\ldots,D_{k}$, $k$ mutually exclusive subsets or ``folds" of approximately equal size. The cross-validation method differs from the handout and subsampling methods in that each sample or ``fold" is used the same number of times for training and once for testing. This served as a good explanation that top participants in KDD Cup 2009 did not overfit the validation set.
+  \item There was not all about ensemble methods in the challenge. A popular technique, i.e. logistic regression, which belongs to linear classifiers proved good performance at the expense of increasing computational requirements. The same went with non-linear kernel methods like support vector machine (SVM).
+\end{itemize}
+A keynote from \cite{Ref:AnalysisOfTheKDDCup2009} is as well-illustrated by figure as by words. KDD Cup 2009 dataset was provided by Orange Telecom company, which had an authentic industrial flavour. Even if as diversified as performance, process automation , training and development time criteria should be considered in an industrial setting, the sorted final scores are very astonishing. From Fig. \ref{Fig:Sorted Final Socres} we could infer that even if at the cost of a huge performance deterioration of the other criteria, it is still hard to achieve significant improvement of prediction accuracy via state-of-the-art techniques. Confirmation from figure that the top 50\% values lie on an almost horizontal line.
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{SortedFinalScores}
+% where an .eps filename suffix will be assumed under latex,
+% and a .pdf suffix will be assumed for pdflatex; or what has been declared
+% via \DeclareGraphicsExtensions.
+\caption{\textbf{Sorted final scores:} The sorted AUC values on the test set of each three classes, together with the average of AUC on the three tasks. Only final submissions are included. Source: \cite{Ref:AnalysisOfTheKDDCup2009}.}
+\label{Fig:Sorted Final Socres}
+\vspace*{4pt}
+\end{figure*}
+\par
+The winning solution came from an IBM research group. Generally speaking their strategy is ensemble selection and more details are described in \cite{Ref:WinningtheKDDCupIBMResearch}. The IBM team used ensemble selection \cite{Ref:EnsembleSelectionFromLibraryOfModels} to generate and ensemble model from large heterogeneous libraries of classifiers for each problem. The robustness and performance evaluation can be found in \cite{Ref:EnsembleMethodsInMachineLearning} and \cite{Ref:AnEmpiricalComparisonofVotingClassification}. In addition, it is an anytime method where ensemble can be generated very fast using the available classifiers in the library at that time without over-fitting. Their article is organized chronically.
+\begin{itemize}
+  \item Fast track. As mentioned above, it's almost impossible to apply any algorithm directly on complex data like this. The IBM group did some fairly standard preprocessing and in order to make the most of ensemble selections, they normalized all the features, discarding merely 1,564 really waste features. When finished the ``textbook" ensemble selection, they created 20 additional features for each existing feature and trained a decision tree of limited depth to directly predict the target.
+  \item Slow track. It is recommended in \cite{Ref:DataMiningConceptsandTechniques} generally to use a stratified 10-fold cross-validation for estimating accuracy, since it will provide relatively low bias and variance. In the fast track, Niculescu-Mizil \emph{et. al} only carried 2 out of 10 due to the lack of 10. For the slow challenge, two extra folds were trained. More importantly, a combination of even more features helped pull the average accuracy rate from 0.8443 to 0.8509. The following features were constructed: a number of features which distinct from others to be handled isolately; pairs of attributes used as inputs of the specific decision tree to obtain two-way non-additive interactions; a fast probabilistic bi-clustering algorithm \cite{Ref:AnEfficientVotingAlgorithmForFindingBiclusters} run to identify bi-clusters.
+\end{itemize}
+The IBM research group built a large library of 500-1,000 base classifiers, and this number was just for each classifier. It is stated that this huge library contributed a lot to their winning.
+\par
+A paper clearly and repeatedly mentioned in IBM and some other groups' article is \cite{Ref:EnsembleSelectionFromLibraryOfModels}, which served as a ``beginner's guide" in ensemble selection. In this paper step by step illustrated what ``ensemble selection from libraries of models" was, and what this novel technic could achieve. Here we discussed this paper in depth.
+\begin{itemize}
+  \item A naive ensemble selection would proceed in this way. Repeatedly adding model that maximizes ensemble's performance to the error metric, and returned the ensemble from the nested set of ensembles that performs best on given metric. The process was done on a hillclimb validation set.
+  \item One aspect particular about ensemble selection in that the validation dataset was used for both parameter training and model selection. To improve its performance, Caruana \emph{et. al} introduced some techniques: selection with replacement, which flattened the performance curve past the peak and enabled the weighting of models; sorted ensemble initialization, which prevented overfitting when ensembles were small; bagged ensemble selection, which minimizes the likelihood of selecting model combinations that are overfitting, as the hillclimb set increases.
+  \item Researchers carefully selected as many as 7 datasets from different repositories to test their ensemble selection method. Those datasets were large enough to remain some data for a large final test, which later strengthened their findings.
+  \item An case study was carried out to support their work. It was done to classify sub-atomic particles. Performance was measured against the Stanford Linear Accelerator Center (SLAC) Q-score: $SLQ~=~\varepsilon(1-2w)^{2}$. The outcome was an increase of 6\% SLQ, compared with the best bagged trees.
+\end{itemize}
+With a great deal of proof at hand, the researchers concluded that ``using many different learning methods and parameter settings is an effective way of generating a diverse collection of models", which in turn could find ensembles outperforming all other models. A lively plot of ensemble methods is shown in Fig. \ref{Fig:Increasing Classifier Accuracy}.
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{IncreasingClassifierAccuracy}
+% where an .eps filename suffix will be assumed under latex,
+% and a .pdf suffix will be assumed for pdflatex; or what has been declared
+% via \DeclareGraphicsExtensions.
+\caption{\textbf{Increasing classifier accuracy:} A set of classification models $M_{1},M_{2},\ldots,M_{k}$ are generated by ensemble methods. And each classifier Source: \cite{Ref:AnalysisOfTheKDDCup2009}.}
+\label{Fig:Increasing Classifier Accuracy}
+\vspace*{4pt}
+\end{figure*}
+\par
+In \cite{Ref:EnsembleMethodsInMachineLearning}, which published 4 years earlier than Caruana's findings above, a more mathematical analysis of then popular ensemble methods was done. Dietterich reviewed error-correcting output coding, bagging and boosting, and provided reasons as varied as statistical, computational and representational in his discussions.
+\par
+After listing so many benefits brought up by ensemble methods, it was no wonder for us to find and figure out why it was so pervasively used in KDD Cup 2009. For report by Lo \emph{et. al} in \cite{Ref:AnEnsembleOfThreeClassifiersForKDD2009}, they built an ensemble of three classifiers, namely, expanded linear model, heterogeneous boosting and selective naive Bayes. In \cite{Ref:FeaturePartitioningAndBoosting} researchers from the Hungarian Academic of Science partially took ensemble methods into their strategies, with a logistic boost as their approach, accompanied by an ADTree classifier.
+\par
+Alternatively, a team from ID Analytics Inc. used a combination of boosting and bagging and they achieved the fast scoring on a large database \cite{Ref:ACombinationOfBoostingAndBaggingForKDD}. Xie \emph{et. al} considered the three tasks (churn, appetency, and up-selling) as binary classification problems. They believed that ensemble learning schemes are widely used to improve the overall performance of a single classifier by combining predictions from multiple classifiers. The team used TreeNet stochastic gradient decision tree as the main classifier and since the three tasks are binary classification problems, the log likelihood function was chosen. They combined bagging and boosting, and for each task they bagged 5 boosted tree models and took the average as the final prediction result. Bagging and boosting both decreased error rate of decision tree learning, and the question came as which one would be better to use as well as under what kind of circumstances.
+\par
+A comparative study was conducted by Khoshgoftaar, Hulse and Napolitano to compare between boosting and bagging techniques with noisy and imbalanced data \cite{Ref:ComparingBoostingandBaggingWithNoisyImbalancedData}. They evaluated four algorithms of boosting and bagging (SMOTEBoost, RUSBoost, Exactly Balanced Bagging, and Roughly Balanced Bagging) in a comprehensive suite of experiments for nearly four million classification models were trained. The results were tested for statistical significance via analysis-of-variance modeling. They recommended the use of bagging technique since it performed better than boosting when data were noisy and imbalanced. However, when the data were clean and imbalanced the difference was less significant. On the contrary, Jain and Kulkarni stated that boosting is more accurate than bagging. They published a paper in 2012 reviewing the state of the art group learning techniques for the imbalanced data sets. In addition, they proposed a new group learning algorithm called Incorporating Bagging in to Boosting (IB). Moreover, the final results showed that Incorporating Bagging into Boosting (IB) was more stable than boosting and it is on average more accurate than bagging, also its average error rate was lower than the average error rate of boosting \cite{Ref:IncoprtatingBaggingIntoBoosting}. These results emphasized the advantages of combining bagging and boosting techniques to get high quality performance and accuracy, and were in return confirmed by the results of researchers from ID Analytics in KDD Cup 2009.
+
+\section{Our Blueprint}\label{Sec:Our Research Methods}
+% Abraham: For this part, I turn to the present tense. I suppose that would not be a big problem.
+% Abraham: Life is hard, always that hard. Holy Cow!
+
+
+
+We reviewed throughout of each report in the proceedings \cite{Ref:ProceedingsOfKddCup2009} to find their future work and proposed our course of research as followed. To be short, we would do an ensemble selection of 3 to 5 base classifiers, which depends on the time allocated to the second phase of this project. Furthermore, we planned to add 1 to 2 features generated from in-use features, to test if this would improve our ensemble selection's performance. In the end, when time permitting we would replace standard classifiers with newly-discovered classifiers to test their validity.
+\subsection{Dataset}
+Due to the lack of time allocated to the second part of this project, we made an decision to work only on large dataset in the beginning. We considered experimenting our methods on the small dataset to validate them.
+\subsection{Preprocessing}
+As described in section \ref{Sec:Technical Challenges}, the dataset itself remains to be a big challenge. Therefore, we agree to take the following steps to tackle it.
+\par
+Missing values. We would consider missing categorical values as a separate value. We would take a standard approach which calculates the mean of the feature to impute missing values. And as proven an effective technique by \cite{Ref:WinningtheKDDCupIBMResearch}, we decide to add an extra indicator variable to indicate ``missingness" for every one of the 333 variables with missing values. We planned to do this because some linear models in our base classifiers could then estimate the optimal constant instead of merely relying on the means to replace the missing value with.
+\par
+Categorical values. Since categorical values are not easily handled by many learning algorithms, we decide to recode categorical values using the same way as by IBM Research. For different values a categorical attribute could take, we would generate corresponding indicators. As an good example shown in IBM's paper, limiting the number of values encoded would greatly reduce the number of features, which may be from variables with a enormous vocabulary.
+\par
+Clean up. We would normalize each feature by dividing up by their range. And we would clean the data by eliminating redundant features, which are either constant, or duplicate of other features.
+
+% Abraham: As with the IBM way, there is no [feature selection]. It's because they have up-to-date computing power. Though this could be achieved by Cloud Computing...I have no idea towards Google App Engine.
+\subsection{Base Classifiers}
+As stated by Dietterich \cite{Ref:EnsembleMethodsInMachineLearning}, ``A necessary and sufficient condition for an ensemble of classifiers to be more accurate than any of its individual members is if the classifiers are accurate and diverse." The winning team of this KDD Cup employed as many as 10 base classifiers--random forests, boosted trees, logistic regression, SVM, decision trees, TANs, Naive Bayes, Sparse Network of Windows and k-NN. Building libraries would be expensive, what's more is that time is limited to train all of them in the next phase. To maintain the accuracy and diversity of our next-phase base classifier library, we decide to build it using the classifiers as follows, boosted decision trees, decision trees, linear regression, SVM and k-NN.
+
+\subsection{Ensemble Selection}
+An ensemble is a collection of models. To make predictions, we just need to calculate weighted average or ``voting" based on those models. One important reason for us to work with ensemble selection is that it can be optimized to any easily computed metric. Same as described before, for an ensemble selection classifier used to improve classification accuracy, one thing is the base classifiers in the library are accurate. This is not hard to achieve with a great literature at hand. The other characteristic is diverse. Due to the fact that our computation power is limited, we planned to build 100 to 200 base classifiers in our library.
+
+\subsection{More Features}
+Not so many prize winning teams reported to have used carefully-treated features, namely artificially selected features to produce even better results. However, the top 1 team IBM Research built more features from those massive already-given ones, in both fast track and slow track. As a good example shown by them, we planned to add one more feature after the first round of ensemble selection. The feasible approach our team members unanimously choose is to use decision tree to identify the optimal splitting points \cite{Ref:WinningtheKDDCupIBMResearch}. The output, i.e. probabilistic prediction, of this decision tree would help at least to some degree express nonlinear relationships in a linear model.
+
+\subsection{More Base Classifiers}
+As shown by some researchers that in the end KDD Cup 2009 challenge is merely a binary classification problem with three unique probabilities to estimate \cite{Ref:AnEnsembleOfThreeClassifiersForKDD2009}. Therefore we did a massive search for recent papers that report good results of new/updated base classifiers. Based on our findings, we planned to add one of those two classifiers to our library if possible (time sufficient after the first round). Paper \cite{Ref:LargeLinearClassificationWhen} presented a large linear classifier that performed great on big data classification with computer memory limitation, they provided their code at this site \footnote{\url{http://www.csie.ntu.edu.tw/~cjlin/liblinear/exp.html}}. Researchers at Cornell university presented new models for classification and regression \cite{Ref:IntelligibleModelsForClassificationAndRegression}. Their innovative method is based on tree ensembles, which ``manages" its leaves in an adaptive way. This is well worth trying since we also planned to include some classic decision tree models. We would like to see how much improvement this patched tree generation methods would have in our study.
+
+\subsection{Objectives}
+For the evaluation of our next-phase implementation, we propose two research questions here.
+\subsubsection{\textbf{RQ1: How great would the probability be before and after the ensemble selection step}}
+In \cite{Ref:DataMiningConceptsandTechniques} it is clearly stated that ``An ensemble for classification is a composite model, made up of a combination of classifiers. The individual classifiers vote, and a class label prediction is returned by the ensemble based on the collection of votes." Therefore, we expect to see some probability calibrations, as shown in \cite{Ref:EnsembleSelectionFromLibraryOfModels}.
+
+\subsubsection{\textbf{RQ2: How great would the performance be if we use newly developed models}}
+It is witnessed that many newly developed or updated models arose for recent ACM SIGKDD annual meetings. Apart from a few we discussed above, there are new model for nonlinear classification \cite{Ref:TradingRepresentabilityforScalability}, new classifier based on composite hypercubes \cite{Ref:ANewClassifierBasedOnCompositeHypercubes} etc. We planned to select one or two of them out of all those appeared in KDD and ICDM, to replace models of same characteristic (linear/nonlinear). We would like to see the performance change after this add-up as a validation of new models.
+
+
+\section{Conclusion}\label{Sec:Conclusion}
+We have conducted a broad search of related literature in the field of customer relationship prediction. We proposed to use ensemble selection of several base classifiers for the next phase. We conclude each team member's contributions as follows.
+\begin{itemize}
+  \item Yanan Xiao. He finished half of the literature review and took the responsibility to typeset this report in \LaTeX2e.
+  \item Aziza Al Sawafi. She contributed the other half of this report, especially the section \ref{Sec:Related Work} and \ref{Sec:Technical Challenges}.
+  \item Mansoor Al Dosari. He did review some related papers. Later we found it hard to contact him.
+\end{itemize}
+% Abraham: Always be self-motivating even working with those self-degrading. I have to use the word degrading.
+
+
+
+
+
+
+
+
+
+%%*************************************************************************
+% An example of a floating figure using the graphicx package.
+% Note that \label must occur AFTER (or within) \caption.
+% For figures, \caption should occur after the \includegraphics.
+% Note that IEEEtran v1.7 and later has special internal code that
+% is designed to preserve the operation of \label within \caption
+% even when the captionsoff option is in effect. However, because
+% of issues like this, it may be the safest practice to put all your
+% \label just after \caption rather than within \caption{}.
+%
+% Reminder: the "draftcls" or "draftclsnofoot", not "draft", class
+% option should be used if it is desired that the figures are to be
+% displayed while in draft mode.
+%
+%\begin{figure}[!t]
+%\centering
+%\includegraphics[width=2.5in]{myfigure}
+% where an .eps filename suffix will be assumed under latex,
+% and a .pdf suffix will be assumed for pdflatex; or what has been declared
+% via \DeclareGraphicsExtensions.
+%\caption{Simulation Results}
+%\label{fig_sim}
+%\end{figure}
+
+% Note that IEEE typically puts floats only at the top, even when this
+% results in a large percentage of a column being occupied by floats.
+
+
+% An example of a double column floating figure using two subfigures.
+% (The subfig.sty package must be loaded for this to work.)
+% The subfigure \label commands are set within each subfloat command, the
+% \label for the overall figure must come after \caption.
+% \hfil must be used as a separator to get equal spacing.
+% The subfigure.sty package works much the same way, except \subfigure is
+% used instead of \subfloat.
+%
+%\begin{figure*}[!t]
+%\centerline{\subfloat[Case I]\includegraphics[width=2.5in]{subfigcase1}%
+%\label{fig_first_case}}
+%\hfil
+%\subfloat[Case II]{\includegraphics[width=2.5in]{subfigcase2}%
+%\label{fig_second_case}}}
+%\caption{Simulation results}
+%\label{fig_sim}
+%\end{figure*}
+%
+% Note that often IEEE papers with subfigures do not employ subfigure
+% captions (using the optional argument to \subfloat), but instead will
+% reference/describe all of them (a), (b), etc., within the main caption.
+
+
+% An example of a floating table. Note that, for IEEE style tables, the
+% \caption command should come BEFORE the table. Table text will default to
+% \footnotesize as IEEE normally uses this smaller font for tables.
+% The \label must come after \caption as always.
+%
+%\begin{table}[!t]
+%% increase table row spacing, adjust to taste
+%\renewcommand{\arraystretch}{1.3}
+% if using array.sty, it might be a good idea to tweak the value of
+% \extrarowheight as needed to properly center the text within the cells
+%\caption{An Example of a Table}
+%\label{table_example}
+%\centering
+%% Some packages, such as MDW tools, offer better commands for making tables
+%% than the plain LaTeX2e tabular which is used here.
+%\begin{tabular}{|c||c|}
+%\hline
+%One & Two\\
+%\hline
+%Three & Four\\
+%\hline
+%\end{tabular}
+%\end{table}
+
+
+% Note that IEEE does not put floats in the very first column - or typically
+% anywhere on the first page for that matter. Also, in-text middle ("here")
+% positioning is not used. Most IEEE journals use top floats exclusively.
+% Note that, LaTeX2e, unlike IEEE journals, places footnotes above bottom
+% floats. This can be corrected via the \fnbelowfloat command of the
+% stfloats package.
+
+%%*************************************************************************
+
+
+
+%\section{Conclusion}
+%The conclusion goes here.
+
+
+
+
+
+% if have a single appendix:
+%\appendix[Proof of the Zonklar Equations]
+% or
+%\appendix  % for no appendix heading
+% do not use \section anymore after \appendix, only \section*
+% is possibly needed
+
+% use appendices with more than one appendix
+% then use \section to start each appendix
+% you must declare a \section before using any
+% \subsection or using \label (\appendices by itself
+% starts a section numbered zero.)
+%
+
+
+\appendices
+%\section{Proof of the First Zonklar Equation}
+%Appendix one text goes here.
+
+% you can choose not to have a title for an appendix
+% if you want by leaving the argument blank
+%\section{}
+%Appendix two text goes here.
+
+
+% use section* for acknowledgement
+\section*{Acknowledgment}
+
+
+The authors would like to thank Dr. Wei Lee for giving high quality data mining lectures and selecting this challenging but rewarding topic as this semester's project. They would like give more gratitude to Masdar Institute for the studying and researching environment.
+
+
+% Can use something like this to put references on a page
+% by themselves when using endfloat and the captionsoff option.
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+
+
+
+% trigger a \newpage just before the given reference
+% number - used to balance the columns on the last page
+% adjust value as needed - may need to be readjusted if
+% the document is modified later
+%\IEEEtriggeratref{8}
+% The "triggered" command can be changed if desired:
+%\IEEEtriggercmd{\enlargethispage{-5in}}
+
+% references section
+
+% can use a bibliography generated by BibTeX as a .bbl file
+% BibTeX documentation can be easily obtained at:
+% http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/
+% The IEEEtran BibTeX style support page is at:
+% http://www.michaelshell.org/tex/ieeetran/bibtex/
+\bibliographystyle{IEEEtran}
+% argument is your BibTeX string definitions and bibliography database(s)
+%\bibliography{IEEEabrv,../bib/paper}
+\bibliography{IEEEabrv,Reference}
+%
+% <OR> manually copy in the resultant .bbl file
+% set second argument of \begin to the number of references
+% (used to reserve space for the reference number labels box)
+%\begin{thebibliography}{1}
+
+%\bibitem{IEEEhowto:kopka}
+%H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+%  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+
+%\end{thebibliography}
+
+% Abraham: We choose to use BibTeX, this is much more manageable.
+
+% biography section
+%
+% If you have an EPS/PDF photo (graphicx package needed) extra braces are
+% needed around the contents of the optional argument to biography to prevent
+% the LaTeX parser from getting confused when it sees the complicated
+% \includegraphics command within an optional argument. (You could create
+% your own custom macro containing the \includegraphics command to make things
+% simpler here.)
+%\begin{biography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
+% or if you just want to reserve a space for a photo:
+
+%\begin{IEEEbiography}{Michael Shell}
+%Biography text here.
+%\end{IEEEbiography}
+
+% if you will not have a photo at all:
+\begin{IEEEbiographynophoto}{Yanan Xiao}
+A first year master student as well as IEEE student member in CIS program, Masdar Institute. He loves programming when all the coursework is finished. When he feels tired of programming, he would read some books.
+\end{IEEEbiographynophoto}
+
+% insert where needed to balance the two columns on the last page with
+% biographies
+%\newpage
+
+\begin{IEEEbiographynophoto}{Aziza Al Sawafi}
+ First year Computing and Information Science student at Masdar Inst., got a bachelor degree in Network Engineering (United Arab Emirates University). Sport, drawing, designing, blogging, reading poems, photography, and riding horse/bicycle are my interests beside all things that are related to networking and computer science.
+\end{IEEEbiographynophoto}
+
+% You can push biographies down or up by placing
+% a \vfill before or after them. The appropriate
+% use of \vfill depends on what kind of text is
+% on the last page and whether or not the columns
+% are being equalized.
+
+\vfill
+
+% Can be used to pull up biographies so that the bottom of the last one
+% is flush with the other column.
+\enlargethispage{-5in}
+
+
+
+% that's all folks
+\end{document}
+
+
