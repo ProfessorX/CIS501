@@ -28,5 +28,6 @@
      "Ref:ChallengesinKDDataMiningDatasets"
      "Ref:TowardsAnOptimalClassificationModel"
      "Ref:ApplicationOfDataMiningInCRM"
-     "Ref:TargetingCustomers")))
+     "Ref:TargetingCustomers"
+     "Ref:Yanan2013")))
 

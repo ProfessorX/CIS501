@@ -3,6 +3,10 @@
     (LaTeX-add-bibliographies
      "IEEEabrv"
      "Reference")
+    (LaTeX-add-labels
+     "sec:introduction"
+     "sec:initial-plan"
+     "sec:revised-proposal")
     (TeX-run-style-hooks
      "hyperref"
      "url"
