@@ -25,4 +25,9 @@
 Y.~Xiao and A.~Sawafi, ``Getting the max out of ensemble selection,''
   \emph{Journal of Masdar Institute}, vol.~1, pp. 323--330, Dec. 2013.
 
+\bibitem{Ref:WinningtheKDDCupIBMResearch}
+A.~Niculescu-Mizil \emph{et~al.}, ``Winning the {KDD Cup} orange challenge with
+  ensemble selection,'' in \emph{Proceedings of {KDD-Cup} 2009 competition},
+  Paris, France, Jun. 2009, pp. 23--34.
+
 \end{thebibliography}

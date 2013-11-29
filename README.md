@@ -25,6 +25,13 @@ problems like this.
 3. That should suffice. And pickup what should be interesting for
 them, and share your "fun" with them
 
+### Notes ###
+Below are some notes by Dr. Woon.
+The main thing is that:
+    * transparency and clarity of the methodology
+    * creativity in using different things and tools, but reasonable ones
+    * show the efforts that spent for the project
+
 
 ## TODO ##
 1. Finish the modification of your presentation slides, within
@@ -33,5 +40,7 @@ them, and share your "fun" with them
 20131128 Lab 17:17
 1. Finish the Introduction part and the second section. Within today.
 2. Review what I have written.
+
+
 
 

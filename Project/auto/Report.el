@@ -6,7 +6,8 @@
     (LaTeX-add-labels
      "sec:introduction"
      "sec:initial-plan"
-     "sec:revised-proposal")
+     "sec:revised-proposal"
+     "sec:result-conclusion")
     (TeX-run-style-hooks
      "hyperref"
      "url"
