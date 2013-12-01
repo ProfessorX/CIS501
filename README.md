@@ -14,6 +14,9 @@ Right now I would post news of project progress here.
 * Add an extra indicator to indicate missingness (if possible. 1 for
   missing and 0 for not-missing.)
 
+### Possible Running ###
+weka.classifiers.meta.EnsembleSelection -W /home/abrahamx91/Masdar-Institute/Data-Mining/Project/Train -P rmse -A library -B 10 -V 0.25 -E 0.5 -H 100 -I 1.0 -X 1 -R -G -S 1
+
 ## Course Presentation ##
 I suppose I can add a few more slides, about the technical background
 of that paper. AKA, some mathematical stuff.
