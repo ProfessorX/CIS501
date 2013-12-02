@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.26pt}
+\beamer@sectionintoc {1}{Introduction}{5}{0}{1}
+\beamer@sectionintoc {2}{Trustrace}{9}{0}{2}
+\beamer@sectionintoc {3}{Empirical Evaluation}{15}{0}{3}
+\beamer@sectionintoc {4}{Results}{18}{0}{4}
+\beamer@sectionintoc {5}{Discussion}{21}{0}{5}
+\beamer@sectionintoc {6}{Future Work}{23}{0}{6}
