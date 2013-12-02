@@ -1,0 +1,7 @@
+In the last step, Histrace removes false-positive links by imposing
+  the following constraint:
+  \begin{block}{Remove false-positive link with regular expression}
+\begin{verbatim}
+fix(e[ds])?|bugs?|problems?|defects?patch
+\end{verbatim}
+  \end{block}

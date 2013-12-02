@@ -11,11 +11,11 @@
 \title[Miners to Millionaires]{From Miners to Millionaires}
 \author{Yanan Xiao}
 \institute[Masdar Institute]{Masdar Institute of Science and Technology}
-\date[CIS502 Presentation]{Software Engineering Course Presentation}
+\date[CIS501 Presentation]{Data Mining Course Presentation}
 
 % Frame Begin
 \begin{frame}
-\titlepage
+\titlepage~
 \end{frame}
 
 %\begin{frame}[shrink]
@@ -32,13 +32,13 @@
 \begin{frame}
 \frametitle{Glossaries}
 \begin{itemize}
-  \item IR: Information Retrieval\\[6pt]
-  \item VSM: Vector Space Model\\[6pt]
-  \item JSM: Jensen-Shannon Model\\[6pt]
-  \item PCA: Principal Component Analysis\\[6pt]
-  \item Trustrace: Trust-Based Traceability\\[6pt]
-  \item TF/IDF: Text Frequency and Inverse Document Frequency\\[6pt]
-  \item MSW: Multiple-Static Weights\\[8pt]
+  \item IR:\@ Information Retrieval\\[6pt]
+  \item VSM:\@ Vector Space Model\\[6pt]
+  \item JSM:\@ Jensen-Shannon Model\\[6pt]
+  \item PCA:\@ Principal Component Analysis\\[6pt]
+  \item Trustrace:\@ Trust-Based Traceability\\[6pt]
+  \item TF/IDF:\@ Text Frequency and Inverse Document Frequency\\[6pt]
+  \item MSW:\@ Multiple-Static Weights\\[8pt]
 \end{itemize}
 \end{frame}
 
@@ -99,23 +99,27 @@ The literature has proposed methods, techniques, and tools to recover these trac
 \begin{frame}
 \frametitle{A Mathematician's Approach}
 A set of requirements:
-\begin{equation}\label{equ:Requirements}
-  R~=~\{r_{1},...,r_{N}\}
+\begin{equation}
+\label{equ:Requirements}
+  R~=~\{r_{1},\ldots,r_{N}\}
 \end{equation}
 A set of classes:
-\begin{equation}\label{equ:Classes}
-  C~=~\{c_{1},...,c_{M}\}
+\begin{equation}
+\label{equ:Classes}
+  C~=~\{c_{1},\ldots,c_{M}\}
 \end{equation}
 A collection of sets:
-\begin{equation}\label{equ:Sets}
-  T~=~\{T_{1},...,T_{P}\}
+\begin{equation}
+\label{equ:Sets}
+  T~=~\{T_{1},\ldots,T_{P}\}
 \end{equation}
-where each $T_{i}~=~{T_{1},...,T_{N_{i}}}$ is a set of homogeneous pieces of information.
+where each $T_{i}~=~{T_{1},\ldots,T_{N_{i}}}$ is a set of homogeneous pieces of information.
 \end{frame}
 
 \begin{frame}
 For each set $T_{i}\in T$, we build a set $R2CT_{i,r_{j},t_{k}}$ for each expert $T_{i}$ as follows:
-\begin{equation}\label{equ:RequirementSetforExperts}
+\begin{equation}
+\label{equ:RequirementSetforExperts}
   R2CT_{i,r_{j},t_{k}}~=~\{(r_{j},c_{s},\sigma^{'}_{i}(r_{j},t_{k}))|c_{s}\in \delta_{T_{i}}(t_{k}) \& t_{k}\in T_{i}\}
 \end{equation}
 And we use the sets $T_{i} \in T$ to build a set of trustable links $T_{r}$:
@@ -128,7 +132,8 @@ And we use the sets $T_{i} \in T$ to build a set of trustable links $T_{r}$:
     \end{array}
 \end{equation}
 In $TC_{i}(r_{j},c_{s})$ a new similarity $\sigma^{*}_{i}(r_{j},c_{s})$ computed as:
-\begin{equation}\label{equ:TrumoNewSimilarity}
+\begin{equation}
+\label{equ:TrumoNewSimilarity}
   \sigma^{*}_{i}(r_{j},c_{s})~=~\frac{\sigma_{i}(r_{j},c_{s})+\sum_{l\in TC_{i}(r_{j},c_{s})}\phi(l)}{1+|TC_{i}(r_{j},c_{s})|}
 \end{equation}
 \end{frame}
@@ -173,6 +178,79 @@ Finally Trumo combine assigned value  to each link $T_{r}$ as follows:
 \end{itemize}
 \end{frame}
 
+\subsection{Technical Notes}
+
+
+\begin{frame}[fragile,containsverbatim]
+  \frametitle{Histrace}
+  Histrace creates links between the set of requirements, $R$ and the
+  source code, $C$, using the software repositories.\\
+  In the following, $T_{1}$ stands for CVS/SVN commit messages, and
+  $T_{2}$ for bug reports.\\[6pt]
+  \begin{block}{Link each commit message and bug reports}
+\begin{verbatim}
+((b)[ug]{0,2}\s*[id]{0,3}|id|fix|pr|#)
+[\s#=]*[?([0--9]{4,6})]?
+\end{verbatim} 
+  \end{block}
+Tuned to the naming and numbering conventions by the developers of
+\emph{Rhino}.
+\end{frame}
+
+\begin{frame}[fragile,containsverbatim]
+  In the last step, Histrace removes false-positive links by imposing
+  the following constraint:
+  \begin{block}{Remove false-positive link with regular expression}
+\begin{verbatim}
+fix(e[ds])?|bugs?|problems?|defects?patch
+\end{verbatim}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{IR Techniques}
+  VSM and JSM are used by researchers. These techniques both
+  essentially use term-by-document matrices. 
+  \begin{itemize}
+    \item Vector Space Model. The well-known TF/IDF measure is
+      chosen. A document is a vector of TF/IDF weights. TF is the
+      local weight whereas IDF a global weight of a term.
+      \begin{equation}
+        \label{eq:1}
+        {(TF/IDF)}_{i,j}=\frac{n_{i,j}}{\sum_{k}n_{k,j}}*
+        \log_{2}{(\frac{|D|}{|d:t_{i}\in d|})}
+      \end{equation}
+    \item Jensen-Shannon Model. JSM represents each document through a
+      probability distribution, i.e., a normalized term-by-document
+      matrix.
+      \begin{equation}
+        \label{eq:2}
+        p=\frac{n(w,d)}{T_{d}}
+      \end{equation}
+      Just a fancy way of expressing \emph{word frequency}.
+      
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+  JSM ranks target documents via the ``distance'' of their probability
+  distribution to that of the source document.
+\begin{equation}
+        \label{eq:4}
+        JSM(q,d)=H(\frac{p_{q}+p_{d}}{2})-\frac{H(p_{q}+H(p_{d}))}{2}
+\end{equation}
+\begin{equation}
+  \label{eq:5}
+  H(p)=\sum h(p(w))
+\end{equation}
+\begin{equation}
+  \label{eq:6}
+  h(x)=-x\log x
+\end{equation}
+$H(p)$ is the entropy of the probability distribution $p$, and $p_{q}$
+and $p_{d}$ are the probability distribution of the two documents.
+\end{frame}
 \section{Empirical Evaluation}
 \begin{frame}
 \frametitle{Goal}
