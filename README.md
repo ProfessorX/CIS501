@@ -37,12 +37,26 @@ The main thing is that:
 
 
 ## TODO ##
-1. Finish the modification of your presentation slides, within
-   today. The today is defined as, November 27th.
+    1. Finish the modification of your presentation slides, within
+    today. The today is defined as, November 27th.
 
-20131128 Lab 17:17
-1. Finish the Introduction part and the second section. Within today.
-2. Review what I have written.
+    20131128 Lab 17:17
+        1. Finish the Introduction part and the second section. Within today.
+        2. Review what I have written.
+
+    20131202 Lab 23:30
+        1. You either work hard enough to keep your seat here. Or pack
+           all your belongings and fuck yourself off to People's
+           Republic.
+        2. For data mining presentation:
+           * Regular expressions in Histrace (add the missing stuff,
+             by way of {block} and {verbatim}). Well, I did use this
+             technique before, somehow I forgot to use for the former
+             presentation.
+           * Add the missing IR technique descriptions.
+           * Possible applications? (I do not think so. Right now I
+             prefer to talk more about RegEx and some IR techniques
+             they used. Since their results, is funny.)
 
 
 
