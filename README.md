@@ -19,6 +19,11 @@ Plan to backup or rescue this project, with the help of some packages
 mentioned in IBM Research paper. (Well, I have to do this since I am
 the team leader.)
 
+Next few things to do:
+    1. Reformat the data format.
+    2. finish the festlearn commands.
+    3. finish the rest commands for other packages.
+
 ### Possible Running ###
 weka.classifiers.meta.EnsembleSelection -W /home/abrahamx91/Masdar-Institute/Data-Mining/Project/Train -P rmse -A library -B 10 -V 0.25 -E 0.5 -H 100 -I 1.0 -X 1 -R -G -S 1
 
