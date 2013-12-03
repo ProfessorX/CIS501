@@ -14,6 +14,11 @@ Right now I would post news of project progress here.
 * Add an extra indicator to indicate missingness (if possible. 1 for
   missing and 0 for not-missing.)
 
+### Some Urgent Stuff ###
+Plan to backup or rescue this project, with the help of some packages
+mentioned in IBM Research paper. (Well, I have to do this since I am
+the team leader.)
+
 ### Possible Running ###
 weka.classifiers.meta.EnsembleSelection -W /home/abrahamx91/Masdar-Institute/Data-Mining/Project/Train -P rmse -A library -B 10 -V 0.25 -E 0.5 -H 100 -I 1.0 -X 1 -R -G -S 1
 
@@ -57,7 +62,13 @@ The main thing is that:
            * Possible applications? (I do not think so. Right now I
              prefer to talk more about RegEx and some IR techniques
              they used. Since their results, is funny.)
-
+    
+    20131203 Lab 13:00
+        1. Figure out how to manipulate those packages.
+        2. Write shell scripts to test those fucking stuff.
+        3. Run those stuff on your workstation.
+        4. A simple note: 16:00 Group meeting with your RESEARCH
+           partners. You have to make a hit, here.
 
 
 
