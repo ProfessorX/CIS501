@@ -1,0 +1,19 @@
+#!/bin/bash
+BBRtrain -p 1 -C 1 -H 0.001 -u 0 -f 100 -l 1 train.data train-bbr-100.data.model
+BBRtrain -p 1 -C 1 -H 0.01 -u 0 -f 100 -l 1 train.data train-bbr-100-1.data.model
+BBRtrain -p 1 -C 1 -H 0.1 -u 0 -f 100 -l 1 train.data train-bbr-100-2.data.model
+BBRtrain -p 1 -C 1 -H 1 -u 0 -f 100 -l 1 train.data train-bbr-100-3.data.model
+BBRtrain -p 1 -C 1 -H 10 -u 0 -f 100 -l 1 train.data train-bbr-100-4.data.model
+BBRtrain -p 1 -C 1 -H 100 -u 0 -f 100 -l 1 train.data train-bbr-100-5.data.model
+BBRtrain -p 1 -C 1 -H 0.001 -u 0 -f 200 -l 1 train.data train-bbr-200.data.model
+BBRtrain -p 1 -C 1 -H 0.01 -u 0 -f 200 -l 1 train.data train-bbr-200-1.data.model
+BBRtrain -p 1 -C 1 -H 0.1 -u 0 -f 200 -l 1 train.data train-bbr-200-2.data.model
+BBRtrain -p 1 -C 1 -H 1 -u 0 -f 200 -l 1 train.data train-bbr-200-3.data.model
+BBRtrain -p 1 -C 1 -H 10 -u 0 -f 200 -l 1 train.data train-bbr-200-4.data.model
+BBRtrain -p 1 -C 1 -H 100 -u 0 -f 200 -l 1 train.data train-bbr-200-5.data.model
+BBRtrain -p 1 -C 1 -H 0.001 -u 0 -f 500 -l 1 train.data train-bbr-500.data.model
+BBRtrain -p 1 -C 1 -H 0.01 -u 0 -f 500 -l 1 train.data train-bbr-500-1.data.model
+BBRtrain -p 1 -C 1 -H 0.1 -u 0 -f 500 -l 1 train.data train-bbr-500-2.data.model
+BBRtrain -p 1 -C 1 -H 1 -u 0 -f 500 -l 1 train.data train-bbr-500-3.data.model
+BBRtrain -p 1 -C 1 -H 10 -u 0 -f 500 -l 1 train.data train-bbr-500-4.data.model
+BBRtrain -p 1 -C 1 -H 100 -u 0 -f 500 -l 1 train.data train-bbr-500-5.data.model

@@ -1,0 +1,1695 @@
+%!PS-Adobe-3.0
+%%Title: stdin
+%%For: Abraham Xiao
+%%Creator: a2ps version 4.14
+%%CreationDate: Tue Dec  3 22:38:06 2013
+%%BoundingBox: 24 50 571 792
+%%DocumentData: Clean7Bit
+%%Orientation: Portrait
+%%Pages: 12
+%%PageOrder: Ascend
+%%DocumentMedia: A4dj 595 842 0 () ()
+%%DocumentNeededResources: font Courier
+%%+ font Courier-Bold
+%%+ font Courier-BoldOblique
+%%+ font Courier-Oblique
+%%+ font Helvetica
+%%+ font Helvetica-Bold
+%%+ font Symbol
+%%+ font Times-Bold
+%%+ font Times-Roman
+%%DocumentProcessColors: Black 
+%%DocumentSuppliedResources: procset a2ps-a2ps-hdr
+%%+ procset a2ps-black+white-Prolog
+%%+ encoding ISO-8859-1Encoding
+%%EndComments
+/a2psdict 200 dict def
+a2psdict begin
+%%BeginProlog
+%%Copyright: (c) 1988, 89, 90, 91, 92, 93 Miguel Santana
+%%Copyright: (c) 1995, 96, 97, 98 Akim Demaille, Miguel Santana
+% Check PostScript language level.
+/languagelevel where {
+  pop /gs_languagelevel languagelevel def
+} {
+  /gs_languagelevel 1 def
+} ifelse
+
+% EPSF import as in the Red Book
+/BeginInclude {
+  /b4_Inc_state save def    		% Save state for cleanup
+  /dict_count countdictstack def	% Count objects on dict stack
+  /op_count count 1 sub def		% Count objects on operand stack 
+  userdict begin
+    0 setgray 0 setlinecap
+    1 setlinewidth 0 setlinejoin
+    10 setmiterlimit [ ] 0 setdash newpath
+    gs_languagelevel 1 ne {
+      false setstrokeadjust false setoverprint 
+    } if
+} bind def
+
+/EndInclude {
+  count op_count sub { pos } repeat	% Clean up stacks
+  countdictstack dict_count sub { end } repeat
+  b4_Inc_state restore
+} bind def
+
+/BeginEPSF {
+  BeginInclude
+  /showpage { } def
+} bind def
+
+/EndEPSF {
+  EndInclude
+} bind def
+
+% Page prefeed
+/page_prefeed {         % bool -> -
+  statusdict /prefeed known {
+    statusdict exch /prefeed exch put
+  } {
+    pop
+  } ifelse
+} bind def
+
+/deffont {
+  findfont exch scalefont def
+} bind def
+
+/reencode_font {
+  findfont reencode 2 copy definefont pop def
+} bind def
+
+% Function c-show (str => -)
+% centers text only according to x axis.
+/c-show { 
+  dup stringwidth pop
+  2 div neg 0 rmoveto
+  show
+} bind def
+
+% Function l-show (str => -)
+% prints texts so that it ends at currentpoint
+/l-show {
+  dup stringwidth pop neg 
+  0 
+  rmoveto show
+} bind def
+
+% center-fit show (str w => -)
+% show centered, and scale currentfont so that the width is less than w
+/cfshow {
+  exch dup stringwidth pop
+  % If the title is too big, try to make it smaller
+  3 2 roll 2 copy
+  gt
+  { % if, i.e. too big
+    exch div
+    currentfont exch scalefont setfont
+  } { % ifelse
+    pop pop 
+  }
+  ifelse
+  c-show			% center title
+} bind def
+
+% Return the y size of the current font
+% - => fontsize
+/currentfontsize {
+  currentfont /FontType get 0 eq {
+    currentfont /FontMatrix get 3 get
+  }{
+    currentfont /FontMatrix get 3 get 1000 mul
+  } ifelse
+} bind def
+
+% reencode the font
+% <encoding-vector> <fontdict> -> <newfontdict>
+/reencode { %def
+  dup length 5 add dict begin
+    { %forall
+      % <vector> <key> <val>
+      1 index /FID ne 
+      { def }{ pop pop } ifelse
+    } forall
+    /Encoding exch def % -
+
+    % Use the font's bounding box to determine the ascent, descent,
+    % and overall height; don't forget that these values have to be
+    % transformed using the font's matrix.
+    % We use `load' because sometimes BBox is executable, sometimes not.
+    % Since we need 4 numbers an not an array avoid BBox from being executed
+    /FontBBox load aload pop
+    FontMatrix transform /Ascent exch def pop
+    FontMatrix transform /Descent exch def pop
+    /FontHeight Ascent Descent sub def
+
+    % Get the underline position and thickness if they're defined.
+    % Use 1 if they are not defined.
+    currentdict /FontInfo 2 copy known
+    { get
+      /UnderlinePosition 2 copy % <FontInfo> /UP <FontInfo> /UP
+      2 copy known
+      { get }{ pop pop 1 } ifelse
+      0 exch FontMatrix transform exch pop
+      def % <FontInfo>
+
+      /UnderlineThickness 2 copy % <FontInfo> /UT <FontInfo> /UT
+      2 copy known
+      { get }{ pop pop 1 } ifelse
+      0 exch FontMatrix transform exch pop
+      def % <FontInfo>
+      pop % -
+    }{ pop pop
+    } ifelse
+
+    currentdict
+  end 
+} bind def
+
+% composite fonts for ASCII-EUC mixed strings
+% Version 1.2 1/31/1990
+% Original Ken'ichi HANDA (handa@etl.go.jp)
+% Modified Norio Katayama (katayama@rd.nacsis.ac.jp),1998
+% Extend & Fix Koji Nakamaru (maru@on.cs.keio.ac.jp), 1999
+% Anyone can freely copy, modify, distribute this program.
+
+/copyfont {	% font-dic extra-entry-count  copyfont  font-dic
+	1 index maxlength add dict begin
+	{	1 index /FID ne 2 index /UniqueID ne and
+		{def} {pop pop} ifelse
+	} forall
+	currentdict
+	end
+} bind def
+
+/compositefont { % ASCIIFontName EUCFontName RomanScale RomanOffset Rot(T/F) compositefont font
+    /RomanRotation exch def
+    /RomanOffset exch def
+    /RomanScale exch def
+    userdict /fixeucfont_dict known not {
+	userdict begin
+	    /fixeucfont_dict 2 dict begin
+		/UpperByteEncoding [
+		    16#00 1 16#20 { pop 0 } for
+		    16#21 1 16#28 { 16#20 sub } for
+		    16#29 1 16#2F { pop 0 } for
+		    16#30 1 16#74 { 16#27 sub } for
+		    16#75 1 16#FF { pop 0 } for
+		] def
+	        /LowerByteEncoding [
+		    16#00 1 16#A0 { pop /.notdef } for
+		    16#A1 1 16#FE { 16#80 sub 16 2 string cvrs
+				    (cXX) dup 1 4 -1 roll
+				    putinterval cvn } for
+		    /.notdef
+		] def
+		currentdict
+	    end def
+	end
+    } if
+    findfont dup /FontType get 0 eq {
+	14 dict begin
+	    %
+	    % 7+8 bit EUC font
+	    %
+	    12 dict begin
+		/EUCFont exch def
+		/FontInfo (7+8 bit EUC font) readonly def
+		/PaintType 0 def
+		/FontType 0 def
+		/FontMatrix matrix def
+		% /FontName
+		/Encoding fixeucfont_dict /UpperByteEncoding get def
+		/FMapType 2 def
+		EUCFont /WMode known
+		{ EUCFont /WMode get /WMode exch def }
+		{ /WMode 0 def } ifelse
+		/FDepVector [
+		    EUCFont /FDepVector get 0 get
+		    [ 16#21 1 16#28 {} for 16#30 1 16#74 {} for ]
+		    {
+			13 dict begin
+			    /EUCFont EUCFont def
+			    /UpperByte exch 16#80 add def	
+			    % /FontName
+			    /FontInfo (EUC lower byte font) readonly def
+			    /PaintType 0 def
+			    /FontType 3 def
+			    /FontMatrix matrix def
+			    /FontBBox {0 0 0 0} def
+			    /Encoding
+				fixeucfont_dict /LowerByteEncoding get def
+			    % /UniqueID
+			    % /WMode
+			    /BuildChar {
+				gsave
+				exch dup /EUCFont get setfont
+				/UpperByte get
+				2 string
+				dup 0 4 -1 roll put
+				dup 1 4 -1 roll put
+				dup stringwidth setcharwidth
+				0 0 moveto show
+				grestore
+			    } bind def
+			    currentdict
+			end
+			/lowerbytefont exch definefont
+		    } forall
+		] def
+		currentdict
+	    end
+	    /eucfont exch definefont
+	    exch
+	    findfont 1 copyfont dup begin
+		RomanRotation {
+			/FontMatrix FontMatrix
+			[ 0 RomanScale neg RomanScale 0 RomanOffset neg 0 ]
+			matrix concatmatrix def
+		}{
+			/FontMatrix FontMatrix
+			[ RomanScale 0 0 RomanScale 0 RomanOffset ] matrix concatmatrix
+			def
+			/CDevProc
+			    {pop pop pop pop 0 exch -1000 exch 2 div 880} def
+		} ifelse
+	    end
+	    /asciifont exch definefont
+	    exch
+	    /FDepVector [ 4 2 roll ] def
+	    /FontType 0 def
+	    /WMode 0 def
+	    /FMapType 4 def
+	    /FontMatrix matrix def
+	    /Encoding [0 1] def
+	    /FontBBox {0 0 0 0} def
+%	    /FontHeight 1.0 def % XXXX
+	    /FontHeight RomanScale 1.0 ge { RomanScale }{ 1.0 } ifelse def
+	    /Descent -0.3 def   % XXXX
+	    currentdict
+	end
+	/tmpfont exch definefont
+	pop
+	/tmpfont findfont
+    }{
+	pop findfont 0 copyfont
+    } ifelse
+} def	
+
+/slantfont {	% FontName slant-degree  slantfont  font'
+    exch findfont 1 copyfont begin
+    [ 1 0 4 -1 roll 1 0 0 ] FontMatrix exch matrix concatmatrix
+    /FontMatrix exch def
+    currentdict
+    end
+} def
+
+% Function print line number (<string> # -)
+/# {
+  gsave
+    sx cw mul neg 2 div 0 rmoveto
+    f# setfont
+    c-show
+  grestore
+} bind def
+
+% -------- Some routines to enlight plain b/w printings ---------
+
+% Underline
+% width --
+/dounderline {
+  currentpoint
+  gsave
+    moveto
+    0 currentfont /Descent get currentfontsize mul rmoveto
+    0 rlineto
+    stroke
+  grestore
+} bind def
+
+% Underline a string
+% string --
+/dounderlinestring {
+  stringwidth pop
+  dounderline
+} bind def
+
+/UL {
+  /ul exch store
+} bind def
+
+% Draw a box of WIDTH wrt current font
+% width --
+/dobox {
+  currentpoint
+  gsave
+    newpath
+    moveto
+    0 currentfont /Descent get currentfontsize mul rmoveto
+    dup 0 rlineto
+    0 currentfont /FontHeight get currentfontsize mul rlineto
+    neg 0 rlineto
+    closepath
+    stroke
+  grestore
+} bind def
+
+/BX {
+  /bx exch store
+} bind def
+
+% Box a string
+% string --
+/doboxstring {
+  stringwidth pop
+  dobox
+} bind def
+
+%
+% ------------- Color routines ---------------
+%
+/FG /setrgbcolor load def
+
+% Draw the background
+% width --
+/dobackground {
+  currentpoint
+  gsave
+    newpath
+    moveto
+    0 currentfont /Descent get currentfontsize mul rmoveto
+    dup 0 rlineto
+    0 currentfont /FontHeight get currentfontsize mul rlineto
+    neg 0 rlineto
+    closepath
+    bgcolor aload pop setrgbcolor
+    fill
+  grestore
+} bind def
+
+% Draw bg for a string
+% string --
+/dobackgroundstring {
+  stringwidth pop
+  dobackground
+} bind def
+
+
+/BG {
+  dup /bg exch store
+  { mark 4 1 roll ] /bgcolor exch store } if
+} bind def
+
+
+/Show {
+  bg { dup dobackgroundstring } if
+  ul { dup dounderlinestring } if
+  bx { dup doboxstring } if
+  show
+} bind def
+
+% Function T(ab), jumps to the n-th tabulation in the current line
+/T {
+  cw mul x0 add
+  bg { dup currentpoint pop sub dobackground } if
+  ul { dup currentpoint pop sub dounderline } if
+  bx { dup currentpoint pop sub dobox } if
+  y0 moveto
+} bind def
+
+% Function n: move to the next line
+/n {
+  /y0 y0 bfs sub store
+  x0 y0 moveto
+} bind def
+
+% Function N: show and move to the next line
+/N {
+  Show
+  /y0 y0 bfs sub store
+  x0 y0 moveto
+} bind def
+
+/S {
+  Show
+} bind def
+
+%%BeginResource: procset a2ps-a2ps-hdr 2.0 2
+%%Copyright: (c) 1988, 89, 90, 91, 92, 93 Miguel Santana
+%%Copyright: (c) 1995, 96, 97, 98 Akim Demaille, Miguel Santana
+% Function title: prints page header.
+% <ct> <rt> <lt> are passed as argument
+/title { 
+  % 1. Draw the background
+  x v get y v get moveto
+  gsave
+    0 th 2 div neg rmoveto 
+    th setlinewidth
+    0.95 setgray
+    pw 0 rlineto stroke
+  grestore
+  % 2. Border it
+  gsave
+    0.7 setlinewidth
+    pw 0 rlineto
+    0 th neg rlineto
+    pw neg 0 rlineto
+    closepath stroke
+  grestore
+  % stk: ct rt lt
+  x v get y v get th sub 1 add moveto
+%%IncludeResource: font Helvetica
+  fHelvetica fnfs 0.8 mul scalefont setfont
+  % 3. The left title
+  gsave
+    dup stringwidth pop fnfs 0.8 mul add exch % leave space took on stack
+    fnfs 0.8 mul hm rmoveto
+    show			% left title
+  grestore
+  exch
+  % stk: ct ltw rt
+  % 4. the right title
+  gsave
+    dup stringwidth pop fnfs 0.8 mul add exch % leave space took on stack
+    dup
+    pw exch stringwidth pop fnfs 0.8 mul add sub
+    hm
+    rmoveto
+    show			% right title
+  grestore
+  % stk: ct ltw rtw
+  % 5. the center title
+  gsave
+    pw 3 1 roll
+    % stk: ct pw ltw rtw
+    3 copy 
+    % Move to the center of the left room
+    sub add 2 div hm rmoveto
+    % What is the available space in here?
+    add sub fnfs 0.8 mul sub fnfs 0.8 mul sub
+    % stk: ct space_left
+%%IncludeResource: font Helvetica-Bold
+  fHelvetica-Bold fnfs scalefont setfont
+    cfshow
+  grestore
+} bind def
+
+% Function border: prints virtual page border
+/border { %def
+  gsave				% print four sides
+    0 setgray
+    x v get y v get moveto
+    0.7 setlinewidth		% of the square
+    pw 0 rlineto
+    0 ph neg rlineto
+    pw neg 0 rlineto
+    closepath stroke
+  grestore
+} bind def
+
+% Function water: prints a water mark in background
+/water { %def
+  gsave
+    scx scy moveto rotate
+%%IncludeResource: font Times-Bold
+  fTimes-Bold 100 scalefont setfont
+    .97 setgray
+    dup stringwidth pop 2 div neg -50 rmoveto
+    show
+  grestore
+} bind def
+
+% Function rhead: prints the right header
+/rhead {  %def
+  lx ly moveto
+  fHelvetica fnfs 0.8 mul scalefont setfont
+  l-show
+} bind def
+
+% Function footer (cf rf lf -> -)
+/footer {
+  fHelvetica fnfs 0.8 mul scalefont setfont
+  dx dy moveto
+  show
+
+  snx sny moveto
+  l-show
+  
+  fnx fny moveto
+  c-show
+} bind def
+%%EndResource
+%%BeginResource: procset a2ps-black+white-Prolog 2.0 1
+
+% Function T(ab), jumps to the n-th tabulation in the current line
+/T { 
+  cw mul x0 add y0 moveto
+} bind def
+
+% Function n: move to the next line
+/n { %def
+  /y0 y0 bfs sub store
+  x0 y0 moveto
+} bind def
+
+% Function N: show and move to the next line
+/N {
+  Show
+  /y0 y0 bfs sub store
+  x0 y0 moveto
+}  bind def
+
+/S {
+  Show
+} bind def
+
+/p {
+  false UL
+  false BX
+  fCourier bfs scalefont setfont
+  Show
+} bind def
+
+/sy {
+  false UL
+  false BX
+  fSymbol bfs scalefont setfont
+  Show
+} bind def
+
+/k {
+  false UL
+  false BX
+  fCourier-Oblique bfs scalefont setfont
+  Show
+} bind def
+
+/K {
+  false UL
+  false BX
+  fCourier-Bold bfs scalefont setfont
+  Show
+} bind def
+
+/c {
+  false UL
+  false BX
+  fCourier-Oblique bfs scalefont setfont
+  Show
+} bind def
+
+/C {
+  false UL
+  false BX
+  fCourier-BoldOblique bfs scalefont setfont
+  Show 
+} bind def
+
+/l {
+  false UL
+  false BX
+  fHelvetica bfs scalefont setfont
+  Show
+} bind def
+
+/L {
+  false UL
+  false BX
+  fHelvetica-Bold bfs scalefont setfont
+  Show 
+} bind def
+
+/str{
+  false UL
+  false BX
+  fTimes-Roman bfs scalefont setfont
+  Show
+} bind def
+
+/e{
+  false UL
+  true BX
+  fHelvetica-Bold bfs scalefont setfont
+  Show
+} bind def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+%%IncludeResource: font Courier
+%%IncludeResource: font Courier-Oblique
+%%IncludeResource: font Courier-Bold
+%%IncludeResource: font Times-Roman
+%%IncludeResource: font Symbol
+%%IncludeResource: font Courier-BoldOblique
+%%BeginResource: encoding ISO-8859-1Encoding
+/ISO-8859-1Encoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/space /exclam /quotedbl /numbersign /dollar /percent /ampersand /quoteright 
+/parenleft /parenright /asterisk /plus /comma /minus /period /slash 
+/zero /one /two /three /four /five /six /seven 
+/eight /nine /colon /semicolon /less /equal /greater /question 
+/at /A /B /C /D /E /F /G 
+/H /I /J /K /L /M /N /O 
+/P /Q /R /S /T /U /V /W 
+/X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore 
+/quoteleft /a /b /c /d /e /f /g 
+/h /i /j /k /l /m /n /o 
+/p /q /r /s /t /u /v /w 
+/x /y /z /braceleft /bar /braceright /asciitilde /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/space /exclamdown /cent /sterling /currency /yen /brokenbar /section 
+/dieresis /copyright /ordfeminine /guillemotleft /logicalnot /hyphen /registered /macron 
+/degree /plusminus /twosuperior /threesuperior /acute /mu /paragraph /bullet 
+/cedilla /onesuperior /ordmasculine /guillemotright /onequarter /onehalf /threequarters /questiondown 
+/Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla 
+/Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis 
+/Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply 
+/Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /germandbls 
+/agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla 
+/egrave /eacute /ecircumflex /edieresis /igrave /iacute /icircumflex /idieresis 
+/eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis /divide 
+/oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn /ydieresis 
+] def
+%%EndResource
+% Initialize page description variables.
+/sh 842 def
+/sw 595 def
+/llx 24 def
+/urx 571 def
+/ury 792 def
+/lly 50 def
+/#copies 1 def
+/th 0.000000 def
+/fnfs 11 def
+/bfs 11.199836 def
+/cw 6.719901 def
+
+% Dictionary for ISO-8859-1 support
+/iso1dict 8 dict begin
+  /fCourier ISO-8859-1Encoding /Courier reencode_font
+  /fCourier-Bold ISO-8859-1Encoding /Courier-Bold reencode_font
+  /fCourier-BoldOblique ISO-8859-1Encoding /Courier-BoldOblique reencode_font
+  /fCourier-Oblique ISO-8859-1Encoding /Courier-Oblique reencode_font
+  /fHelvetica ISO-8859-1Encoding /Helvetica reencode_font
+  /fHelvetica-Bold ISO-8859-1Encoding /Helvetica-Bold reencode_font
+  /fTimes-Bold ISO-8859-1Encoding /Times-Bold reencode_font
+  /fTimes-Roman ISO-8859-1Encoding /Times-Roman reencode_font
+currentdict end def
+/bgcolor [ 0 0 0 ] def
+/bg false def
+/ul false def
+/bx false def
+% The font for line numbering
+/f# /Helvetica findfont bfs .6 mul scalefont def
+/fSymbol /Symbol findfont def
+/hm fnfs 0.25 mul def
+/pw
+   cw 81.400000 mul
+def
+/ph
+   735.829211 th add
+def
+/pmw 0 def
+/pmh 0 def
+/v 0 def
+/x [
+  pmw pw add 0 mul
+] def
+/y [
+  pmh ph add 0 mul ph add
+] def
+/scx sw 2 div def
+/scy sh 2 div def
+/snx urx def
+/sny lly 2 add def
+/dx llx def
+/dy sny def
+/fnx scx def
+/fny dy def
+/lx snx def
+/ly ury fnfs 0.8 mul sub def
+/sx 0 def
+/tab 8 def
+/x0 0 def
+/y0 0 def
+%%EndSetup
+
+%%Page: (1) 1
+%%BeginPageSetup
+/pagesave save def
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 0 add translate
+/v 0 store
+/x0 x v get 4.703931 add sx cw mul add store
+/y0 y v get bfs  sub store
+x0 y0 moveto
+(Libsvm is a simple, easy-to-use, and efficient software for SVM) p n
+(classification and regression. It solves C-SVM classification, nu-SVM) N
+(classification, one-class-SVM, epsilon-SVM regression, and nu-SVM) N
+(regression. It also provides an automatic model selection tool for) N
+(C-SVM classification. This document explains the use of libsvm.) N
+() N
+(Libsvm is available at ) N
+(http://www.csie.ntu.edu.tw/~cjlin/libsvm) N
+(Please read the COPYRIGHT file before using libsvm.) N
+() N
+(Table of Contents) N
+(=================) N
+() N
+(- Quick Start) N
+(- Installation and Data Format) N
+(- `svm-train' Usage) N
+(- `svm-predict' Usage) N
+(- `svm-scale' Usage) N
+(- Tips on Practical Use) N
+(- Examples) N
+(- Precomputed Kernels ) N
+(- Library Usage) N
+(- Java Version) N
+(- Building Windows Binaries) N
+(- Additional Tools: Sub-sampling, Parameter Selection, Format checking, etc.) N
+(- MATLAB/OCTAVE Interface) N
+(- Python Interface) N
+(- Additional Information) N
+() N
+(Quick Start) N
+(===========) N
+() N
+(If you are new to SVM and if the data is not large, please go to ) N
+(`tools' directory and use easy.py after installation. It does ) N
+(everything automatic -- from data scaling to parameter selection.) N
+() N
+(Usage: easy.py training_file [testing_file]) N
+() N
+(More information about parameter selection can be found in) N
+(`tools/README.') N
+() N
+(Installation and Data Format) N
+(============================) N
+() N
+(On Unix systems, type `make' to build the `svm-train' and `svm-predict') N
+(programs. Run them without arguments to show the usages of them.) N
+() N
+(On other systems, consult `Makefile' to build them \(e.g., see) N
+('Building Windows binaries' in this file\) or use the pre-built) N
+(binaries \(Windows binaries are in the directory `windows'\).) N
+() N
+(The format of training and testing data file is:) N
+() N
+(<label> <index1>:<value1> <index2>:<value2> ...) N
+(.) N
+(.) N
+(.) N
+() N
+(Each line contains an instance and is ended by a '\\n' character.  For) N
+(classification, <label> is an integer indicating the class label) N
+(\(multi-class is supported\). For regression, <label> is the target) N
+(value which can be any real number. For one-class SVM, it's not used) N
+(so can be any number.  The pair <index>:<value> gives a feature) N
+(\(attribute\) value: <index> is an integer starting from 1 and <value>) N
+(is a real number. The only exception is the precomputed kernel, where) N
+grestore
+end % of iso1dict
+pagesave restore
+showpage
+%%Page: (2) 2
+%%BeginPageSetup
+/pagesave save def
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 0 add translate
+/v 0 store
+/x0 x v get 4.703931 add sx cw mul add store
+/y0 y v get bfs  sub store
+x0 y0 moveto
+(<index> starts from 0; see the section of precomputed kernels. Indices) p n
+(must be in ASCENDING order. Labels in the testing file are only used) N
+(to calculate accuracy or errors. If they are unknown, just fill the) N
+(first column with any numbers.) N
+() N
+(A sample classification data included in this package is) N
+(`heart_scale'. To check if your data is in a correct form, use) N
+(`tools/checkdata.py' \(details in `tools/README'\).) N
+() N
+(Type `svm-train heart_scale', and the program will read the training) N
+(data and output the model file `heart_scale.model'. If you have a test) N
+(set called heart_scale.t, then type `svm-predict heart_scale.t) N
+(heart_scale.model output' to see the prediction accuracy. The `output') N
+(file contains the predicted class labels.) N
+() N
+(For classification, if training data are in only one class \(i.e., all) N
+(labels are the same\), then `svm-train' issues a warning message:) N
+(`Warning: training data in only one class. See README for details,') N
+(which means the training data is very unbalanced. The label in the) N
+(training data is directly returned when testing.) N
+() N
+(There are some other useful programs in this package.) N
+() N
+(svm-scale:) N
+() N
+() S 8 T (This is a tool for scaling input data file.) N
+() N
+(svm-toy:) N
+() N
+() S 8 T (This is a simple graphical interface which shows how SVM) N
+() S 8 T (separate data in a plane. You can click in the window to ) N
+() S 8 T (draw data points. Use "change" button to choose class ) N
+() S 8 T (1, 2 or 3 \(i.e., up to three classes are supported\), "load") N
+() S 8 T (button to load data from a file, "save" button to save data to) N
+() S 8 T (a file, "run" button to obtain an SVM model, and "clear") N
+() S 8 T (button to clear the window.) N
+() N
+() S 8 T (You can enter options in the bottom of the window, the syntax of) N
+() S 8 T (options is the same as `svm-train'.) N
+() N
+() S 8 T (Note that "load" and "save" consider dense data format both in) N
+() S 8 T (classification and the regression cases. For classification,) N
+() S 8 T (each data point has one label \(the color\) that must be 1, 2,) N
+() S 8 T (or 3 and two attributes \(x-axis and y-axis values\) in) N
+() S 8 T ([0,1\). For regression, each data point has one target value) N
+() S 8 T (\(y-axis\) and one attribute \(x-axis values\) in [0, 1\).) N
+() N
+() S 8 T (Type `make' in respective directories to build them.) N
+() N
+() S 8 T (You need Qt library to build the Qt version.) N
+() S 8 T (\(available from http://www.trolltech.com\)) N
+() N
+() S 8 T (You need GTK+ library to build the GTK version.) N
+() S 8 T (\(available from http://www.gtk.org\)) N
+() S 8 T () N
+() S 8 T (The pre-built Windows binaries are in the `windows') N
+() S 8 T (directory. We use Visual C++ on a 32-bit machine, so the) N
+() S 8 T (maximal cache size is 2GB.) N
+() N
+(`svm-train' Usage) N
+(=================) N
+() N
+(Usage: svm-train [options] training_set_file [model_file]) N
+(options:) N
+(-s svm_type : set type of SVM \(default 0\)) N
+grestore
+end % of iso1dict
+pagesave restore
+showpage
+%%Page: (3) 3
+%%BeginPageSetup
+/pagesave save def
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 0 add translate
+/v 0 store
+/x0 x v get 4.703931 add sx cw mul add store
+/y0 y v get bfs  sub store
+x0 y0 moveto
+() p 8 T (0 -- C-SVC) S 24 T () S 32 T (\(multi-class classification\)) N
+() S 8 T (1 -- nu-SVC) S 24 T () S 32 T (\(multi-class classification\)) N
+() S 8 T (2 -- one-class SVM) S 32 T () N
+() S 8 T (3 -- epsilon-SVR) S 32 T (\(regression\)) N
+() S 8 T (4 -- nu-SVR) S 24 T () S 32 T (\(regression\)) N
+(-t kernel_type : set type of kernel function \(default 2\)) N
+() S 8 T (0 -- linear: u'*v) N
+() S 8 T (1 -- polynomial: \(gamma*u'*v + coef0\)^degree) N
+() S 8 T (2 -- radial basis function: exp\(-gamma*|u-v|^2\)) N
+() S 8 T (3 -- sigmoid: tanh\(gamma*u'*v + coef0\)) N
+() S 8 T (4 -- precomputed kernel \(kernel values in training_set_file\)) N
+(-d degree : set degree in kernel function \(default 3\)) N
+(-g gamma : set gamma in kernel function \(default 1/num_features\)) N
+(-r coef0 : set coef0 in kernel function \(default 0\)) N
+(-c cost : set the parameter C of C-SVC, epsilon-SVR, and nu-SVR \(default 1\)) N
+(-n nu : set the parameter nu of nu-SVC, one-class SVM, and nu-SVR \(default 0.5\)) N
+(-p epsilon : set the epsilon in loss function of epsilon-SVR \(default 0.1\)) N
+(-m cachesize : set cache memory size in MB \(default 100\)) N
+(-e epsilon : set tolerance of termination criterion \(default 0.001\)) N
+(-h shrinking : whether to use the shrinking heuristics, 0 or 1 \(default 1\)) N
+(-b probability_estimates : whether to train a SVC or SVR model for probability e) N
+(-wi weight : set the parameter C of class i to weight*C, for C-SVC \(default 1\)) N
+(-v n: n-fold cross validation mode) N
+(-q : quiet mode \(no outputs\)) N
+() N
+() N
+(The k in the -g option means the number of attributes in the input data.) N
+() N
+(option -v randomly splits the data into n parts and calculates cross) N
+(validation accuracy/mean squared error on them.) N
+() N
+(See libsvm FAQ for the meaning of outputs.) N
+() N
+(`svm-predict' Usage) N
+(===================) N
+() N
+(Usage: svm-predict [options] test_file model_file output_file) N
+(options:) N
+(-b probability_estimates: whether to predict probability estimates, 0 or 1 \(defa) N
+() N
+(model_file is the model file generated by svm-train.) N
+(test_file is the test data you want to predict.) N
+(svm-predict will produce output in the output_file.) N
+() N
+(`svm-scale' Usage) N
+(=================) N
+() N
+(Usage: svm-scale [options] data_filename) N
+(options:) N
+(-l lower : x scaling lower limit \(default -1\)) N
+(-u upper : x scaling upper limit \(default +1\)) N
+(-y y_lower y_upper : y scaling limits \(default: no y scaling\)) N
+(-s save_filename : save scaling parameters to save_filename) N
+(-r restore_filename : restore scaling parameters from restore_filename) N
+() N
+(See 'Examples' in this file for examples.) N
+() N
+(Tips on Practical Use) N
+(=====================) N
+() N
+(* Scale your data. For example, scale each attribute to [0,1] or [-1,+1].) N
+(* For C-SVC, consider using the model selection tool in the tools directory.) N
+(* nu in nu-SVC/one-class-SVM/nu-SVR approximates the fraction of training) N
+(  errors and support vectors.) N
+(* If data for classification are unbalanced \(e.g. many positive and) N
+grestore
+end % of iso1dict
+pagesave restore
+showpage
+%%Page: (4) 4
+%%BeginPageSetup
+/pagesave save def
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 0 add translate
+/v 0 store
+/x0 x v get 4.703931 add sx cw mul add store
+/y0 y v get bfs  sub store
+x0 y0 moveto
+(  few negative\), try different penalty parameters C by -wi \(see) p n
+(  examples below\).) N
+(* Specify larger cache size \(i.e., larger -m\) for huge problems.) N
+() N
+(Examples) N
+(========) N
+() N
+(> svm-scale -l -1 -u 1 -s range train > train.scale) N
+(> svm-scale -r range test > test.scale) N
+() N
+(Scale each feature of the training data to be in [-1,1]. Scaling) N
+(factors are stored in the file range and then used for scaling the) N
+(test data.) N
+() N
+(> svm-train -s 0 -c 5 -t 2 -g 0.5 -e 0.1 data_file ) N
+() N
+(Train a classifier with RBF kernel exp\(-0.5|u-v|^2\), C=10, and) N
+(stopping tolerance 0.1.) N
+() N
+(> svm-train -s 3 -p 0.1 -t 0 data_file) N
+() N
+(Solve SVM regression with linear kernel u'v and epsilon=0.1) N
+(in the loss function.) N
+() N
+(> svm-train -c 10 -w1 1 -w-2 5 -w4 2 data_file) N
+() N
+(Train a classifier with penalty 10 = 1 * 10 for class 1, penalty 50 =) N
+(5 * 10 for class -2, and penalty 20 = 2 * 10 for class 4.) N
+() N
+(> svm-train -s 0 -c 100 -g 0.1 -v 5 data_file) N
+() N
+(Do five-fold cross validation for the classifier using) N
+(the parameters C = 100 and gamma = 0.1) N
+() N
+(> svm-train -s 0 -b 1 data_file) N
+(> svm-predict -b 1 test_file data_file.model output_file) N
+() N
+(Obtain a model with probability information and predict test data with) N
+(probability estimates) N
+() N
+(Precomputed Kernels ) N
+(===================) N
+() N
+(Users may precompute kernel values and input them as training and) N
+(testing files.  Then libsvm does not need the original) N
+(training/testing sets.) N
+() N
+(Assume there are L training instances x1, ..., xL and. ) N
+(Let K\(x, y\) be the kernel) N
+(value of two instances x and y. The input formats) N
+(are:) N
+() N
+(New training instance for xi:) N
+() N
+(<label> 0:i 1:K\(xi,x1\) ... L:K\(xi,xL\) ) N
+() N
+(New testing instance for any x:) N
+() N
+(<label> 0:? 1:K\(x,x1\) ... L:K\(x,xL\) ) N
+() N
+(That is, in the training file the first column must be the "ID" of) N
+(xi. In testing, ? can be any value.) N
+() N
+(All kernel values including ZEROs must be explicitly provided.  Any) N
+(permutation or random subsets of the training/testing files are also) N
+grestore
+end % of iso1dict
+pagesave restore
+showpage
+%%Page: (5) 5
+%%BeginPageSetup
+/pagesave save def
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 0 add translate
+/v 0 store
+/x0 x v get 4.703931 add sx cw mul add store
+/y0 y v get bfs  sub store
+x0 y0 moveto
+(valid \(see examples below\).) p n
+() N
+(Note: the format is slightly different from the precomputed kernel) N
+(package released in libsvmtools earlier.) N
+() N
+(Examples:) N
+() N
+() S 8 T (Assume the original training data has three four-feature) N
+() S 8 T (instances and testing data has one instance:) N
+() N
+() S 8 T (15  1:1 2:1 3:1 4:1) N
+() S 8 T (45      2:3     4:3) N
+() S 8 T (25          3:1) N
+() N
+() S 8 T (15  1:1     3:1) N
+() N
+() S 8 T (If the linear kernel is used, we have the following new) N
+() S 8 T (training/testing sets:) N
+() N
+() S 8 T (15  0:1 1:4 2:6  3:1) N
+() S 8 T (45  0:2 1:6 2:18 3:0 ) N
+() S 8 T (25  0:3 1:1 2:0  3:1) N
+( ) N
+() S 8 T (15  0:? 1:2 2:0  3:1) N
+() N
+() S 8 T (? can be any value.) N
+() N
+() S 8 T (Any subset of the above training file is also valid. For example,) N
+() N
+() S 8 T (25  0:3 1:1 2:0  3:1) N
+() S 8 T (45  0:2 1:6 2:18 3:0 ) N
+() N
+() S 8 T (implies that the kernel matrix is) N
+() N
+() S 8 T () S 16 T ([K\(2,2\) K\(2,3\)] = [18 0]) N
+() S 8 T () S 16 T ([K\(3,2\) K\(3,3\)] = [0  1]) N
+() N
+(Library Usage) N
+(=============) N
+() N
+(These functions and structures are declared in the header file) N
+(`svm.h'.  You need to #include "svm.h" in your C/C++ source files and) N
+(link your program with `svm.cpp'. You can see `svm-train.c' and) N
+(`svm-predict.c' for examples showing how to use them. We define) N
+(LIBSVM_VERSION and declare `extern int libsvm_version; ' in svm.h, so) N
+(you can check the version number.) N
+() N
+(Before you classify test data, you need to construct an SVM model) N
+(\(`svm_model'\) using training data. A model can also be saved in) N
+(a file for later use. Once an SVM model is available, you can use it) N
+(to classify new data.) N
+() N
+(- Function: struct svm_model *svm_train\(const struct svm_problem *prob,) N
+() S 8 T () S 16 T () S 24 T () S 32 T () S 40 T (const struct svm_parameter *param\);) N
+() N
+(    This function constructs and returns an SVM model according to) N
+(    the given training data and parameters.) N
+() N
+(    struct svm_problem describes the problem:) N
+() S 8 T () N
+() S 8 T (struct svm_problem) N
+() S 8 T ({) N
+() S 8 T () S 16 T (int l;) N
+() S 8 T () S 16 T (double *y;) N
+() S 8 T () S 16 T (struct svm_node **x;) N
+grestore
+end % of iso1dict
+pagesave restore
+showpage
+%%Page: (6) 6
+%%BeginPageSetup
+/pagesave save def
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 0 add translate
+/v 0 store
+/x0 x v get 4.703931 add sx cw mul add store
+/y0 y v get bfs  sub store
+x0 y0 moveto
+() p 8 T (};) N
+( ) N
+(    where `l' is the number of training data, and `y' is an array containing) N
+(    their target values. \(integers in classification, real numbers in) N
+(    regression\) `x' is an array of pointers, each of which points to a sparse) N
+(    representation \(array of svm_node\) of one training vector. ) N
+() N
+(    For example, if we have the following training data:) N
+() N
+(    LABEL) S 16 T (ATTR1) S 24 T (ATTR2) S 32 T (ATTR3) S 40 T (ATTR4) S 48 T (ATTR5) N
+(    -----) S 16 T (-----) S 24 T (-----) S 32 T (-----) S 40 T (-----) S 48 T (-----) N
+(      1) S 8 T () S 16 T (  0) S 24 T (  0.1) S 32 T (  0.2) S 40 T (  0) S 48 T (  0) N
+(      2) S 8 T () S 16 T (  0) S 24 T (  0.1) S 32 T (  0.3) S 40 T ( -1.2) S 48 T (  0) N
+(      1) S 8 T () S 16 T (  0.4) S 24 T (  0) S 32 T (  0) S 40 T (  0) S 48 T (  0) N
+(      2) S 8 T () S 16 T (  0) S 24 T (  0.1) S 32 T (  0) S 40 T (  1.4) S 48 T (  0.5) N
+(      3) S 8 T () S 16 T ( -0.1) S 24 T ( -0.2) S 32 T (  0.1) S 40 T (  1.1) S 48 T (  0.1) N
+() N
+(    then the components of svm_problem are:) N
+() N
+(    l = 5) N
+() N
+(    y -> 1 2 1 2 3) N
+() N
+(    x -> [ ] -> \(2,0.1\) \(3,0.2\) \(-1,?\)) N
+() S 8 T ( [ ] -> \(2,0.1\) \(3,0.3\) \(4,-1.2\) \(-1,?\)) N
+() S 8 T ( [ ] -> \(1,0.4\) \(-1,?\)) N
+() S 8 T ( [ ] -> \(2,0.1\) \(4,1.4\) \(5,0.5\) \(-1,?\)) N
+() S 8 T ( [ ] -> \(1,-0.1\) \(2,-0.2\) \(3,0.1\) \(4,1.1\) \(5,0.1\) \(-1,?\)) N
+() N
+(    where \(index,value\) is stored in the structure `svm_node':) N
+() N
+() S 8 T (struct svm_node) N
+() S 8 T ({) N
+() S 8 T () S 16 T (int index;) N
+() S 8 T () S 16 T (double value;) N
+() S 8 T (};) N
+() N
+(    index = -1 indicates the end of one vector. Note that indices must) N
+(    be in ASCENDING order.) N
+( ) N
+(    struct svm_parameter describes the parameters of an SVM model:) N
+() N
+() S 8 T (struct svm_parameter) N
+() S 8 T ({) N
+() S 8 T () S 16 T (int svm_type;) N
+() S 8 T () S 16 T (int kernel_type;) N
+() S 8 T () S 16 T (int degree;) S 32 T (/* for poly */) N
+() S 8 T () S 16 T (double gamma;) S 32 T (/* for poly/rbf/sigmoid */) N
+() S 8 T () S 16 T (double coef0;) S 32 T (/* for poly/sigmoid */) N
+() N
+() S 8 T () S 16 T (/* these are for training only */) N
+() S 8 T () S 16 T (double cache_size; /* in MB */) N
+() S 8 T () S 16 T (double eps;) S 32 T (/* stopping criteria */) N
+() S 8 T () S 16 T (double C;) S 32 T (/* for C_SVC, EPSILON_SVR, and NU_SVR */) N
+() S 8 T () S 16 T (int nr_weight;) S 32 T () S 40 T (/* for C_SVC */) N
+() S 8 T () S 16 T (int *weight_label;) S 40 T (/* for C_SVC */) N
+() S 8 T () S 16 T (double* weight;) S 32 T () S 40 T (/* for C_SVC */) N
+() S 8 T () S 16 T (double nu;) S 32 T (/* for NU_SVC, ONE_CLASS, and NU_SVR */) N
+() S 8 T () S 16 T (double p;) S 32 T (/* for EPSILON_SVR */) N
+() S 8 T () S 16 T (int shrinking;) S 32 T (/* use the shrinking heuristics */) N
+() S 8 T () S 16 T (int probability; /* do probability estimates */) N
+() S 8 T (};) N
+() N
+(    svm_type can be one of C_SVC, NU_SVC, ONE_CLASS, EPSILON_SVR, NU_SVR.) N
+() N
+grestore
+end % of iso1dict
+pagesave restore
+showpage
+%%Page: (7) 7
+%%BeginPageSetup
+/pagesave save def
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 0 add translate
+/v 0 store
+/x0 x v get 4.703931 add sx cw mul add store
+/y0 y v get bfs  sub store
+x0 y0 moveto
+(    C_SVC:) p 16 T () S 24 T (C-SVM classification) N
+(    NU_SVC:) S 16 T () S 24 T (nu-SVM classification) N
+(    ONE_CLASS:) S 16 T () S 24 T (one-class-SVM) N
+(    EPSILON_SVR:) S 24 T (epsilon-SVM regression) N
+(    NU_SVR:) S 16 T () S 24 T (nu-SVM regression) N
+() N
+(    kernel_type can be one of LINEAR, POLY, RBF, SIGMOID.) N
+() N
+(    LINEAR:) S 16 T (u'*v) N
+(    POLY:) S 16 T (\(gamma*u'*v + coef0\)^degree) N
+(    RBF:) S 16 T (exp\(-gamma*|u-v|^2\)) N
+(    SIGMOID:) S 16 T (tanh\(gamma*u'*v + coef0\)) N
+(    PRECOMPUTED: kernel values in training_set_file) N
+() N
+(    cache_size is the size of the kernel cache, specified in megabytes.) N
+(    C is the cost of constraints violation. ) N
+(    eps is the stopping criterion. \(we usually use 0.00001 in nu-SVC,) N
+(    0.001 in others\). nu is the parameter in nu-SVM, nu-SVR, and) N
+(    one-class-SVM. p is the epsilon in epsilon-insensitive loss function) N
+(    of epsilon-SVM regression. shrinking = 1 means shrinking is conducted;) N
+(    = 0 otherwise. probability = 1 means model with probability) N
+(    information is obtained; = 0 otherwise.) N
+() N
+(    nr_weight, weight_label, and weight are used to change the penalty) N
+(    for some classes \(If the weight for a class is not changed, it is) N
+(    set to 1\). This is useful for training classifier using unbalanced) N
+(    input data or with asymmetric misclassification cost.) N
+() N
+(    nr_weight is the number of elements in the array weight_label and) N
+(    weight. Each weight[i] corresponds to weight_label[i], meaning that) N
+(    the penalty of class weight_label[i] is scaled by a factor of weight[i].) N
+(    ) N
+(    If you do not want to change penalty for any of the classes,) N
+(    just set nr_weight to 0.) N
+() N
+(    *NOTE* Because svm_model contains pointers to svm_problem, you can) N
+(    not free the memory used by svm_problem if you are still using the) N
+(    svm_model produced by svm_train\(\). ) N
+() N
+(    *NOTE* To avoid wrong parameters, svm_check_parameter\(\) should be) N
+(    called before svm_train\(\).) N
+() N
+(    struct svm_model stores the model obtained from the training procedure.) N
+(    It is not recommended to directly access entries in this structure.) N
+(    Programmers should use the interface functions to get the values.) N
+() N
+() S 8 T (struct svm_model) N
+() S 8 T ({) N
+() S 8 T () S 16 T (struct svm_parameter param;) S 48 T (/* parameter */) N
+() S 8 T () S 16 T (int nr_class;) S 32 T () S 40 T (/* number of classes, = 2 in regression/) N
+() S 8 T () S 16 T (int l;) S 24 T () S 32 T () S 40 T (/* total #SV */) N
+() S 8 T () S 16 T (struct svm_node **SV;) S 40 T () S 48 T (/* SVs \(SV[l]\) */) N
+() S 8 T () S 16 T (double **sv_coef;) S 40 T (/* coefficients for SVs in decision func) N
+() S 8 T () S 16 T (double *rho;) S 32 T () S 40 T (/* constants in decision functions \(rho[) N
+() S 8 T () S 16 T (double *probA;) S 32 T () S 40 T (/* pairwise probability information */) N
+() S 8 T () S 16 T (double *probB;) N
+() S 8 T () S 16 T (int *sv_indices;        /* sv_indices[0,...,nSV-1] are values in) N
+() N
+() S 8 T () S 16 T (/* for classification only */) N
+() N
+() S 8 T () S 16 T (int *label;) S 32 T () S 40 T (/* label of each class \(label[k]\) */) N
+() S 8 T () S 16 T (int *nSV;) S 32 T () S 40 T (/* number of SVs for each class \(nSV[k]\)) N
+() S 8 T () S 16 T () S 24 T () S 32 T () S 40 T (/* nSV[0] + nSV[1] + ... + nSV[k-1] = l ) N
+() S 8 T () S 16 T (/* XXX */) N
+() S 8 T () S 16 T (int free_sv;) S 32 T () S 40 T (/* 1 if svm_model is created by svm_load) N
+grestore
+end % of iso1dict
+pagesave restore
+showpage
+%%Page: (8) 8
+%%BeginPageSetup
+/pagesave save def
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 0 add translate
+/v 0 store
+/x0 x v get 4.703931 add sx cw mul add store
+/y0 y v get bfs  sub store
+x0 y0 moveto
+() p 8 T () S 16 T () S 24 T () S 32 T () S 40 T (/* 0 if svm_model is created by svm_trai) N
+() S 8 T (};) N
+() N
+(    param describes the parameters used to obtain the model.) N
+() N
+(    nr_class is the number of classes. It is 2 for regression and one-class SVM.) N
+() N
+(    l is the number of support vectors. SV and sv_coef are support) N
+(    vectors and the corresponding coefficients, respectively. Assume there are) N
+(    k classes. For data in class j, the corresponding sv_coef includes \(k-1\) y*a) N
+(    where alpha's are solutions of the following two class problems:) N
+(    1 vs j, 2 vs j, ..., j-1 vs j, j vs j+1, j vs j+2, ..., j vs k) N
+(    and y=1 for the first j-1 vectors, while y=-1 for the remaining k-j ) N
+(    vectors. For example, if there are 4 classes, sv_coef and SV are like:) N
+() N
+(        +-+-+-+--------------------+) N
+(        |1|1|1|                    |) N
+(        |v|v|v|  SVs from class 1  |) N
+(        |2|3|4|                    |) N
+(        +-+-+-+--------------------+) N
+(        |1|2|2|                    |) N
+(        |v|v|v|  SVs from class 2  |) N
+(        |2|3|4|                    |) N
+(        +-+-+-+--------------------+) N
+(        |1|2|3|                    |) N
+(        |v|v|v|  SVs from class 3  |) N
+(        |3|3|4|                    |) N
+(        +-+-+-+--------------------+) N
+(        |1|2|3|                    |) N
+(        |v|v|v|  SVs from class 4  |) N
+(        |4|4|4|                    |) N
+(        +-+-+-+--------------------+) N
+() N
+(    See svm_train\(\) for an example of assigning values to sv_coef.) N
+() N
+(    rho is the bias term \(-b\). probA and probB are parameters used in) N
+(    probability outputs. If there are k classes, there are k*\(k-1\)/2) N
+(    binary problems as well as rho, probA, and probB values. They are) N
+(    aligned in the order of binary problems:) N
+(    1 vs 2, 1 vs 3, ..., 1 vs k, 2 vs 3, ..., 2 vs k, ..., k-1 vs k.) N
+() N
+(    sv_indices[0,...,nSV-1] are values in [1,...,num_traning_data] to) N
+(    indicate support vectors in the training set.) N
+() N
+(    label contains labels in the training data.) N
+() N
+(    nSV is the number of support vectors in each class.) N
+() N
+(    free_sv is a flag used to determine whether the space of SV should ) N
+(    be released in free_model_content\(struct svm_model*\) and ) N
+(    free_and_destroy_model\(struct svm_model**\). If the model is) N
+(    generated by svm_train\(\), then SV points to data in svm_problem) N
+(    and should not be removed. For example, free_sv is 0 if svm_model) N
+(    is created by svm_train, but is 0 if created by svm_load_model.) N
+() N
+(- Function: double svm_predict\(const struct svm_model *model,) N
+(                               const struct svm_node *x\);) N
+() N
+(    This function does classification or regression on a test vector x) N
+(    given a model.) N
+() N
+(    For a classification model, the predicted class for x is returned.) N
+(    For a regression model, the function value of x calculated using) N
+(    the model is returned. For an one-class model, +1 or -1 is) N
+(    returned.) N
+grestore
+end % of iso1dict
+pagesave restore
+showpage
+%%Page: (9) 9
+%%BeginPageSetup
+/pagesave save def
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 0 add translate
+/v 0 store
+/x0 x v get 4.703931 add sx cw mul add store
+/y0 y v get bfs  sub store
+x0 y0 moveto
+() p n
+(- Function: void svm_cross_validation\(const struct svm_problem *prob,) N
+() S 8 T (const struct svm_parameter *param, int nr_fold, double *target\);) N
+() N
+(    This function conducts cross validation. Data are separated to) N
+(    nr_fold folds. Under given parameters, sequentially each fold is) N
+(    validated using the model from training the remaining. Predicted) N
+(    labels \(of all prob's instances\) in the validation process are) N
+(    stored in the array called target.) N
+() N
+(    The format of svm_prob is same as that for svm_train\(\). ) N
+() N
+(- Function: int svm_get_svm_type\(const struct svm_model *model\);) N
+() N
+(    This function gives svm_type of the model. Possible values of) N
+(    svm_type are defined in svm.h.) N
+() N
+(- Function: int svm_get_nr_class\(const svm_model *model\);) N
+() N
+(    For a classification model, this function gives the number of) N
+(    classes. For a regression or an one-class model, 2 is returned.) N
+() N
+(- Function: void svm_get_labels\(const svm_model *model, int* label\)) N
+(    ) N
+(    For a classification model, this function outputs the name of) N
+(    labels into an array called label. For regression and one-class) N
+(    models, label is unchanged.) N
+() N
+(- Function: void svm_get_sv_indices\(const struct svm_model *model, int *sv_indic) N
+() N
+(    This function outputs indices of support vectors into an array called sv_ind) N
+(    The size of sv_indices is the number of support vectors and can be obtained ) N
+(    Each sv_indices[i] is in the range of [1, ..., num_traning_data].) N
+() N
+(- Function: int svm_get_nr_sv\(const struct svm_model *model\) ) N
+() N
+(    This function gives the number of total support vector.) N
+() N
+(- Function: double svm_get_svr_probability\(const struct svm_model *model\);) N
+() N
+(    For a regression model with probability information, this function) N
+(    outputs a value sigma > 0. For test data, we consider the) N
+(    probability model: target value = predicted value + z, z: Laplace) N
+(    distribution e^\(-|z|/sigma\)/\(2sigma\)) N
+() N
+(    If the model is not for svr or does not contain required) N
+(    information, 0 is returned.) N
+() N
+(- Function: double svm_predict_values\(const svm_model *model, ) N
+() S 8 T () S 16 T () S 24 T () S 32 T (    const svm_node *x, double* dec_values\)) N
+() N
+(    This function gives decision values on a test vector x given a) N
+(    model, and return the predicted label \(classification\) or) N
+(    the function value \(regression\).) N
+() N
+(    For a classification model with nr_class classes, this function) N
+(    gives nr_class*\(nr_class-1\)/2 decision values in the array) N
+(    dec_values, where nr_class can be obtained from the function) N
+(    svm_get_nr_class. The order is label[0] vs. label[1], ...,) N
+(    label[0] vs. label[nr_class-1], label[1] vs. label[2], ...,) N
+(    label[nr_class-2] vs. label[nr_class-1], where label can be) N
+(    obtained from the function svm_get_labels. The returned value is) N
+(    the predicted class for x. Note that when nr_class = 1, this ) N
+(    function does not give any decision value.) N
+() N
+grestore
+end % of iso1dict
+pagesave restore
+showpage
+%%Page: (10) 10
+%%BeginPageSetup
+/pagesave save def
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 0 add translate
+/v 0 store
+/x0 x v get 4.703931 add sx cw mul add store
+/y0 y v get bfs  sub store
+x0 y0 moveto
+(    For a regression model, dec_values[0] and the returned value are) p n
+(    both the function value of x calculated using the model. For a) N
+(    one-class model, dec_values[0] is the decision value of x, while) N
+(    the returned value is +1/-1.) N
+() N
+(- Function: double svm_predict_probability\(const struct svm_model *model, ) N
+() S 8 T (    const struct svm_node *x, double* prob_estimates\);) N
+(    ) N
+(    This function does classification or regression on a test vector x) N
+(    given a model with probability information.) N
+() N
+(    For a classification model with probability information, this) N
+(    function gives nr_class probability estimates in the array) N
+(    prob_estimates. nr_class can be obtained from the function) N
+(    svm_get_nr_class. The class with the highest probability is) N
+(    returned. For regression/one-class SVM, the array prob_estimates) N
+(    is unchanged and the returned value is the same as that of) N
+(    svm_predict.) N
+() N
+(- Function: const char *svm_check_parameter\(const struct svm_problem *prob,) N
+(                                            const struct svm_parameter *param\);) N
+() N
+(    This function checks whether the parameters are within the feasible) N
+(    range of the problem. This function should be called before calling) N
+(    svm_train\(\) and svm_cross_validation\(\). It returns NULL if the) N
+(    parameters are feasible, otherwise an error message is returned.) N
+() N
+(- Function: int svm_check_probability_model\(const struct svm_model *model\);) N
+() N
+(    This function checks whether the model contains required) N
+(    information to do probability estimates. If so, it returns) N
+(    +1. Otherwise, 0 is returned. This function should be called) N
+(    before calling svm_get_svr_probability and) N
+(    svm_predict_probability.) N
+() N
+(- Function: int svm_save_model\(const char *model_file_name,) N
+() S 8 T () S 16 T () S 24 T (       const struct svm_model *model\);) N
+() N
+(    This function saves a model to a file; returns 0 on success, or -1) N
+(    if an error occurs.) N
+() N
+(- Function: struct svm_model *svm_load_model\(const char *model_file_name\);) N
+() N
+(    This function returns a pointer to the model read from the file,) N
+(    or a null pointer if the model could not be loaded.) N
+() N
+(- Function: void svm_free_model_content\(struct svm_model *model_ptr\);) N
+() N
+(    This function frees the memory used by the entries in a model structure.) N
+() N
+(- Function: void svm_free_and_destroy_model\(struct svm_model **model_ptr_ptr\);) N
+() N
+(    This function frees the memory used by a model and destroys the model) N
+(    structure. It is equivalent to svm_destroy_model, which) N
+(    is deprecated after version 3.0.) N
+() N
+(- Function: void svm_destroy_param\(struct svm_parameter *param\);) N
+() N
+(    This function frees the memory used by a parameter set.) N
+() N
+(- Function: void svm_set_print_string_function\(void \(*print_func\)\(const char *\)\)) N
+() N
+(    Users can specify their output format by a function. Use) N
+(        svm_set_print_string_function\(NULL\); ) N
+(    for default printing to stdout.) N
+grestore
+end % of iso1dict
+pagesave restore
+showpage
+%%Page: (11) 11
+%%BeginPageSetup
+/pagesave save def
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 0 add translate
+/v 0 store
+/x0 x v get 4.703931 add sx cw mul add store
+/y0 y v get bfs  sub store
+x0 y0 moveto
+() p n
+(Java Version) N
+(============) N
+() N
+(The pre-compiled java class archive `libsvm.jar' and its source files are) N
+(in the java directory. To run the programs, use) N
+() N
+(java -classpath libsvm.jar svm_train <arguments>) N
+(java -classpath libsvm.jar svm_predict <arguments>) N
+(java -classpath libsvm.jar svm_toy) N
+(java -classpath libsvm.jar svm_scale <arguments>) N
+() N
+(Note that you need Java 1.5 \(5.0\) or above to run it.) N
+() N
+(You may need to add Java runtime library \(like classes.zip\) to the classpath.) N
+(You may need to increase maximum Java heap size.) N
+() N
+(Library usages are similar to the C version. These functions are available:) N
+() N
+(public class svm {) N
+() S 8 T (public static final int LIBSVM_VERSION=317; ) N
+() S 8 T (public static svm_model svm_train\(svm_problem prob, svm_parameter param\)) N
+() S 8 T (public static void svm_cross_validation\(svm_problem prob, svm_parameter ) N
+() S 8 T (public static int svm_get_svm_type\(svm_model model\);) N
+() S 8 T (public static int svm_get_nr_class\(svm_model model\);) N
+() S 8 T (public static void svm_get_labels\(svm_model model, int[] label\);) N
+() S 8 T (public static void svm_get_sv_indices\(svm_model model, int[] indices\);) N
+() S 8 T (public static int svm_get_nr_sv\(svm_model model\);) N
+() S 8 T (public static double svm_get_svr_probability\(svm_model model\);) N
+() S 8 T (public static double svm_predict_values\(svm_model model, svm_node[] x, d) N
+() S 8 T (public static double svm_predict\(svm_model model, svm_node[] x\);) N
+() S 8 T (public static double svm_predict_probability\(svm_model model, svm_node[]) N
+() S 8 T (public static void svm_save_model\(String model_file_name, svm_model mode) N
+() S 8 T (public static svm_model svm_load_model\(String model_file_name\) throws IO) N
+() S 8 T (public static String svm_check_parameter\(svm_problem prob, svm_parameter) N
+() S 8 T (public static int svm_check_probability_model\(svm_model model\);) N
+() S 8 T (public static void svm_set_print_string_function\(svm_print_interface pri) N
+(}) N
+() N
+(The library is in the "libsvm" package.) N
+(Note that in Java version, svm_node[] is not ended with a node whose index = -1.) N
+() N
+(Users can specify their output format by) N
+() N
+() S 8 T (your_print_func = new svm_print_interface\(\)) N
+() S 8 T ({ ) N
+() S 8 T () S 16 T (public void print\(String s\)) N
+() S 8 T () S 16 T ({) N
+() S 8 T () S 16 T () S 24 T (// your own format) N
+() S 8 T () S 16 T (}) N
+() S 8 T (};) N
+() S 8 T (svm.svm_set_print_string_function\(your_print_func\);) N
+() N
+(Building Windows Binaries) N
+(=========================) N
+() N
+(Windows binaries are in the directory `windows'. To build them via) N
+(Visual C++, use the following steps:) N
+() N
+(1. Open a DOS command box \(or Visual Studio Command Prompt\) and change) N
+(to libsvm directory. If environment variables of VC++ have not been) N
+(set, type) N
+() N
+("C:\\Program Files\\Microsoft Visual Studio 10.0\\VC\\bin\\vcvars32.bat") N
+() N
+grestore
+end % of iso1dict
+pagesave restore
+showpage
+%%Page: (12) 12
+%%BeginPageSetup
+/pagesave save def
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 0 add translate
+/v 0 store
+/x0 x v get 4.703931 add sx cw mul add store
+/y0 y v get bfs  sub store
+x0 y0 moveto
+(You may have to modify the above command according which version of) p n
+(VC++ or where it is installed.) N
+() N
+(2. Type) N
+() N
+(nmake -f Makefile.win clean all) N
+() N
+(3. \(optional\) To build shared library libsvm.dll, type) N
+() N
+(nmake -f Makefile.win lib) N
+() N
+(Another way is to build them from Visual C++ environment. See details) N
+(in libsvm FAQ.) N
+() N
+(- Additional Tools: Sub-sampling, Parameter Selection, Format checking, etc.) N
+(============================================================================) N
+() N
+(See the README file in the tools directory.) N
+() N
+(MATLAB/OCTAVE Interface) N
+(=======================) N
+() N
+(Please check the file README in the directory `matlab'.) N
+() N
+(Python Interface) N
+(================) N
+() N
+(See the README file in python directory.) N
+() N
+(Additional Information) N
+(======================) N
+() N
+(If you find LIBSVM helpful, please cite it as) N
+() N
+(Chih-Chung Chang and Chih-Jen Lin, LIBSVM : a library for support) N
+(vector machines. ACM Transactions on Intelligent Systems and) N
+(Technology, 2:27:1--27:27, 2011. Software available at) N
+(http://www.csie.ntu.edu.tw/~cjlin/libsvm) N
+() N
+(LIBSVM implementation document is available at) N
+(http://www.csie.ntu.edu.tw/~cjlin/papers/libsvm.pdf) N
+() N
+(For any questions and comments, please email cjlin@csie.ntu.edu.tw) N
+() N
+(Acknowledgments:) N
+(This work was supported in part by the National Science ) N
+(Council of Taiwan via the grant NSC 89-2213-E-002-013.) N
+(The authors thank their group members and users) N
+(for many helpful discussions and comments. They are listed in) N
+(http://www.csie.ntu.edu.tw/~cjlin/libsvm/acknowledgements) N
+() N
+grestore
+end % of iso1dict
+pagesave restore
+showpage
+
+%%Trailer
+end
+%%EOF
