@@ -106,3 +106,11 @@ in your workstation.)
 3. Start "verifying" your model...(well, I guess that would be a
    failure. Why the heck would you choose Ensemble Selection.)
 4. Start writing your report. This time, data mining comes first.
+
+20131204 Lab 21:00
+1. Reconfigure the data file. Strictly according to the LIBSVM format.
+2. Write the testing shell script.
+3. Format the data to **real** libsvm on your workstation. And play
+   with your "real" data a second time.
+4. Finish part of your writing stuff within the night. Get up
+   early. No more excuses for you. No more.
