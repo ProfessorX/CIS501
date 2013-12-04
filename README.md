@@ -84,3 +84,18 @@ The main thing is that:
 1. Next, fuck up the SVM code.
 2. Transform the csv data to libsvm data, and run it on your
    workstation. 
+
+20131204 CR6 11:00
+1. TF/IDF.
+2. Regular expressions.
+3. And [map reduce]. (Which is yet another fancy name of divide and
+   conquer.)
+
+20131204 Lab 12:30
+1. Automated screen capturing. In Chrome.
+   Requirement: In Chrome, Automated "Refresh".
+   Capture the stuff after refreshing.
+2. Data Mining running. (fix the **libsvm** data format, and re-run it
+in your workstation.)
+3. Start writing both of your reports. Or it would be too damn
+   late. **sleep well**.
