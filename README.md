@@ -99,3 +99,10 @@ The main thing is that:
 in your workstation.)
 3. Start writing both of your reports. Or it would be too damn
    late. **sleep well**.
+
+20131204 Lab 14:30
+1. Finish the script.
+2. Finish the data format reconfiguration.
+3. Start "verifying" your model...(well, I guess that would be a
+   failure. Why the heck would you choose Ensemble Selection.)
+4. Start writing your report. This time, data mining comes first.
