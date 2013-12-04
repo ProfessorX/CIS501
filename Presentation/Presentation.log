@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.7)  3 DEC 2013 00:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.7)  4 DEC 2013 11:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -936,7 +936,7 @@ x.map}] (./Presentation.toc) [2
 ] [4
 
 ]
-<bounty-hunter-track.png, id=176, 128.48pt x 128.48pt>
+<bounty-hunter-track.png, id=170, 128.48pt x 128.48pt>
 File: bounty-hunter-track.png Graphic file (type png)
 
 <use bounty-hunter-track.png>
@@ -955,7 +955,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [5
 
  <./bounty-hunter-track.png>]
-<code-for-food.jpg, id=205, 224.84pt x 225.84375pt>
+<code-for-food.jpg, id=199, 224.84pt x 225.84375pt>
 File: code-for-food.jpg Graphic file (type jpg)
  <use code-for-food.jpg>
 Package pdftex.def Info: code-for-food.jpg used on input line 71.
@@ -963,7 +963,7 @@ Package pdftex.def Info: code-for-food.jpg used on input line 71.
 
 [6
 
- <./code-for-food.jpg>] <modern-miners.jpg, id=233, 610.28pt x 590.205pt>
+ <./code-for-food.jpg>] <modern-miners.jpg, id=227, 610.28pt x 590.205pt>
 File: modern-miners.jpg Graphic file (type jpg)
 
 <use modern-miners.jpg>
@@ -972,7 +972,7 @@ Package pdftex.def Info: modern-miners.jpg used on input line 82.
  [7
 
  <./modern-miners.jpg>]
-<Automation.png, id=262, 266.9975pt x 306.14375pt>
+<Automation.png, id=256, 266.9975pt x 306.14375pt>
 File: Automation.png Graphic file (type png)
  <use Automation.png>
 Package pdftex.def Info: Automation.png used on input line 96.
@@ -987,7 +987,7 @@ Package pdftex.def Info: Automation.png used on input line 96.
 ] [11
 
 ]
-<Traceability.png, id=390, 1675.25874pt x 616.3025pt>
+<Traceability.png, id=385, 1675.25874pt x 616.3025pt>
 File: Traceability.png Graphic file (type png)
  <use Traceability.png>
 Package pdftex.def Info: Traceability.png used on input line 161.
@@ -996,7 +996,7 @@ Package pdftex.def Info: Traceability.png used on input line 161.
 [12
 
  <./Traceability.png (PNG copy)>]
-<Overlap.png, id=420, 678.535pt x 418.56375pt>
+<Overlap.png, id=415, 678.535pt x 418.56375pt>
 File: Overlap.png Graphic file (type png)
  <use Overlap.png>
 Package pdftex.def Info: Overlap.png used on input line 170.
@@ -1029,7 +1029,7 @@ Package pdftex.def Info: Overlap.png used on input line 170.
 ] [22
 
 ]
-<js_normalised_rhino_2exp.pdf, id=708, 361.35pt x 361.35pt>
+<js_normalised_rhino_2exp.pdf, id=704, 361.35pt x 361.35pt>
 File: js_normalised_rhino_2exp.pdf Graphic file (type pdf)
 
 <use js_normalised_rhino_2exp.pdf>
@@ -1038,7 +1038,7 @@ Package pdftex.def Info: js_normalised_rhino_2exp.pdf used on input line 296.
  [23
 
  <./js_normalised_rhino_2exp.pdf>]
-<vsm_rhino_2exp_example.pdf, id=740, 361.35pt x 361.35pt>
+<vsm_rhino_2exp_example.pdf, id=736, 361.35pt x 361.35pt>
 File: vsm_rhino_2exp_example.pdf Graphic file (type pdf)
 
 <use vsm_rhino_2exp_example.pdf>
@@ -1053,14 +1053,14 @@ Package pdftex.def Info: vsm_rhino_2exp_example.pdf used on input line 305.
 
 ] [27
 
-] <H1B.jpg, id=853, 451.6875pt x 301.125pt>
+] <H1B.jpg, id=849, 451.6875pt x 301.125pt>
 File: H1B.jpg Graphic file (type jpg)
  <use H1B.jpg>
 Package pdftex.def Info: H1B.jpg used on input line 347.
 (pdftex.def)             Requested size: 293.59338pt x 195.72891pt.
  [28
 
- <./H1B.jpg>] <Base-Salary.jpg, id=882, 451.6875pt x 291.0875pt>
+ <./H1B.jpg>] <Base-Salary.jpg, id=878, 451.6875pt x 291.0875pt>
 File: Base-Salary.jpg Graphic file (type jpg)
  <use Base-Salary.jpg>
 Package pdftex.def Info: Base-Salary.jpg used on input line 356.
@@ -1068,7 +1068,7 @@ Package pdftex.def Info: Base-Salary.jpg used on input line 356.
 
 [29
 
- <./Base-Salary.jpg>] <Question.jpg, id=911, 652.4375pt x 388.45125pt>
+ <./Base-Salary.jpg>] <Question.jpg, id=907, 652.4375pt x 388.45125pt>
 File: Question.jpg Graphic file (type jpg)
 
 <use Question.jpg>
@@ -1092,7 +1092,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 367.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 367.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 367.
 Package rerunfilecheck Info: File `Presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 46D1DDB81D310DE10D7AC9104C2247A9;344.
+(rerunfilecheck)             Checksum: D6EA27427941054975695544B56B51A1;279.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1101,13 +1101,13 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 367.
  ) 
 Here is how much of TeX's memory you used:
- 16002 strings out of 493315
- 305509 string characters out of 6131250
- 371180 words of memory out of 5000000
- 18963 multiletter control sequences out of 15000+600000
+ 15981 strings out of 493315
+ 304844 string characters out of 6131250
+ 371178 words of memory out of 5000000
+ 18942 multiletter control sequences out of 15000+600000
  12829 words of font info for 48 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,17n,62p,408b,596s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,17n,60p,408b,596s stack positions out of 5000i,500n,10000p,200000b,80000s
 </home/abrahamx91/Programs/texlive/2013/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmex10.pfb></home/abrahamx91/Programs/texlive/2013/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmmi10.pfb></home/abrahamx91/Programs/texlive/2013/texmf-dis
@@ -1131,10 +1131,10 @@ x91/Programs/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
 /home/abrahamx91/Programs/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb></home/abrahamx91/Programs/texlive/2013/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmtt12.pfb>
-Output written on Presentation.pdf (30 pages, 1209130 bytes).
+Output written on Presentation.pdf (30 pages, 1209201 bytes).
 PDF statistics:
- 1021 PDF objects out of 1200 (max. 8388607)
- 935 compressed objects within 10 object streams
+ 1017 PDF objects out of 1200 (max. 8388607)
+ 931 compressed objects within 10 object streams
  85 named destinations out of 1000 (max. 500000)
- 190 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 182 words of extra memory for PDF output out of 10000 (max. 10000000)
 
