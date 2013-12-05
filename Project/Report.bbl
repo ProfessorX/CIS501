@@ -21,13 +21,37 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{Ref:Yanan2013}
-Y.~Xiao and A.~Sawafi, ``Getting the max out of ensemble selection,''
-  \emph{Journal of Masdar Institute}, vol.~1, pp. 323--330, Dec. 2013.
+\bibitem{Ref:CustomerRelationshipManagement}
+\BIBentryALTinterwordspacing
+Wikipedia. (2013) Customer relationship management. [Online]. Available:
+  \url{https://en.wikipedia.org/wiki/Customer_relationship_management}
+\BIBentrySTDinterwordspacing
 
-\bibitem{Ref:WinningtheKDDCupIBMResearch}
-A.~Niculescu-Mizil \emph{et~al.}, ``Winning the {KDD Cup} orange challenge with
-  ensemble selection,'' in \emph{Proceedings of {KDD-Cup} 2009 competition},
-  Paris, France, Jun. 2009, pp. 23--34.
+\bibitem{Ref:DataMiningStrategiesforCRM}
+A.~Al-Mudimigh, Z.~Ullah, and F.~Saleem, ``Data mining strategies and
+  techniques for crm systems,'' in \emph{IEEE International Conference on
+  System of Systems Engineering}, 2009, pp. 1--5.
+
+\bibitem{Ref:ApplicationOfDataMiningInCRM}
+K.~Wu and F.~Liu, ``Application of data mining in customer relationship
+  management,'' in \emph{Management and Service Science (MASS), 2010
+  International Conference on}, 2010, pp. 1--4.
+
+\bibitem{Ref:TargetingCustomers}
+N.~Shahrokhi, R.~Dehzad, and S.~Sahami, ``Targeting customers with data mining
+  techniques: Classification,'' in \emph{User Science and Engineering (i-USEr),
+  2011 International Conference on}, 2011, pp. 212--215.
+
+\bibitem{Ref:AnalysisOfTheKDDCup2009}
+I.~Guyon, V.~Lemaire, M.~Boulle, G.~Dror, and D.~Vogel, ``Analysis of the kdd
+  cup 2009: Fast scoring on a large orange customer database,'' in
+  \emph{Proceedings of {KDD-Cup} 2009 competition}, Paris, France, Jun. 2009,
+  pp. 23--34.
+
+\bibitem{Ref:ChallengesinKDDataMiningDatasets}
+M.~Lobur, Y.~Stekh, and V.~Artsibasov, ``Challenges in knowledge discovery and
+  data mining in datasets,'' in \emph{Proceedings of VIIth International
+  Conference on Perspective Technologies and Methods in MEMS Design
+  (MEMSTECH)}, 2011, pp. 232--233.
 
 \end{thebibliography}

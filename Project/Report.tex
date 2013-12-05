@@ -449,7 +449,7 @@
 %\title{Bare Demo of IEEEtran.cls for Journals}
 
 % Abraham: There will be a good title afterwards.
-\title{Big Data with Ensemble Selection}
+\title{Big Data without Map Reduce}
 
 %
 %
@@ -537,10 +537,12 @@ Abu Dhabi, UAE.\@ P.O. 54224\@ Email: \{yxiao,aalsawafi@masdar.ac.ae\}.}%
 %\boldmath
 %The abstract goes here.
 We present our approach to the big data problem put forward in KDD
-Cup 2009. We carry out a more technical analysis of our initial plan,
-and then make some modification to it. Later we run our process in
-Amazon cloud servers. We obtain a quite satisfactory result, the
-average score is 75\%.
+Cup 2009. We carry out a more technical analysis of our initial plan.
+And we describe our trials and errors with the large dataset. Till
+now, our team has not come up with any practical solution with large
+dataset in a limited time. We present our results with the small
+dataset in the end.
+
 
 
 \end{abstract}
@@ -612,11 +614,67 @@ data mining
 
 %\subsubsection{Subsubsection Heading Here}
 %Subsubsection text here.
-\IEEEPARstart{W}{e} proposed an approach to tackle the KDD Cup 2009
-in~\cite{Ref:Yanan2013}. We planned to carry out a meta classification
-method, i.e.\ ensemble selection with a reduced set of base
-classifiers when compared
-with~\cite{Ref:WinningtheKDDCupIBMResearch}. 
+\IEEEPARstart{C}{ustomer} relationship management (CRM) is an
+essential model for managing the interactions between the company and
+its current and future customers. It takes up-to-date technologies to
+organize, automate, and synchronize CRM and marketing information
+system~\cite{Ref:CustomerRelationshipManagement}. CRM applications
+that use data mining are called Analytic CRM, which provides valid
+predictions from customer data collected and stored with various
+attributes. There are a lot of data mining tools and methods to
+extract and analyze data generally, and customer data specifically. A
+naive step in doing so is to summarize the statistical attributes of
+the data (such as means and standard deviations) and use charts and
+graphs to review it
+visually~\cite{Ref:DataMiningStrategiesforCRM}. However, in many
+situations customer relationship data volume is vast and
+massive. Therefore, more sophisticated methods are created and
+evaluated. In this field, we found the following techniques are most
+frequently employed: decision trees, support vector machines,
+artificial neural networks and Bayesian classifiers.
+\par
+Data mining has powerful capability in processing and analyzing data;
+its key technologies that applied in CRM are categorized into three
+main categories; clustering, classification and forecast, and
+association
+rules~\cite{Ref:ApplicationOfDataMiningInCRM}. Classification and
+forecast analysis classifies unknown data into the most proper
+pre-defined class based on category description that is obtained by
+training a set of data using certain algorithm. Key classification
+techniques are; decision making tree, Bayesian statistics, BP neural
+networks, Genetic Algorithm, rough set theory, fuzzy set theory and so
+on. Classification methods in CRM can predict new customer’s behaviors
+and activities. 
+\par
+As mentioned in~\cite{Ref:TargetingCustomers}, classification analysis
+is the one that is widely used in classifying CRM data. It can be
+processed in two steps; learning phase and training
+phase~\cite{Ref:AnalysisOfTheKDDCup2009}. In the learning phase the
+classification algorithm analyzes the training data set and learns it,
+then in the second phase the accuracy of the classifier will be
+estimated using the test data set. After that, the classifier can be
+used to predict and classify new data set. In order to obtain better
+accuracy, some preprocessing and filtering techniques can be applied
+to the data before going through the classification phases. Those
+techniques are; data cleaning, data discretization, and feature
+selection. The common challenges in knowledge discovery from CRM data
+are the high-dimensionality, and imbalanced corrupted
+records. Besides, researchers roved that customer classification and
+prediction is cost sensitive in nature. For example, if a valuable
+customer predicted as loyal but then that customer churns, the cost is
+higher than if a loyal customer is classified as one who will
+churn~\cite{Ref:ChallengesinKDDataMiningDatasets}.
+\par
+In this paper, we present various tools that we tried and several
+plans that were carried out when dealing with big data problem like
+this. The rest of the paper is organized as
+follows. Section~\ref{sec:initial-plan} displays what our thoughts
+were before tackling the real large dataset. Section
+\ref{sec:revised-proposal} shows what our efforts are when no team
+member has the pre-knowledge of how to write \emph{map reduce} scripts
+and run them with the help of
+clusters. Section~\ref{sec:result-conclusion} serves as the conclusion
+for this not-so-successful trial with big, complex data mining task.
 
 % After downloading the data. Upload it to Amazon. And run.
 
@@ -624,12 +682,12 @@ with~\cite{Ref:WinningtheKDDCupIBMResearch}.
 
 \section{Initial Proposal}
 \label{sec:initial-plan}
-In this section we describe what we proposed as out initial plan.
+Lesson we learn from writing and reviewing this section is that 
 
-\section{Revised Proposal}
+\section{Our Journey}
 \label{sec:revised-proposal}
 
-\section{Result and Conclusion}
+\section{Results and Conclusion}
 \label{sec:result-conclusion}
 Well, the result shall come out. Eventually.
 

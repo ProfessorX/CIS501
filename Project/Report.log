@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.7)  29 NOV 2013 21:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.7)  5 DEC 2013 21:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -519,30 +519,53 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 534.
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
 
-(./Report.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 851.
- [1{/home/abrahamx91/Programs/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pd
-ftex.map}
+(./Report.bbl
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 27.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 27.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 27.
+) [1{/home/abrahamx91/Programs/texlive/2013/texmf-var/fonts/map/pdftex/updmap/p
+dftex.map}
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 851.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 907.
+
+! Infinite glue shrinkage found in box being split.
+\@outputdblcol ...\vsplit \@outputbox to\maxdimen 
+                                                  \toks@ \expandafter {\topm...
+l.907 \end{document}
+                    
+The box you are \vsplitting contains some infinitely
+shrinkable glue, e.g., `\vss' or `\vskip 0pt minus 1fil'.
+Such glue doesn't belong there; but you can safely proceed,
+since the offensive shrinkability has been made finite.
+
+[2
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 907.
  (./Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 851.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 851.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 907.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 907.
 Package rerunfilecheck Info: File `Report.out' has not changed.
 (rerunfilecheck)             Checksum: F3A10E74C37700647ACFED03009504B6;969.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 851.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 907.
  ) 
 Here is how much of TeX's memory you used:
- 11089 strings out of 493315
- 162014 string characters out of 6131250
- 236785 words of memory out of 5000000
- 14433 multiletter control sequences out of 15000+600000
- 38729 words of font info for 69 fonts, out of 8000000 for 9000
+ 11113 strings out of 493315
+ 162486 string characters out of 6131250
+ 240010 words of memory out of 5000000
+ 14447 multiletter control sequences out of 15000+600000
+ 40803 words of font info for 75 fonts, out of 8000000 for 9000
  960 hyphenation exceptions out of 8191
- 36i,6n,38p,348b,321s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,6n,38p,348b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/home/abrahamx91/Programs/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.en
 c}</home/abrahamx91/Programs/texlive/2013/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb></home/abrahamx91/Programs/texlive/2013/texmf-dist/fonts/type1/u
@@ -550,10 +573,10 @@ rw/times/utmb8a.pfb></home/abrahamx91/Programs/texlive/2013/texmf-dist/fonts/ty
 pe1/urw/times/utmbi8a.pfb></home/abrahamx91/Programs/texlive/2013/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></home/abrahamx91/Programs/texlive/2013/texmf-di
 st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Report.pdf (1 page, 65932 bytes).
+Output written on Report.pdf (2 pages, 70038 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
+ 91 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 500000)
  65 words of extra memory for PDF output out of 10000 (max. 10000000)
 
