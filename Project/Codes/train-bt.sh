@@ -387,3 +387,6 @@ festlearn -d 1 -n 0.1 -t 125 train-raw-up.data train-raw-up-bt-125.data.model &&
 festlearn -d 1 -n 0.1 -t 126 train-raw-up.data train-raw-up-bt-126.data.model &&
 festlearn -d 1 -n 0.1 -t 127 train-raw-up.data train-raw-up-bt-127.data.model &&
 festlearn -d 1 -n 0.1 -t 128 train-raw-up.data train-raw-up-bt-128.data.model
+
+
+./classify-bt.sh

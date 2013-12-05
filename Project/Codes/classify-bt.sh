@@ -1,389 +1,389 @@
 #!/bin/bash
-festclassify   train-raw-ap.data train-raw-ap-bt-1.data.model train-raw-ap-bt-1.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-2.data.model train-raw-ap-bt-2.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-3.data.model train-raw-ap-bt-3.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-4.data.model train-raw-ap-bt-4.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-5.data.model train-raw-ap-bt-5.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-6.data.model train-raw-ap-bt-6.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-7.data.model train-raw-ap-bt-7.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-8.data.model train-raw-ap-bt-8.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-9.data.model train-raw-ap-bt-9.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-10.data.model train-raw-ap-bt-10.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-11.data.model train-raw-ap-bt-11.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-12.data.model train-raw-ap-bt-12.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-13.data.model train-raw-ap-bt-13.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-14.data.model train-raw-ap-bt-14.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-15.data.model train-raw-ap-bt-15.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-16.data.model train-raw-ap-bt-16.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-17.data.model train-raw-ap-bt-17.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-18.data.model train-raw-ap-bt-18.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-19.data.model train-raw-ap-bt-19.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-20.data.model train-raw-ap-bt-20.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-21.data.model train-raw-ap-bt-21.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-22.data.model train-raw-ap-bt-22.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-23.data.model train-raw-ap-bt-23.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-24.data.model train-raw-ap-bt-24.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-25.data.model train-raw-ap-bt-25.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-26.data.model train-raw-ap-bt-26.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-27.data.model train-raw-ap-bt-27.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-28.data.model train-raw-ap-bt-28.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-29.data.model train-raw-ap-bt-29.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-30.data.model train-raw-ap-bt-30.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-31.data.model train-raw-ap-bt-31.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-32.data.model train-raw-ap-bt-32.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-33.data.model train-raw-ap-bt-33.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-34.data.model train-raw-ap-bt-34.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-35.data.model train-raw-ap-bt-35.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-36.data.model train-raw-ap-bt-36.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-37.data.model train-raw-ap-bt-37.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-38.data.model train-raw-ap-bt-38.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-39.data.model train-raw-ap-bt-39.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-40.data.model train-raw-ap-bt-40.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-41.data.model train-raw-ap-bt-41.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-42.data.model train-raw-ap-bt-42.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-43.data.model train-raw-ap-bt-43.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-44.data.model train-raw-ap-bt-44.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-45.data.model train-raw-ap-bt-45.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-46.data.model train-raw-ap-bt-46.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-47.data.model train-raw-ap-bt-47.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-48.data.model train-raw-ap-bt-48.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-49.data.model train-raw-ap-bt-49.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-50.data.model train-raw-ap-bt-50.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-51.data.model train-raw-ap-bt-51.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-52.data.model train-raw-ap-bt-52.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-53.data.model train-raw-ap-bt-53.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-54.data.model train-raw-ap-bt-54.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-55.data.model train-raw-ap-bt-55.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-56.data.model train-raw-ap-bt-56.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-57.data.model train-raw-ap-bt-57.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-58.data.model train-raw-ap-bt-58.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-59.data.model train-raw-ap-bt-59.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-60.data.model train-raw-ap-bt-60.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-61.data.model train-raw-ap-bt-61.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-62.data.model train-raw-ap-bt-62.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-63.data.model train-raw-ap-bt-63.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-64.data.model train-raw-ap-bt-64.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-65.data.model train-raw-ap-bt-65.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-66.data.model train-raw-ap-bt-66.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-67.data.model train-raw-ap-bt-67.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-68.data.model train-raw-ap-bt-68.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-69.data.model train-raw-ap-bt-69.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-70.data.model train-raw-ap-bt-70.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-71.data.model train-raw-ap-bt-71.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-72.data.model train-raw-ap-bt-72.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-73.data.model train-raw-ap-bt-73.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-74.data.model train-raw-ap-bt-74.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-75.data.model train-raw-ap-bt-75.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-76.data.model train-raw-ap-bt-75.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-77.data.model train-raw-ap-bt-77.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-78.data.model train-raw-ap-bt-78.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-79.data.model train-raw-ap-bt-79.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-80.data.model train-raw-ap-bt-80.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-81.data.model train-raw-ap-bt-81.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-82.data.model train-raw-ap-bt-82.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-83.data.model train-raw-ap-bt-83.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-84.data.model train-raw-ap-bt-84.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-85.data.model train-raw-ap-bt-85.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-86.data.model train-raw-ap-bt-86.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-87.data.model train-raw-ap-bt-87.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-88.data.model train-raw-ap-bt-88.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-89.data.model train-raw-ap-bt-89.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-90.data.model train-raw-ap-bt-90.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-91.data.model train-raw-ap-bt-91.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-92.data.model train-raw-ap-bt-92.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-93.data.model train-raw-ap-bt-93.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-94.data.model train-raw-ap-bt-94.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-95.data.model train-raw-ap-bt-95.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-96.data.model train-raw-ap-bt-96.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-97.data.model train-raw-ap-bt-97.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-98.data.model train-raw-ap-bt-98.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-99.data.model train-raw-ap-bt-99.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-100.data.model train-raw-ap-bt-100.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-101.data.model train-raw-ap-bt-101.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-102.data.model train-raw-ap-bt-102.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-103.data.model train-raw-ap-bt-103.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-104.data.model train-raw-ap-bt-104.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-105.data.model train-raw-ap-bt-105.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-106.data.model train-raw-ap-bt-106.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-107.data.model train-raw-ap-bt-107.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-108.data.model train-raw-ap-bt-108.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-109.data.model train-raw-ap-bt-109.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-110.data.model train-raw-ap-bt-110.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-111.data.model train-raw-ap-bt-111.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-112.data.model train-raw-ap-bt-112.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-113.data.model train-raw-ap-bt-113.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-114.data.model train-raw-ap-bt-114.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-115.data.model train-raw-ap-bt-115.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-116.data.model train-raw-ap-bt-116.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-117.data.model train-raw-ap-bt-117.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-118.data.model train-raw-ap-bt-118.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-119.data.model train-raw-ap-bt-119.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-120.data.model train-raw-ap-bt-120.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-121.data.model train-raw-ap-bt-121.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-122.data.model train-raw-ap-bt-122.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-123.data.model train-raw-ap-bt-123.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-124.data.model train-raw-ap-bt-124.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-125.data.model train-raw-ap-bt-125.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-126.data.model train-raw-ap-bt-126.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-127.data.model train-raw-ap-bt-127.data.model.prediction
-festclassify   train-raw-ap.data train-raw-ap-bt-128.data.model train-raw-ap-bt-128.data.model.prediction
+festclassify   train-raw-ap.data train-raw-ap-bt-1.data.model train-raw-ap-bt-1.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-2.data.model train-raw-ap-bt-2.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-3.data.model train-raw-ap-bt-3.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-4.data.model train-raw-ap-bt-4.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-5.data.model train-raw-ap-bt-5.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-6.data.model train-raw-ap-bt-6.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-7.data.model train-raw-ap-bt-7.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-8.data.model train-raw-ap-bt-8.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-9.data.model train-raw-ap-bt-9.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-10.data.model train-raw-ap-bt-10.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-11.data.model train-raw-ap-bt-11.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-12.data.model train-raw-ap-bt-12.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-13.data.model train-raw-ap-bt-13.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-14.data.model train-raw-ap-bt-14.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-15.data.model train-raw-ap-bt-15.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-16.data.model train-raw-ap-bt-16.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-17.data.model train-raw-ap-bt-17.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-18.data.model train-raw-ap-bt-18.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-19.data.model train-raw-ap-bt-19.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-20.data.model train-raw-ap-bt-20.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-21.data.model train-raw-ap-bt-21.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-22.data.model train-raw-ap-bt-22.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-23.data.model train-raw-ap-bt-23.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-24.data.model train-raw-ap-bt-24.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-25.data.model train-raw-ap-bt-25.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-26.data.model train-raw-ap-bt-26.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-27.data.model train-raw-ap-bt-27.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-28.data.model train-raw-ap-bt-28.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-29.data.model train-raw-ap-bt-29.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-30.data.model train-raw-ap-bt-30.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-31.data.model train-raw-ap-bt-31.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-32.data.model train-raw-ap-bt-32.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-33.data.model train-raw-ap-bt-33.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-34.data.model train-raw-ap-bt-34.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-35.data.model train-raw-ap-bt-35.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-36.data.model train-raw-ap-bt-36.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-37.data.model train-raw-ap-bt-37.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-38.data.model train-raw-ap-bt-38.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-39.data.model train-raw-ap-bt-39.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-40.data.model train-raw-ap-bt-40.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-41.data.model train-raw-ap-bt-41.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-42.data.model train-raw-ap-bt-42.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-43.data.model train-raw-ap-bt-43.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-44.data.model train-raw-ap-bt-44.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-45.data.model train-raw-ap-bt-45.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-46.data.model train-raw-ap-bt-46.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-47.data.model train-raw-ap-bt-47.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-48.data.model train-raw-ap-bt-48.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-49.data.model train-raw-ap-bt-49.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-50.data.model train-raw-ap-bt-50.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-51.data.model train-raw-ap-bt-51.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-52.data.model train-raw-ap-bt-52.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-53.data.model train-raw-ap-bt-53.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-54.data.model train-raw-ap-bt-54.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-55.data.model train-raw-ap-bt-55.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-56.data.model train-raw-ap-bt-56.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-57.data.model train-raw-ap-bt-57.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-58.data.model train-raw-ap-bt-58.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-59.data.model train-raw-ap-bt-59.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-60.data.model train-raw-ap-bt-60.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-61.data.model train-raw-ap-bt-61.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-62.data.model train-raw-ap-bt-62.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-63.data.model train-raw-ap-bt-63.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-64.data.model train-raw-ap-bt-64.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-65.data.model train-raw-ap-bt-65.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-66.data.model train-raw-ap-bt-66.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-67.data.model train-raw-ap-bt-67.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-68.data.model train-raw-ap-bt-68.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-69.data.model train-raw-ap-bt-69.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-70.data.model train-raw-ap-bt-70.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-71.data.model train-raw-ap-bt-71.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-72.data.model train-raw-ap-bt-72.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-73.data.model train-raw-ap-bt-73.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-74.data.model train-raw-ap-bt-74.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-75.data.model train-raw-ap-bt-75.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-76.data.model train-raw-ap-bt-75.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-77.data.model train-raw-ap-bt-77.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-78.data.model train-raw-ap-bt-78.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-79.data.model train-raw-ap-bt-79.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-80.data.model train-raw-ap-bt-80.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-81.data.model train-raw-ap-bt-81.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-82.data.model train-raw-ap-bt-82.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-83.data.model train-raw-ap-bt-83.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-84.data.model train-raw-ap-bt-84.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-85.data.model train-raw-ap-bt-85.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-86.data.model train-raw-ap-bt-86.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-87.data.model train-raw-ap-bt-87.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-88.data.model train-raw-ap-bt-88.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-89.data.model train-raw-ap-bt-89.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-90.data.model train-raw-ap-bt-90.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-91.data.model train-raw-ap-bt-91.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-92.data.model train-raw-ap-bt-92.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-93.data.model train-raw-ap-bt-93.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-94.data.model train-raw-ap-bt-94.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-95.data.model train-raw-ap-bt-95.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-96.data.model train-raw-ap-bt-96.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-97.data.model train-raw-ap-bt-97.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-98.data.model train-raw-ap-bt-98.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-99.data.model train-raw-ap-bt-99.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-100.data.model train-raw-ap-bt-100.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-101.data.model train-raw-ap-bt-101.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-102.data.model train-raw-ap-bt-102.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-103.data.model train-raw-ap-bt-103.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-104.data.model train-raw-ap-bt-104.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-105.data.model train-raw-ap-bt-105.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-106.data.model train-raw-ap-bt-106.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-107.data.model train-raw-ap-bt-107.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-108.data.model train-raw-ap-bt-108.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-109.data.model train-raw-ap-bt-109.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-110.data.model train-raw-ap-bt-110.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-111.data.model train-raw-ap-bt-111.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-112.data.model train-raw-ap-bt-112.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-113.data.model train-raw-ap-bt-113.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-114.data.model train-raw-ap-bt-114.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-115.data.model train-raw-ap-bt-115.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-116.data.model train-raw-ap-bt-116.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-117.data.model train-raw-ap-bt-117.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-118.data.model train-raw-ap-bt-118.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-119.data.model train-raw-ap-bt-119.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-120.data.model train-raw-ap-bt-120.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-121.data.model train-raw-ap-bt-121.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-122.data.model train-raw-ap-bt-122.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-123.data.model train-raw-ap-bt-123.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-124.data.model train-raw-ap-bt-124.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-125.data.model train-raw-ap-bt-125.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-126.data.model train-raw-ap-bt-126.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-127.data.model train-raw-ap-bt-127.data.model.prediction &&
+festclassify   train-raw-ap.data train-raw-ap-bt-128.data.model train-raw-ap-bt-128.data.model.prediction &&
 
 # Life is hard.
-festclassify   train-raw-ch.data train-raw-ch-bt-1.data.model train-raw-ch-bt-1.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-2.data.model train-raw-ch-bt-2.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-3.data.model train-raw-ch-bt-3.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-4.data.model train-raw-ch-bt-4.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-5.data.model train-raw-ch-bt-5.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-6.data.model train-raw-ch-bt-6.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-7.data.model train-raw-ch-bt-7.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-8.data.model train-raw-ch-bt-8.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-9.data.model train-raw-ch-bt-9.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-10.data.model train-raw-ch-bt-10.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-11.data.model train-raw-ch-bt-11.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-12.data.model train-raw-ch-bt-12.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-13.data.model train-raw-ch-bt-13.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-14.data.model train-raw-ch-bt-14.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-15.data.model train-raw-ch-bt-15.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-16.data.model train-raw-ch-bt-16.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-17.data.model train-raw-ch-bt-17.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-18.data.model train-raw-ch-bt-18.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-19.data.model train-raw-ch-bt-19.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-20.data.model train-raw-ch-bt-20.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-21.data.model train-raw-ch-bt-21.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-22.data.model train-raw-ch-bt-22.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-23.data.model train-raw-ch-bt-23.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-24.data.model train-raw-ch-bt-24.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-25.data.model train-raw-ch-bt-25.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-26.data.model train-raw-ch-bt-26.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-27.data.model train-raw-ch-bt-27.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-28.data.model train-raw-ch-bt-28.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-29.data.model train-raw-ch-bt-29.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-30.data.model train-raw-ch-bt-30.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-31.data.model train-raw-ch-bt-31.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-32.data.model train-raw-ch-bt-32.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-33.data.model train-raw-ch-bt-33.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-34.data.model train-raw-ch-bt-34.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-35.data.model train-raw-ch-bt-35.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-36.data.model train-raw-ch-bt-36.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-37.data.model train-raw-ch-bt-37.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-38.data.model train-raw-ch-bt-38.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-39.data.model train-raw-ch-bt-39.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-40.data.model train-raw-ch-bt-40.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-41.data.model train-raw-ch-bt-41.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-42.data.model train-raw-ch-bt-42.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-43.data.model train-raw-ch-bt-43.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-44.data.model train-raw-ch-bt-44.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-45.data.model train-raw-ch-bt-45.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-46.data.model train-raw-ch-bt-46.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-47.data.model train-raw-ch-bt-47.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-48.data.model train-raw-ch-bt-48.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-49.data.model train-raw-ch-bt-49.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-50.data.model train-raw-ch-bt-50.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-51.data.model train-raw-ch-bt-51.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-52.data.model train-raw-ch-bt-52.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-53.data.model train-raw-ch-bt-53.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-54.data.model train-raw-ch-bt-54.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-55.data.model train-raw-ch-bt-55.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-56.data.model train-raw-ch-bt-56.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-57.data.model train-raw-ch-bt-57.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-58.data.model train-raw-ch-bt-58.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-59.data.model train-raw-ch-bt-59.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-60.data.model train-raw-ch-bt-60.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-61.data.model train-raw-ch-bt-61.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-62.data.model train-raw-ch-bt-62.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-63.data.model train-raw-ch-bt-63.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-64.data.model train-raw-ch-bt-64.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-65.data.model train-raw-ch-bt-65.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-66.data.model train-raw-ch-bt-66.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-67.data.model train-raw-ch-bt-67.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-68.data.model train-raw-ch-bt-68.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-69.data.model train-raw-ch-bt-69.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-70.data.model train-raw-ch-bt-70.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-71.data.model train-raw-ch-bt-71.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-72.data.model train-raw-ch-bt-72.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-73.data.model train-raw-ch-bt-73.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-74.data.model train-raw-ch-bt-74.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-75.data.model train-raw-ch-bt-75.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-76.data.model train-raw-ch-bt-75.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-77.data.model train-raw-ch-bt-77.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-78.data.model train-raw-ch-bt-78.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-79.data.model train-raw-ch-bt-79.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-80.data.model train-raw-ch-bt-80.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-81.data.model train-raw-ch-bt-81.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-82.data.model train-raw-ch-bt-82.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-83.data.model train-raw-ch-bt-83.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-84.data.model train-raw-ch-bt-84.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-85.data.model train-raw-ch-bt-85.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-86.data.model train-raw-ch-bt-86.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-87.data.model train-raw-ch-bt-87.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-88.data.model train-raw-ch-bt-88.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-89.data.model train-raw-ch-bt-89.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-90.data.model train-raw-ch-bt-90.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-91.data.model train-raw-ch-bt-91.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-92.data.model train-raw-ch-bt-92.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-93.data.model train-raw-ch-bt-93.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-94.data.model train-raw-ch-bt-94.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-95.data.model train-raw-ch-bt-95.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-96.data.model train-raw-ch-bt-96.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-97.data.model train-raw-ch-bt-97.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-98.data.model train-raw-ch-bt-98.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-99.data.model train-raw-ch-bt-99.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-100.data.model train-raw-ch-bt-100.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-101.data.model train-raw-ch-bt-101.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-102.data.model train-raw-ch-bt-102.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-103.data.model train-raw-ch-bt-103.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-104.data.model train-raw-ch-bt-104.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-105.data.model train-raw-ch-bt-105.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-106.data.model train-raw-ch-bt-106.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-107.data.model train-raw-ch-bt-107.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-108.data.model train-raw-ch-bt-108.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-109.data.model train-raw-ch-bt-109.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-110.data.model train-raw-ch-bt-110.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-111.data.model train-raw-ch-bt-111.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-112.data.model train-raw-ch-bt-112.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-113.data.model train-raw-ch-bt-113.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-114.data.model train-raw-ch-bt-114.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-115.data.model train-raw-ch-bt-115.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-116.data.model train-raw-ch-bt-116.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-117.data.model train-raw-ch-bt-117.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-118.data.model train-raw-ch-bt-118.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-119.data.model train-raw-ch-bt-119.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-120.data.model train-raw-ch-bt-120.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-121.data.model train-raw-ch-bt-121.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-122.data.model train-raw-ch-bt-122.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-123.data.model train-raw-ch-bt-123.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-124.data.model train-raw-ch-bt-124.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-125.data.model train-raw-ch-bt-125.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-126.data.model train-raw-ch-bt-126.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-127.data.model train-raw-ch-bt-127.data.model.prediction
-festclassify   train-raw-ch.data train-raw-ch-bt-128.data.model train-raw-ch-bt-128.data.model.prediction
+festclassify   train-raw-ch.data train-raw-ch-bt-1.data.model train-raw-ch-bt-1.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-2.data.model train-raw-ch-bt-2.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-3.data.model train-raw-ch-bt-3.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-4.data.model train-raw-ch-bt-4.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-5.data.model train-raw-ch-bt-5.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-6.data.model train-raw-ch-bt-6.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-7.data.model train-raw-ch-bt-7.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-8.data.model train-raw-ch-bt-8.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-9.data.model train-raw-ch-bt-9.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-10.data.model train-raw-ch-bt-10.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-11.data.model train-raw-ch-bt-11.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-12.data.model train-raw-ch-bt-12.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-13.data.model train-raw-ch-bt-13.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-14.data.model train-raw-ch-bt-14.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-15.data.model train-raw-ch-bt-15.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-16.data.model train-raw-ch-bt-16.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-17.data.model train-raw-ch-bt-17.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-18.data.model train-raw-ch-bt-18.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-19.data.model train-raw-ch-bt-19.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-20.data.model train-raw-ch-bt-20.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-21.data.model train-raw-ch-bt-21.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-22.data.model train-raw-ch-bt-22.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-23.data.model train-raw-ch-bt-23.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-24.data.model train-raw-ch-bt-24.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-25.data.model train-raw-ch-bt-25.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-26.data.model train-raw-ch-bt-26.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-27.data.model train-raw-ch-bt-27.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-28.data.model train-raw-ch-bt-28.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-29.data.model train-raw-ch-bt-29.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-30.data.model train-raw-ch-bt-30.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-31.data.model train-raw-ch-bt-31.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-32.data.model train-raw-ch-bt-32.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-33.data.model train-raw-ch-bt-33.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-34.data.model train-raw-ch-bt-34.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-35.data.model train-raw-ch-bt-35.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-36.data.model train-raw-ch-bt-36.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-37.data.model train-raw-ch-bt-37.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-38.data.model train-raw-ch-bt-38.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-39.data.model train-raw-ch-bt-39.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-40.data.model train-raw-ch-bt-40.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-41.data.model train-raw-ch-bt-41.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-42.data.model train-raw-ch-bt-42.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-43.data.model train-raw-ch-bt-43.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-44.data.model train-raw-ch-bt-44.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-45.data.model train-raw-ch-bt-45.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-46.data.model train-raw-ch-bt-46.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-47.data.model train-raw-ch-bt-47.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-48.data.model train-raw-ch-bt-48.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-49.data.model train-raw-ch-bt-49.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-50.data.model train-raw-ch-bt-50.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-51.data.model train-raw-ch-bt-51.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-52.data.model train-raw-ch-bt-52.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-53.data.model train-raw-ch-bt-53.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-54.data.model train-raw-ch-bt-54.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-55.data.model train-raw-ch-bt-55.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-56.data.model train-raw-ch-bt-56.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-57.data.model train-raw-ch-bt-57.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-58.data.model train-raw-ch-bt-58.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-59.data.model train-raw-ch-bt-59.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-60.data.model train-raw-ch-bt-60.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-61.data.model train-raw-ch-bt-61.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-62.data.model train-raw-ch-bt-62.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-63.data.model train-raw-ch-bt-63.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-64.data.model train-raw-ch-bt-64.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-65.data.model train-raw-ch-bt-65.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-66.data.model train-raw-ch-bt-66.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-67.data.model train-raw-ch-bt-67.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-68.data.model train-raw-ch-bt-68.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-69.data.model train-raw-ch-bt-69.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-70.data.model train-raw-ch-bt-70.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-71.data.model train-raw-ch-bt-71.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-72.data.model train-raw-ch-bt-72.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-73.data.model train-raw-ch-bt-73.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-74.data.model train-raw-ch-bt-74.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-75.data.model train-raw-ch-bt-75.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-76.data.model train-raw-ch-bt-75.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-77.data.model train-raw-ch-bt-77.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-78.data.model train-raw-ch-bt-78.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-79.data.model train-raw-ch-bt-79.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-80.data.model train-raw-ch-bt-80.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-81.data.model train-raw-ch-bt-81.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-82.data.model train-raw-ch-bt-82.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-83.data.model train-raw-ch-bt-83.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-84.data.model train-raw-ch-bt-84.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-85.data.model train-raw-ch-bt-85.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-86.data.model train-raw-ch-bt-86.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-87.data.model train-raw-ch-bt-87.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-88.data.model train-raw-ch-bt-88.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-89.data.model train-raw-ch-bt-89.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-90.data.model train-raw-ch-bt-90.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-91.data.model train-raw-ch-bt-91.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-92.data.model train-raw-ch-bt-92.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-93.data.model train-raw-ch-bt-93.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-94.data.model train-raw-ch-bt-94.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-95.data.model train-raw-ch-bt-95.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-96.data.model train-raw-ch-bt-96.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-97.data.model train-raw-ch-bt-97.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-98.data.model train-raw-ch-bt-98.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-99.data.model train-raw-ch-bt-99.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-100.data.model train-raw-ch-bt-100.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-101.data.model train-raw-ch-bt-101.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-102.data.model train-raw-ch-bt-102.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-103.data.model train-raw-ch-bt-103.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-104.data.model train-raw-ch-bt-104.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-105.data.model train-raw-ch-bt-105.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-106.data.model train-raw-ch-bt-106.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-107.data.model train-raw-ch-bt-107.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-108.data.model train-raw-ch-bt-108.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-109.data.model train-raw-ch-bt-109.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-110.data.model train-raw-ch-bt-110.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-111.data.model train-raw-ch-bt-111.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-112.data.model train-raw-ch-bt-112.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-113.data.model train-raw-ch-bt-113.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-114.data.model train-raw-ch-bt-114.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-115.data.model train-raw-ch-bt-115.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-116.data.model train-raw-ch-bt-116.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-117.data.model train-raw-ch-bt-117.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-118.data.model train-raw-ch-bt-118.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-119.data.model train-raw-ch-bt-119.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-120.data.model train-raw-ch-bt-120.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-121.data.model train-raw-ch-bt-121.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-122.data.model train-raw-ch-bt-122.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-123.data.model train-raw-ch-bt-123.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-124.data.model train-raw-ch-bt-124.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-125.data.model train-raw-ch-bt-125.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-126.data.model train-raw-ch-bt-126.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-127.data.model train-raw-ch-bt-127.data.model.prediction &&
+festclassify   train-raw-ch.data train-raw-ch-bt-128.data.model train-raw-ch-bt-128.data.model.prediction &&
 
 # Life is......HARD.
-festclassify   train-raw-up.data train-raw-up-bt-1.data.model train-raw-up-bt-1.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-2.data.model train-raw-up-bt-2.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-3.data.model train-raw-up-bt-3.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-4.data.model train-raw-up-bt-4.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-5.data.model train-raw-up-bt-5.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-6.data.model train-raw-up-bt-6.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-7.data.model train-raw-up-bt-7.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-8.data.model train-raw-up-bt-8.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-9.data.model train-raw-up-bt-9.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-10.data.model train-raw-up-bt-10.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-11.data.model train-raw-up-bt-11.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-12.data.model train-raw-up-bt-12.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-13.data.model train-raw-up-bt-13.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-14.data.model train-raw-up-bt-14.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-15.data.model train-raw-up-bt-15.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-16.data.model train-raw-up-bt-16.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-17.data.model train-raw-up-bt-17.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-18.data.model train-raw-up-bt-18.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-19.data.model train-raw-up-bt-19.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-20.data.model train-raw-up-bt-20.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-21.data.model train-raw-up-bt-21.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-22.data.model train-raw-up-bt-22.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-23.data.model train-raw-up-bt-23.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-24.data.model train-raw-up-bt-24.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-25.data.model train-raw-up-bt-25.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-26.data.model train-raw-up-bt-26.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-27.data.model train-raw-up-bt-27.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-28.data.model train-raw-up-bt-28.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-29.data.model train-raw-up-bt-29.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-30.data.model train-raw-up-bt-30.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-31.data.model train-raw-up-bt-31.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-32.data.model train-raw-up-bt-32.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-33.data.model train-raw-up-bt-33.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-34.data.model train-raw-up-bt-34.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-35.data.model train-raw-up-bt-35.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-36.data.model train-raw-up-bt-36.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-37.data.model train-raw-up-bt-37.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-38.data.model train-raw-up-bt-38.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-39.data.model train-raw-up-bt-39.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-40.data.model train-raw-up-bt-40.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-41.data.model train-raw-up-bt-41.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-42.data.model train-raw-up-bt-42.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-43.data.model train-raw-up-bt-43.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-44.data.model train-raw-up-bt-44.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-45.data.model train-raw-up-bt-45.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-46.data.model train-raw-up-bt-46.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-47.data.model train-raw-up-bt-47.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-48.data.model train-raw-up-bt-48.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-49.data.model train-raw-up-bt-49.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-50.data.model train-raw-up-bt-50.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-51.data.model train-raw-up-bt-51.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-52.data.model train-raw-up-bt-52.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-53.data.model train-raw-up-bt-53.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-54.data.model train-raw-up-bt-54.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-55.data.model train-raw-up-bt-55.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-56.data.model train-raw-up-bt-56.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-57.data.model train-raw-up-bt-57.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-58.data.model train-raw-up-bt-58.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-59.data.model train-raw-up-bt-59.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-60.data.model train-raw-up-bt-60.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-61.data.model train-raw-up-bt-61.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-62.data.model train-raw-up-bt-62.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-63.data.model train-raw-up-bt-63.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-64.data.model train-raw-up-bt-64.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-65.data.model train-raw-up-bt-65.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-66.data.model train-raw-up-bt-66.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-67.data.model train-raw-up-bt-67.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-68.data.model train-raw-up-bt-68.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-69.data.model train-raw-up-bt-69.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-70.data.model train-raw-up-bt-70.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-71.data.model train-raw-up-bt-71.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-72.data.model train-raw-up-bt-72.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-73.data.model train-raw-up-bt-73.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-74.data.model train-raw-up-bt-74.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-75.data.model train-raw-up-bt-75.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-76.data.model train-raw-up-bt-75.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-77.data.model train-raw-up-bt-77.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-78.data.model train-raw-up-bt-78.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-79.data.model train-raw-up-bt-79.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-80.data.model train-raw-up-bt-80.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-81.data.model train-raw-up-bt-81.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-82.data.model train-raw-up-bt-82.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-83.data.model train-raw-up-bt-83.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-84.data.model train-raw-up-bt-84.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-85.data.model train-raw-up-bt-85.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-86.data.model train-raw-up-bt-86.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-87.data.model train-raw-up-bt-87.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-88.data.model train-raw-up-bt-88.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-89.data.model train-raw-up-bt-89.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-90.data.model train-raw-up-bt-90.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-91.data.model train-raw-up-bt-91.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-92.data.model train-raw-up-bt-92.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-93.data.model train-raw-up-bt-93.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-94.data.model train-raw-up-bt-94.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-95.data.model train-raw-up-bt-95.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-96.data.model train-raw-up-bt-96.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-97.data.model train-raw-up-bt-97.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-98.data.model train-raw-up-bt-98.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-99.data.model train-raw-up-bt-99.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-100.data.model train-raw-up-bt-100.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-101.data.model train-raw-up-bt-101.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-102.data.model train-raw-up-bt-102.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-103.data.model train-raw-up-bt-103.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-104.data.model train-raw-up-bt-104.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-105.data.model train-raw-up-bt-105.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-106.data.model train-raw-up-bt-106.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-107.data.model train-raw-up-bt-107.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-108.data.model train-raw-up-bt-108.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-109.data.model train-raw-up-bt-109.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-110.data.model train-raw-up-bt-110.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-111.data.model train-raw-up-bt-111.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-112.data.model train-raw-up-bt-112.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-113.data.model train-raw-up-bt-113.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-114.data.model train-raw-up-bt-114.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-115.data.model train-raw-up-bt-115.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-116.data.model train-raw-up-bt-116.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-117.data.model train-raw-up-bt-117.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-118.data.model train-raw-up-bt-118.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-119.data.model train-raw-up-bt-119.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-120.data.model train-raw-up-bt-120.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-121.data.model train-raw-up-bt-121.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-122.data.model train-raw-up-bt-122.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-123.data.model train-raw-up-bt-123.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-124.data.model train-raw-up-bt-124.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-125.data.model train-raw-up-bt-125.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-126.data.model train-raw-up-bt-126.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-127.data.model train-raw-up-bt-127.data.model.prediction
-festclassify   train-raw-up.data train-raw-up-bt-128.data.model train-raw-up-bt-128.data.model.prediction
+festclassify   train-raw-up.data train-raw-up-bt-1.data.model train-raw-up-bt-1.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-2.data.model train-raw-up-bt-2.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-3.data.model train-raw-up-bt-3.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-4.data.model train-raw-up-bt-4.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-5.data.model train-raw-up-bt-5.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-6.data.model train-raw-up-bt-6.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-7.data.model train-raw-up-bt-7.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-8.data.model train-raw-up-bt-8.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-9.data.model train-raw-up-bt-9.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-10.data.model train-raw-up-bt-10.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-11.data.model train-raw-up-bt-11.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-12.data.model train-raw-up-bt-12.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-13.data.model train-raw-up-bt-13.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-14.data.model train-raw-up-bt-14.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-15.data.model train-raw-up-bt-15.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-16.data.model train-raw-up-bt-16.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-17.data.model train-raw-up-bt-17.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-18.data.model train-raw-up-bt-18.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-19.data.model train-raw-up-bt-19.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-20.data.model train-raw-up-bt-20.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-21.data.model train-raw-up-bt-21.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-22.data.model train-raw-up-bt-22.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-23.data.model train-raw-up-bt-23.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-24.data.model train-raw-up-bt-24.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-25.data.model train-raw-up-bt-25.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-26.data.model train-raw-up-bt-26.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-27.data.model train-raw-up-bt-27.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-28.data.model train-raw-up-bt-28.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-29.data.model train-raw-up-bt-29.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-30.data.model train-raw-up-bt-30.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-31.data.model train-raw-up-bt-31.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-32.data.model train-raw-up-bt-32.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-33.data.model train-raw-up-bt-33.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-34.data.model train-raw-up-bt-34.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-35.data.model train-raw-up-bt-35.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-36.data.model train-raw-up-bt-36.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-37.data.model train-raw-up-bt-37.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-38.data.model train-raw-up-bt-38.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-39.data.model train-raw-up-bt-39.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-40.data.model train-raw-up-bt-40.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-41.data.model train-raw-up-bt-41.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-42.data.model train-raw-up-bt-42.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-43.data.model train-raw-up-bt-43.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-44.data.model train-raw-up-bt-44.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-45.data.model train-raw-up-bt-45.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-46.data.model train-raw-up-bt-46.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-47.data.model train-raw-up-bt-47.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-48.data.model train-raw-up-bt-48.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-49.data.model train-raw-up-bt-49.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-50.data.model train-raw-up-bt-50.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-51.data.model train-raw-up-bt-51.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-52.data.model train-raw-up-bt-52.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-53.data.model train-raw-up-bt-53.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-54.data.model train-raw-up-bt-54.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-55.data.model train-raw-up-bt-55.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-56.data.model train-raw-up-bt-56.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-57.data.model train-raw-up-bt-57.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-58.data.model train-raw-up-bt-58.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-59.data.model train-raw-up-bt-59.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-60.data.model train-raw-up-bt-60.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-61.data.model train-raw-up-bt-61.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-62.data.model train-raw-up-bt-62.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-63.data.model train-raw-up-bt-63.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-64.data.model train-raw-up-bt-64.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-65.data.model train-raw-up-bt-65.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-66.data.model train-raw-up-bt-66.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-67.data.model train-raw-up-bt-67.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-68.data.model train-raw-up-bt-68.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-69.data.model train-raw-up-bt-69.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-70.data.model train-raw-up-bt-70.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-71.data.model train-raw-up-bt-71.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-72.data.model train-raw-up-bt-72.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-73.data.model train-raw-up-bt-73.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-74.data.model train-raw-up-bt-74.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-75.data.model train-raw-up-bt-75.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-76.data.model train-raw-up-bt-75.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-77.data.model train-raw-up-bt-77.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-78.data.model train-raw-up-bt-78.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-79.data.model train-raw-up-bt-79.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-80.data.model train-raw-up-bt-80.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-81.data.model train-raw-up-bt-81.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-82.data.model train-raw-up-bt-82.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-83.data.model train-raw-up-bt-83.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-84.data.model train-raw-up-bt-84.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-85.data.model train-raw-up-bt-85.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-86.data.model train-raw-up-bt-86.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-87.data.model train-raw-up-bt-87.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-88.data.model train-raw-up-bt-88.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-89.data.model train-raw-up-bt-89.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-90.data.model train-raw-up-bt-90.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-91.data.model train-raw-up-bt-91.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-92.data.model train-raw-up-bt-92.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-93.data.model train-raw-up-bt-93.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-94.data.model train-raw-up-bt-94.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-95.data.model train-raw-up-bt-95.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-96.data.model train-raw-up-bt-96.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-97.data.model train-raw-up-bt-97.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-98.data.model train-raw-up-bt-98.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-99.data.model train-raw-up-bt-99.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-100.data.model train-raw-up-bt-100.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-101.data.model train-raw-up-bt-101.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-102.data.model train-raw-up-bt-102.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-103.data.model train-raw-up-bt-103.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-104.data.model train-raw-up-bt-104.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-105.data.model train-raw-up-bt-105.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-106.data.model train-raw-up-bt-106.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-107.data.model train-raw-up-bt-107.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-108.data.model train-raw-up-bt-108.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-109.data.model train-raw-up-bt-109.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-110.data.model train-raw-up-bt-110.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-111.data.model train-raw-up-bt-111.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-112.data.model train-raw-up-bt-112.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-113.data.model train-raw-up-bt-113.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-114.data.model train-raw-up-bt-114.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-115.data.model train-raw-up-bt-115.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-116.data.model train-raw-up-bt-116.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-117.data.model train-raw-up-bt-117.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-118.data.model train-raw-up-bt-118.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-119.data.model train-raw-up-bt-119.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-120.data.model train-raw-up-bt-120.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-121.data.model train-raw-up-bt-121.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-122.data.model train-raw-up-bt-122.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-123.data.model train-raw-up-bt-123.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-124.data.model train-raw-up-bt-124.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-125.data.model train-raw-up-bt-125.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-126.data.model train-raw-up-bt-126.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-127.data.model train-raw-up-bt-127.data.model.prediction &&
+festclassify   train-raw-up.data train-raw-up-bt-128.data.model train-raw-up-bt-128.data.model.prediction 
