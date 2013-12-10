@@ -114,3 +114,8 @@ in your workstation.)
    with your "real" data a second time.
 4. Finish part of your writing stuff within the night. Get up
    early. No more excuses for you. No more.
+
+20131210 Lab 23:23
+1. Finish the data format step and start the random forest.
+2. Run one tree (be time permitting) and see if you get good result.
+3. Build your model. Classify your model. As simple as that.
