@@ -818,8 +818,27 @@ even noisy feature.
 After the first attempt of ``lazy'' preprocessing, the strict version
 is carried out as follows:
 \begin{enumerate}
-\item 
+\item Impute both missing numerical and categorical values with their
+  mean at that column.
+  \begin{itemize}
+  \item If one column is composed of all $NaN$ values, it is tagged
+    $1$.
+  \item Else it is tagged $2$. 
+  \item The value that is tagged $1$ then gets deleted because no
+    information could be obtained from that feature. This treatment is
+    also useful to indicate missingness. 
+  \end{itemize}
+\item Recode the categorical values by sorting and selecting. We
+  select top 10 largest categorical events, and recode them by
+  computing their frequency in the corresponding feature. If there are
+  fewer than 10 events, all of them get kept and recoded. 
+\item The last step we do is to normalize each feature value and then
+  mapping them to scale $[-1, 1]$. 
 \end{enumerate}
+We also plan to carry out some classification with MATLAB built-in
+function \emph{TreeBagger} later on. Since both team member agree that
+following IBM's method is a good way, for the large dataset we still
+try to tackle it with FEST packages and the alike.
 
 
 \subsection{Weka}
@@ -828,12 +847,43 @@ is carried out as follows:
 Weka is the first integrated tool that came to our mind. The author
 mentioned in the manual that even a sample of real-world data that's
 processed with ensemble selection could take days or even weeks to
-run. There are two built-in model libraries in weka's ensemble
-selection package, both are ``incredibly'' large. We build our model
-list consisting of only a few more than 300 base classifiers. Even a
-seemingly not convincing libraries like this, we did not witness the
-time of its final built-up. It took weka a whole 24 hours to train
-just one model, i.e.\ a base classifier, and that is 4.2GB large.
+run\cite{ref:ensembleselectionnutshell}. There are two built-in model
+libraries in weka's ensemble selection package, both are
+``incredibly'' large. We follow the instructions on this manual and
+describe our attempt with Weka as follows:
+\begin{enumerate}
+\item Build a model list with library editor GUI implemented in weka's
+  ensemble selection package. One thing worth noting here is that
+  since the newest stable version, EnsembleSelection package is not
+  shipped as a built-in package. The model list file is actually a xml
+  file containing command information to be read and executed by
+  weka. 
+\item The file we try with weka is in csv format. It will be
+  transformed to arff format once the classification, in our case
+  ensemble selection command, is entered. Part of our command is
+  supplied in the appendices.
+\end{enumerate}
+As indicated in manual ``Ensemble Selection in a Nutshell'', training
+takes time when the dimension of data is large. And this is especially
+the case with KDD Cup's dataset. We deal with more than 14,000
+features this time because we did not delete as many features as IBM
+did. Moreover, the large dataset contains 50,000 instances. We did run
+weka to get a result successfully. Training that feature requires
+almost 24 hours and one model file output by the Ensemble Selection
+weka implementation would take as much as 4.2GB harddisk space. Since
+this is the first time that we deal with \emph{big data} using weka,
+with no help from tools like hadoop to map reduce the problem, we
+decided to abandon it for practical considerations, like time,
+harddisk space, etc. 
+
+
+
+
+
+
+
+
+
 \subsection{Shell Script}
 \label{sec:shell-script}
 Eventually we get rid of weka due to it's efficiency. Following again
@@ -982,13 +1032,16 @@ make-ups.
 
 
 \appendices
-\section{Sample Shell Scripts}
+\section{Source Code}
 %Appendix one text goes here.
 
 % you can choose not to have a title for an appendix
 % if you want by leaving the argument blank
 %\section{}
 %Appendix two text goes here.
+We enlist our partial source codes here. The complete project is at
+Github CIS501
+repository\footnote{\url{https://github.com/ProfessorX/CIS501}}. 
 \begin{verbatim}
 #!/bin/bash
 festlearn -c 3 -n 0.1 -p 0.5 -t 300 

@@ -1,0 +1,61 @@
+%cate转换在samplecode里面有%
+[Xnum2_tr,Xnum2_te]=convert2num(Xtxt_tr, Xtxt_te);%这句
+
+%-----------missingvalue-----------%
+function [X,Y,tag]=ErrHandling(X,Y)
+tag=zeros(1,14740);
+for i=1:size(X,2)
+    if sum(isnan(X(:,i)))>0&&sum(isnan(X(:,i)))<50000
+    disp(i);
+    X(isnan(X(:,i)),i) =  mean(X(~isnan(X(:,i)),i));  
+    end
+    if sum(isnan(Y(:,i)))>0&&sum(isnan(Y(:,i)))<50000
+    disp(i);
+    Y(isnan(Y(:,i)),i) =  mean(Y(~isnan(Y(:,i)),i));
+    end
+    if sum(isnan(X(:,i)))==50000&&sum(isnan(Y(:,i)))==50000
+        tag(1,i)=1;
+    elseif sum(isnan(X(:,i)))==50000&&sum(isnan(Y(:,i)))<50000
+        tag(1,i)=-1;
+    elseif sum(isnan(X(:,i)))<50000&&sum(isnan(Y(:,i)))==50000
+        tag(1,i)=-2;
+    end
+end
+end
+%-----Recode--------%
+Recode={};
+for i=14703:14962
+    value=unique(Train(:,i));
+    value(value==0)=[];
+    if ~isempty(value)
+    value(:,2)=0;
+    for j=1:size(value,1)
+        value(j,2)=sum(Train(:,i)==value(j,1))/50000;
+    end
+    [~,lev]=sort(value(:,2),'descend');
+    value=value(lev,:);
+    if length(value)>10
+    value=value(1:10,:);
+    end
+    end
+    Recode{1,i-14702}=value;
+    value1=unique(Test(:,i));
+    value1(value1==0)=[];
+    if ~isempty(value1)
+    value1(:,2)=0;
+    for j=1:size(value1,1)
+        value1(j,2)=sum(Test(:,i)==value1(j,1))/50000;
+    end
+    [~,lev]=sort(value1(:,2),'descend');
+    value1=value1(lev,:);
+    if length(value1)>10
+    value1=value1(1:10,:);
+    end
+    end
+    Recode{2,i-14702}=value1;   
+end
+%--------Normalize--------------%
+for i=1:size(Train,2)
+   Train(:,i)=(Train(:,i)-min(Train(:,i)))/(max(Train(:,i))-min(Train(:,i))); 
+   Test(:,i)=(Test(:,i)-min(Test(:,i)))/(max(Test(:,i))-min(Test(:,i))); 
+end
