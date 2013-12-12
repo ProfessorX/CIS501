@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.7)  12 DEC 2013 22:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.7)  12 DEC 2013 23:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -126,7 +126,7 @@ x.map}
 Here is how much of TeX's memory you used:
  747 strings out of 493315
  10688 string characters out of 6131250
- 71375 words of memory out of 5000000
+ 72375 words of memory out of 5000000
  4260 multiletter control sequences out of 15000+600000
  4294 words of font info for 16 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -143,7 +143,7 @@ s/type1/public/amsfonts/cm/cmr7.pfb></home/abrahamx91/Programs/texlive/2013/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/abrahamx91/Programs/te
 xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/abrahamx9
 1/Programs/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Review-Notes.pdf (1 page, 102992 bytes).
+Output written on Review-Notes.pdf (1 page, 105358 bytes).
 PDF statistics:
  48 PDF objects out of 1000 (max. 8388607)
  34 compressed objects within 1 object stream

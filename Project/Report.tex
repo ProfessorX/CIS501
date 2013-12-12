@@ -781,7 +781,12 @@ times but were not able to make the whole cluster share a same virtual
 disk, which is vital according
 to~\cite{ref:ensembleselectionnutshell}. Our review on this failure is
 that we should set off even earlier after being informed that this is
-a real classification problem on really complex data.
+a real classification problem on really complex data. After the
+submission, we also investigate tools like hadoop, MongoDB and Apache
+Mahout\cite{NIPS2006_725}. Because the time is limited and each team
+member has other research task at hand, we plan to run our initial
+plan on a Amazon cluster later on. Below we discuss our process step
+by step.
 
 \subsection{MATLAB}
 \label{sec:matlab}
@@ -794,7 +799,29 @@ consuming. The memory consumption in total for train and test chunk
 sums up to 10GB.\@ We then use the built-in function \emph{csvwrite}
 to format them. This is important because tools we use, like FEST
 package, BBR package, and LIBSVM, only supports LIBSVM format. The
-final conversion is done with a c program.
+final conversion is done with a c program that helps transform csv
+format files into libsvm format. This step is also done automatically
+by writing a shell script.
+\par
+One thing that is worth noting here is that we actually did two types
+of preprocessing, one pretty naive whereas the other strictly
+following the standard. So for our team we have as many as two sets of
+large data and two sets of small data. Our story with small data is
+discussed in the next section since we finished it after the deadline,
+because we really want to produce some results. For the naive
+preprocessing, we merely transformed the categorical data to
+numerical, and skip any other step. We later find this strategy
+performed badly due to some obvious reasons: large dimensionality,
+large data scale for transformed categorical data, and redundant or
+even noisy feature. 
+\par
+After the first attempt of ``lazy'' preprocessing, the strict version
+is carried out as follows:
+\begin{enumerate}
+\item 
+\end{enumerate}
+
+
 \subsection{Weka}
 \label{sec:weka}
 

@@ -80,4 +80,11 @@ R.~Caruana, N.~Karampatziakis, and A.~Yessenalina, ``An empirical evaluation of
 \bibitem{ref:ensembleselectionnutshell}
 \emph{Ensemble Selection in a Nutshell}, Online Manual, Weka Wiki, 2009.
 
+\bibitem{NIPS2006_725}
+C.-T. Chu, S.~K. Kim, Y.-A. Lin, Y.~Yu, G.~Bradski, A.~Y. Ng, and K.~Olukotun,
+  ``Map-reduce for machine learning on multicore,'' in \emph{Advances in Neural
+  Information Processing Systems 19}, B.~Sch\"{o}lkopf, J.~Platt, and
+  T.~Hoffman, Eds.\hskip 1em plus 0.5em minus 0.4em\relax Cambridge, MA: MIT
+  Press, 2007, pp. 281--288.
+
 \end{thebibliography}

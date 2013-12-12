@@ -31,5 +31,6 @@
      "Ref:TargetingCustomers"
      "Ref:Yanan2013"
      "Caruana:2008:EES:1390156.1390169"
-     "ref:ensembleselectionnutshell")))
+     "ref:ensembleselectionnutshell"
+     "NIPS2006_725")))
 
