@@ -1,0 +1,19 @@
+数据导出。
+-------
+我这边的批处理脚本是单独分开做的。所以还请导出成3个csv文件。
+csv-->libsvm的工作我自己来做就好。
+1.
+orange_small_train_appentency.labels
+orange_small_train_churn.labels
+orange_small_train_upselling.labels
+将3个不一样的labels分别写入到处理过的数据的第一列。（其他列依次向后移一列。）
+（这个【真的】要在第一列，转换的程序就是这么处理的》。。libsvm的格式也这种尿行）
+
+2. csvwrite()将ap+processed-data导出。
+3. csvwrite()将ch+processed-data导出。
+4. 同上，导出up。
+
+***************
+test
+***************
+test的数据参照train的一样处理。只要把你的函数/数据名改一下就好了。

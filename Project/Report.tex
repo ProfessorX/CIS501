@@ -682,14 +682,160 @@ for this not-so-successful trial with big, complex data mining task.
 
 \section{Initial Proposal}
 \label{sec:initial-plan}
-Lesson we learn from writing and reviewing this section is that 
+Lesson we learn from writing and reviewing this section is that
+``think twice before taking actions''. We depicted a master plan in
+our previous proposal~\cite{Ref:Yanan2013}. However, due to the lack
+of map reduce technique, we are able to train models on a oct-core
+workstation. The problem is that the training part of ensemble
+selection is really memory consuming. All of the 32GB memory got used
+instantly while at the same time we observe the CPU usage just above
+10\%. See Fig~\ref{fig:memory-consuming}.
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.35]{Figure/Memory-Consuming.png}
+% where an .eps filename suffix will be assumed under latex,
+% and a .pdf suffix will be assumed for pdflatex; or what has been declared
+% via \DeclareGraphicsExtensions.
+\caption{CPU and memory usage when running FEST package}
+\label{fig:memory-consuming}
+\end{figure}
+
+\subsection{Preprocessing}
+\label{sec:preprocessing}
+
+In order to tackle the challenges of the big data set, we propose the
+following steps.
+\par
+Missing value. We would consider missing categorical values
+as a separate value. We would take a standard approach which
+calculates the mean of the feature to impute missing values. And as
+proven an effective technique
+by~\cite{Ref:WinningtheKDDCupIBMResearch}. We decide to add an extra
+indicator variable to indicate “missingness” for every one of the 333
+variables with missing values. We planned to do this because some
+linear models in our base classifiers could then estimate the optimal
+constant instead of merely relying on the means to replace the missing
+value with. 
+\par
+Categorical value. Since categorical values are not easily
+handled by many learning algorithms, we decide to recode categorical
+values using the same way as by IBM Research. For different values a
+categorical attribute could take, we would generate corresponding
+indicators. As a good example shown in IBM’s paper, limiting the
+number of values encoded would greatly reduce the number of features,
+which may be from variables with an enormous vocabulary. 
+\par
+Clean up. We would normalize each feature by dividing up by their
+range. And we would clean the data by eliminating redundant features,
+which are either constant, or duplicate of other features.
+
+\subsection{Base Classifiers}
+\label{sec:base-classifiers}
+
+As stated by Dietterich~\cite{Ref:EnsembleMethodsInMachineLearning},
+``A necessary and sufficient condition for an ensemble of classifiers
+to be more accurate than any of its individual members is if the
+classifiers are accurate and diverse''. Building libraries would be
+expensive, what’s more is that time is limited to train all of them in
+the next phase. To maintain the accuracy and diversity of our
+next-phase base classifier library, we decide to build it using the
+classifiers as follows, boosted decision trees, decision trees, linear
+regression, SVM and k-NN. 
+
+\subsection{Ensemble Selection}
+\label{sec:ensemble-selection}
+
+An ensemble is a collection of models. To make predictions, we just
+need to calculate weighted average or ``voting'' based on those
+models. One important reason for us to work with ensemble selection is
+that it can be optimized to any easily computed metric. Same as
+described before, for an ensemble selection classifier used to improve
+classification accuracy, one thing is the base classifiers in the
+library are accurate. This is not hard to achieve with a great
+literature at hand. The other characteristic is diverse. Due to the
+fact that our computation power is limited, we planned to build 100 to
+200 base classifiers in our library. 
+
+\subsection{More Features and Base Classifiers}
+\label{sec:more-features-base}
+
+We planned to create some more features and base classifiers. One is
+to buildup a decision tree using FEST
+package~\cite{Caruana:2008:EES:1390156.1390169}, and then visualize
+this tree so that we can tell distinguish a set of nodes forming the
+best splitting points. We also refer to a few state-of-the-art
+classifiers that claiming better performance than traditional
+ones. Nevertheless, as put out in the following section, we did not
+possess enough energy to handle them.
 
 \section{Our Journey}
 \label{sec:revised-proposal}
+As mentioned in abstract, we are not able to produce result which
+exactly follows what we depict in our midterm report. Our initiative
+is to follow the step of IBM Research, which outperformed other teams
+in KDD Cup 2009. We started our more detailed background investigation
+right after the submission of midterm report. Our first attempt was to
+set up a cluster with the help of Amazon Web
+Service\footnote{\url{http://aws.amazon.com/ec2/}}. We tried several
+times but were not able to make the whole cluster share a same virtual
+disk, which is vital according
+to~\cite{ref:ensembleselectionnutshell}. Our review on this failure is
+that we should set off even earlier after being informed that this is
+a real classification problem on really complex data.
+
+\subsection{MATLAB}
+\label{sec:matlab}
+
+Our preprocessing is done fairly standard and systematic. We use
+MATLAB to load the plaintext feature chunk and then run pre-written
+scripts to format them following the previous guidelines. A note here
+is that when dealing with large datasets like this, it's also memory
+consuming. The memory consumption in total for train and test chunk
+sums up to 10GB.\@ We then use the built-in function \emph{csvwrite}
+to format them. This is important because tools we use, like FEST
+package, BBR package, and LIBSVM, only supports LIBSVM format. The
+final conversion is done with a c program.
+\subsection{Weka}
+\label{sec:weka}
+
+Weka is the first integrated tool that came to our mind. The author
+mentioned in the manual that even a sample of real-world data that's
+processed with ensemble selection could take days or even weeks to
+run. There are two built-in model libraries in weka's ensemble
+selection package, both are ``incredibly'' large. We build our model
+list consisting of only a few more than 300 base classifiers. Even a
+seemingly not convincing libraries like this, we did not witness the
+time of its final built-up. It took weka a whole 24 hours to train
+just one model, i.e.\ a base classifier, and that is 4.2GB large.
+\subsection{Shell Script}
+\label{sec:shell-script}
+Eventually we get rid of weka due to it's efficiency. Following again
+the guideline in~\cite{Ref:WinningtheKDDCupIBMResearch}, we wrote
+shell scripts calling package functions like \emph{festlearn},
+\emph{festclassify} etc. Till now there are many models being
+built. The classification is done manually with some finished
+models. On the other hand, our result with FEST package does not
+perform well. We are figuring this out.
+
+
+
+
+
+
+
+
+
 
 \section{Results and Conclusion}
 \label{sec:result-conclusion}
-Well, the result shall come out. Eventually.
+Right now we have several predictions made on the base models. We are
+still running our scripts so that the final result would come later.
+\par
+Contribution. For the final part, our team of two tried our best to
+find solutions for effective solutions for ensemble selection with
+limited computational power. Results so far are not up to our
+expectation. We plan to have a meeting with Dr.\ Woon on practical
+make-ups. 
 
 
 
@@ -809,14 +955,40 @@ Well, the result shall come out. Eventually.
 
 
 \appendices
-%\section{Proof of the First Zonklar Equation}
+\section{Sample Shell Scripts}
 %Appendix one text goes here.
 
 % you can choose not to have a title for an appendix
 % if you want by leaving the argument blank
 %\section{}
 %Appendix two text goes here.
-
+\begin{verbatim}
+#!/bin/bash
+festlearn -c 3 -n 0.1 -p 0.5 -t 300 
+train-raw-ap.data 
+train-raw-ap-rf-0-5.data.model &&
+festlearn -c 3 -n 0.1 -p 1 -t 300 
+train-raw-ap.data 
+train-raw-ap-rf-1.data.model &&
+festlearn -c 3 -n 0.1 -p 2 -t 300 
+train-raw-ap.data 
+train-raw-ap-rf-2.data.model &&
+festlearn -c 3 -n 0.1 -p 4 -t 300 
+train-raw-ap.data 
+train-raw-ap-rf-4.data.model &&
+festlearn -c 3 -n 0.1 -p 8 -t 300 
+train-raw-ap.data 
+train-raw-ap-rf-8.data.model &&
+festlearn -c 3 -n 0.1 -p 16 -t 300 
+train-raw-ap.data 
+train-raw-ap-rf-16.data.model &&
+festlearn -c 3 -n 0.1 -p 32 -t 300 
+train-raw-ap.data 
+train-raw-ap-rf-32.data.model &&
+festlearn -c 3 -n 0.1 -p 64 -t 300 
+train-raw-ap.data 
+train-raw-ap-rf-64.data.model &&
+\end{verbatim}
 
 % use section* for acknowledgment
 \section*{Acknowledgment}

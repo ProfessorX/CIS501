@@ -6,7 +6,15 @@
     (LaTeX-add-labels
      "sec:introduction"
      "sec:initial-plan"
+     "fig:memory-consuming"
+     "sec:preprocessing"
+     "sec:base-classifiers"
+     "sec:ensemble-selection"
+     "sec:more-features-base"
      "sec:revised-proposal"
+     "sec:matlab"
+     "sec:weka"
+     "sec:shell-script"
      "sec:result-conclusion")
     (TeX-run-style-hooks
      "hyperref"

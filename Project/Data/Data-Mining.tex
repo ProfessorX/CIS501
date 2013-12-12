@@ -1,0 +1,109 @@
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
+\documentclass{article}
+
+
+% Packages
+% \usepackage{algorithm}
+\usepackage{algorithmic}
+
+
+
+\begin{document}
+I would like to describe in Chinese. But after months of training, I
+find English more comfortable.
+\par
+This time let's work together with heart and soul, to solve this
+problem and win the happiness of Emirati. You are the best.
+\begin{enumerate}
+\item Load training data chunk 1--5 into MATLAB.\@ After this step,
+  they should be cell array.
+\item Missing categorical values. They should be represented as
+  ``NaN'' in MATLAB. Replace missing \textbf{categorical} values with
+  \textbf{0}. 
+
+\item Missing numeric values. They should be represented as NaN in
+  MATLAB.\@ Replace them with mean of that column. (I suppose it would
+  be more clear to describe in Algorithms. The rest is done with
+  algorithms.)
+
+\end{enumerate}
+
+
+\begin{figure}[htbp]
+  \centering
+  \begin{algorithmic}[1]
+    \FOR{each column}
+    \STATE~Check if there is $NaN$.
+    \STATE~Add a new \textbf{row}. If $Column(j)~has~NaN$,
+    $row(i,j)=1$. Else mark $0$.
+    \ENDFOR
+  \end{algorithmic}
+  \caption{Missing values}
+\end{figure}
+
+
+
+\begin{figure}[htbp]
+  \centering
+
+
+  \begin{algorithmic}[1]
+    \FOR{Missing categorical values}
+    \STATE~Replace $NaN$ in missing categorical values with $0$. 
+    \STATE~if elements in categorical values$ \equiv NaN$
+    \STATE~$NaN --> 0$
+    \ENDFOR
+  \caption{Missing categorical values}
+  \end{algorithmic}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \begin{algorithmic}[1]
+    \STATE~Compute each column's mean. $mean(Column)$.
+    \STATE~Replace $NaN$ in numerical columns with each column's mean.
+  \end{algorithmic}
+
+
+  \caption{Missing numeric values}
+\end{figure}
+
+
+\begin{figure}[htbp]
+  \centering
+  I will describe this in Chinese, in a separate file.
+  \caption{Recode categorical values}
+\end{figure}
+
+
+\begin{figure}[htbp]
+  \centering
+  \begin{algorithmic}[1]
+    \STATE~use $abs(mas())$ to calculate each column's max value.
+    \STATE~Normalize each column. For each value i \textbf{in column
+      j}, replace value i with $i / max~value~in~that~column$. Namely,
+    scale the value to [0--1].
+  \end{algorithmic}
+  \caption{Normalize}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+Sample code is given as follows. I will describe in a separate file in
+Chinese. 
+\begin{verbatim}.
+matlab> SPECTF = csvread('SPECTF.train');
+ % read a csv file
+matlab> labels = SPECTF(:, 1);
+ % labels from the 1st column
+matlab> features = SPECTF(:, 2:end); 
+matlab> features_sparse = sparse(features); 
+% features must be in a sparse matrix
+\end{verbatim}
+  \caption{Write to csv}
+\end{figure}
+\end{document}

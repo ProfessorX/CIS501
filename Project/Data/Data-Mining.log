@@ -1,0 +1,93 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.7)  6 DEC 2013 14:39
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**\input Data-Mining.tex
+(./Data-Mining.tex
+(/home/abrahamx91/Programs/texlive/2013/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/home/abrahamx91/Programs/texlive/2013/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/home/abrahamx91/Programs/texlive/2013/texmf-dist/tex/latex/algorithms/algorit
+hmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+
+(/home/abrahamx91/Programs/texlive/2013/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/home/abrahamx91/Programs/texlive/2013/texmf-dist/tex/latex/graphics/keyval.st
+y
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+\c@ALC@unique=\count87
+\c@ALC@line=\count88
+\c@ALC@rem=\count89
+\c@ALC@depth=\count90
+\ALC@tlm=\skip43
+\algorithmicindent=\skip44
+) (./Data-Mining.aux)
+\openout1 = `Data-Mining.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 40.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 40.
+
+Overfull \hbox (6.74693pt too wide) in paragraph at lines 107--107
+[]\OT1/cmtt/m/n/10 matlab> libsvmwrite('SPECTFlibsvm.train', labels, features_s
+parse);[] 
+ []
+
+[1
+
+{/home/abrahamx91/Programs/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdfte
+x.map}] [2] (./Data-Mining.aux) ) 
+Here is how much of TeX's memory you used:
+ 420 strings out of 493315
+ 5005 string characters out of 6131250
+ 62964 words of memory out of 5000000
+ 3943 multiletter control sequences out of 15000+600000
+ 4415 words of font info for 17 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 23i,4n,19p,149b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
+</home/abrahamx91/Programs/texlive/2013/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/abrahamx91/Programs/texli
+ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/abrahamx91/
+Programs/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></hom
+e/abrahamx91/Programs/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r8.pfb></home/abrahamx91/Programs/texlive/2013/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb></home/abrahamx91/Programs/texlive/2013/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Data-Mining.pdf (2 pages, 77069 bytes).
+PDF statistics:
+ 35 PDF objects out of 1000 (max. 8388607)
+ 24 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
