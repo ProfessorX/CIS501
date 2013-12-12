@@ -34,6 +34,25 @@
 \item \textbf{Bayes decision rule}. $p(x)$ is independent of the class
   and $p(c)$ is frequently assumed to be the \emph{same} for all
   classes.
-\item Life is never easy when you go abroad, alone.
+\item Standard \emph{k-NN}. When we use big $k$, then we could have a
+  better noise resistance. At the same time we have worse resolution.
+\item Kernel density estimation. When we increase the number of
+  kernels, better smoothness is obtained. But we will have a much
+  higher dimension. (You know what this implies.)
+\item Calculate the joint probability distribution is normally very
+  difficult, but Naive Bayesian method solves this by assuming that
+  class conditional distributions are all
+  independent. $p(c_{i}|x)=\frac{p(x_{1},x_{2},\ldots,x_{n}|c_{i})p(c_{i})}{p(x)}=\frac{p(x_{1}|c_{i})p(x_{2}|c_{i})\ldots
+    p(x_{n}|c_{i})p(c_{i})}{p(x)}$.
+\item Kind note about Naive Bayesian classifier. The evidence $p(x)$
+  is class-independent, which means it has nothing to do with, the
+  variable. Aka, the stuff that we \emph{should} really look into.
+\item \textbf{Multivariate Bernoulli} model. For this model, one
+  weakness is that whether a word (in Anti-Spamming case) appears 1 or
+  100 times, the final probability representation is the same. (Let's
+  do it in Chinese. It's NOT scientific.) 
+\item \textbf{Multinomial} event model. For this model, each ``word''
+  (in spamming example) is an event. One word appears, then it's
+  probability is calculated. Appears many times, then times as many.
 \end{itemize}
 \end{document}
