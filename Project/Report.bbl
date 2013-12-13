@@ -82,9 +82,24 @@ R.~Caruana, N.~Karampatziakis, and A.~Yessenalina, ``An empirical evaluation of
 
 \bibitem{NIPS2006_725}
 C.-T. Chu, S.~K. Kim, Y.-A. Lin, Y.~Yu, G.~Bradski, A.~Y. Ng, and K.~Olukotun,
-  ``Map-reduce for machine learning on multicore,'' in \emph{Advances in Neural
+  ``Map-reduce ofr machine learning on multicore,'' in \emph{Advances in Neural
   Information Processing Systems 19}, B.~Sch\"{o}lkopf, J.~Platt, and
   T.~Hoffman, Eds.\hskip 1em plus 0.5em minus 0.4em\relax Cambridge, MA: MIT
   Press, 2007, pp. 281--288.
+
+\bibitem{Chang:2011:LLS:1961189.1961199}
+\BIBentryALTinterwordspacing
+C.-C. Chang and C.-J. Lin, ``Libsvm: A library for support vector machines,''
+  \emph{ACM Trans. Intell. Syst. Technol.}, vol.~2, no.~3, pp. 27:1--27:27, May
+  2011. [Online]. Available: \url{http://doi.acm.org/10.1145/1961189.1961199}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Genkin:August2007:0040-1706:291}
+\BIBentryALTinterwordspacing
+A.~Genkin, D.~D. Lewis, and D.~Madigan, ``Large-scale bayesian logistic
+  regression for text categorization,'' \emph{Technometrics}, vol.~49, pp.
+  291--304(14), August 2007. [Online]. Available:
+  \url{http://www.ingentaconnect.com/content/asa/tech/2007/00000049/00000003/art00007}
+\BIBentrySTDinterwordspacing
 
 \end{thebibliography}

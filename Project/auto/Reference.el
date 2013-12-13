@@ -32,5 +32,7 @@
      "Ref:Yanan2013"
      "Caruana:2008:EES:1390156.1390169"
      "ref:ensembleselectionnutshell"
-     "NIPS2006_725")))
+     "NIPS2006_725"
+     "Chang:2011:LLS:1961189.1961199"
+     "Genkin:August2007:0040-1706:291")))
 

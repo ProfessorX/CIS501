@@ -886,8 +886,44 @@ harddisk space, etc.
 % well as get up early, my friend. 
 
 \subsection{Specific Packages}
-\label{sec:shell-script}
-
+\label{sec:specific-packages}
+After the first two trials, we find that it is too resource consuming
+to train and classify big data using ensemble selection method via
+more generic tools like MATLAB and Weka. And that seem to explain why
+IBM research team did not employ tools as such. Another interesting
+thing we find is that even software like Hadoop that is built to help
+distributed computing is written in Java, which appears to be the
+``best practice'' for some time.
+\par
+We choose FEST, LIBSVM and BBR packages in the end. For FEST package
+we use it to train random forest as well as boosted decision
+trees. Even with the fully preprocessed data, it still takes a long
+time to train \emph{one} random forest or boosted decision tree. ADD
+SPECIFIC TIME GAP LATER ON.\@ AFTER THIS PART!\@ The LIBSVM
+package~\cite{Chang:2011:LLS:1961189.1961199} is used to train models
+based on support vector machine technique. We also prepared shell
+scripts for this step. Unfortunately, due to the practice in map
+reduce technique, even if the CPU of our workstation has a 80\% idle
+rate, we can hardly run all those scripts in parallel. The BRR package
+is obtained for logistic regression usage for which we also prepared
+automatic shell scripts~\cite{Genkin:August2007:0040-1706:291}. 
+\par
+Without the assistance from powerful map reduce tools, till now we
+have trained random forest models of appetency, churn and
+upselling. The classification is still on-going. We also manually run
+the \emph{festclassify} program during the training process, the best
+result we get is $0.991667$ as the prediction probability for one
+instances. The other prediction file that we have has the distribution
+as shown in~\autoref{fig:special-package-1}.
+\begin{figure}[!t]
+  \centering
+  \includegraphics[scale=0.2]{train-plot}
+  \caption{Prediction Distribution for One Churn Model}
+  \label{fig:special-package-1}
+\end{figure}
+The distribution looks fine but we haven't found out any reasonable
+explanation why the mean of this prediction is only $0.1034$. For the
+$0.991667$ prediction, we suppose that overfitting is one possible explanation.
 
 
 

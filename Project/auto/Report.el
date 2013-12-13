@@ -14,7 +14,8 @@
      "sec:revised-proposal"
      "sec:matlab"
      "sec:weka"
-     "sec:shell-script"
+     "sec:specific-packages"
+     "fig:special-package-1"
      "sec:result-conclusion")
     (TeX-run-style-hooks
      "hyperref"
