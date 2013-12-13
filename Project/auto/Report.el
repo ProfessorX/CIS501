@@ -14,11 +14,20 @@
      "sec:revised-proposal"
      "sec:matlab"
      "sec:weka"
+     "fig:weka-1"
      "sec:specific-packages"
+     "fig:specific-packages-2"
+     "fig:specific-packages-3"
      "fig:special-package-1"
-     "sec:result-conclusion")
+     "sec:small-dataset"
+     "tab:small-dataset-1"
+     "tab:small-dataset-2"
+     "sec:result-conclusion"
+     "sec:preprocessing-1"
+     "sec:autom-shell-scripts")
     (TeX-run-style-hooks
      "hyperref"
+     "booktabs"
      "url"
      "fixltx2e"
      "subfig"

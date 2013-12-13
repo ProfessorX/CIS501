@@ -277,6 +277,7 @@
 
 \usepackage{mdwmath}
 \usepackage{mdwtab}
+
 % Also highly recommended is Mark Wooding's extremely powerful MDW tools,
 % especially mdwmath.sty and mdwtab.sty which are used to format equations
 % and tables, respectively. The MDWtools set is already installed on most
@@ -422,6 +423,10 @@
 % http://www.ctan.org/tex-archive/macros/latex/contrib/misc/
 % Read the url.sty source comments for usage information. Basically,
 % \url{my_url_here}.
+
+
+% Some personal house keeping
+\usepackage{booktabs}
 \usepackage{hyperref}
 \hypersetup{unicode}
 \hypersetup{colorlinks=true}
@@ -875,7 +880,12 @@ this is the first time that we deal with \emph{big data} using weka,
 with no help from tools like hadoop to map reduce the problem, we
 decided to abandon it for practical considerations, like time,
 harddisk space, etc. 
-
+\begin{figure}[!t]
+  \centering
+  \includegraphics[scale=0.5]{Age-of-Big-Data9}
+  \caption{One model file trained by Weka ensemble selection package}
+  \label{fig:weka-1}
+\end{figure}
 
 
 
@@ -898,15 +908,33 @@ distributed computing is written in Java, which appears to be the
 We choose FEST, LIBSVM and BBR packages in the end. For FEST package
 we use it to train random forest as well as boosted decision
 trees. Even with the fully preprocessed data, it still takes a long
-time to train \emph{one} random forest or boosted decision tree. ADD
-SPECIFIC TIME GAP LATER ON.\@ AFTER THIS PART!\@ The LIBSVM
-package~\cite{Chang:2011:LLS:1961189.1961199} is used to train models
-based on support vector machine technique. We also prepared shell
-scripts for this step. Unfortunately, due to the practice in map
-reduce technique, even if the CPU of our workstation has a 80\% idle
-rate, we can hardly run all those scripts in parallel. The BRR package
-is obtained for logistic regression usage for which we also prepared
-automatic shell scripts~\cite{Genkin:August2007:0040-1706:291}. 
+time to train \emph{one} random forest or boosted decision
+tree. In~\autoref{fig:specific-packages-2} it is demonstrated how time
+consuming it is when the package program was not written for parallel
+purpose. And~\autoref{fig:specific-packages-3} shows the related
+training time for those models. 
+\begin{figure}[!t]
+  \centering
+  \includegraphics{Age-of-Big-Data6}
+  \caption{Model files trained by FEST package}
+  \label{fig:specific-packages-2}
+\end{figure}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics{Age-of-Big-Data5}
+  \caption{Corresponding training time for some random forest models}
+  \label{fig:specific-packages-3}
+\end{figure}
+
+The LIBSVM package~\cite{Chang:2011:LLS:1961189.1961199} is used to
+train models based on support vector machine technique. We also
+prepared shell scripts for this step. Unfortunately, due to the
+practice in map reduce technique, even if the CPU of our workstation
+has a 80\% idle rate, we can hardly run all those scripts in
+parallel. The BRR package is obtained for logistic regression usage
+for which we also prepared automatic shell
+scripts~\cite{Genkin:August2007:0040-1706:291}.   
 \par
 Without the assistance from powerful map reduce tools, till now we
 have trained random forest models of appetency, churn and
@@ -923,7 +951,114 @@ as shown in~\autoref{fig:special-package-1}.
 \end{figure}
 The distribution looks fine but we haven't found out any reasonable
 explanation why the mean of this prediction is only $0.1034$. For the
-$0.991667$ prediction, we suppose that overfitting is one possible explanation.
+$0.991667$ prediction, we suppose that overfitting is one possible
+explanation. 
+
+\subsection{Small Dataset}
+\label{sec:small-dataset}
+In addition to our original plan, we also practiced with the small
+dataset the moment we find it impractical to stick with ensemble
+selection. Overall ensemble selection as described
+in~\cite{Caruana:2008:EES:1390156.1390169} can have good performance
+on high dimension dataset, but that point stands on the basis of
+carefully running either Weka program or specific packages \emph{in
+  parallel}. Due to the lack of related knowledge in map reduce, we
+run similar classifiers on Weka with small dataset. We describe our
+results as follows.
+\par
+The preprocessing is carried out in a similar manner not parameters
+are not 100\% the same.
+\begin{enumerate}
+\item If an feature contains more than 50\% missing values,
+  i.e. ``NaN'' in MATLAB terminology, then this feature is no longer
+  considered. 
+\item For the remaining features, we impute missing values as follows:
+  \begin{enumerate}
+  \item Both missing values in numerical and categorical features are
+    imputed with their modes and means.
+  \item Categorical values are recoded to numerical values, by their
+    relative frequency.
+  \item For each feature the discretization is applied to smooth
+    distribution curve.
+  \end{enumerate}
+\item The final clean up is done by filtering features that possesses
+  a less than $0.01$ information gain. We use Weka's built-in function
+  InfoGainAttributeEval filter to achieve this step.
+\end{enumerate}
+For small dataset, we also carry out the classification with two
+samples of data. One set we removed categorical features completely
+the other is full, for the benefit of comparison. The base classifiers
+we use in this case are Naive Bayesian Classifier (NBC), Lazy IBK and
+Decision Table Classifier (DTC). NBC is simple in structure and it is
+based on the assumption that predictors are conditionally independent
+given the target variable. Because of its simplicity, NBC was
+attractive choice since we have a large set of variables.  The second
+classifier is Lazy IBK (Instance-Based K) which is one of the Nearest
+Neighbor algorithms. Thirdly, we used DTC which uses a simple decision
+table majority algorithm; it makes decisions on attributes for each
+instance.
+\par
+Our results with the small dataset is displayed as follows.
+% \begin{table}[!t]
+% %increase table row spacing, adjust to taste
+% \renewcommand{\arraystretch}{1.3}
+% %if using array.sty, it might be a good idea to tweak the value of
+% %\extrarowheight as needed to properly center the text within the cells
+% \caption{An Example of a Table}
+% \label{table_example}
+% \centering
+% %Some packages, such as MDW tools, offer better commands for making tables
+% %than the plain LaTeX2e tabular which is used here.
+% \begin{tabular}{|c||c|}
+% \hline
+% One & Two\\
+% \hline
+% Three & Four\\
+% \hline
+% \end{tabular}
+% \end{table}
+
+\begin{table}
+[!t]
+\centering
+\caption{Small dataset without categorical values}
+\label{tab:small-dataset-1}
+\begin{tabular}
+{ccccc}
+\toprule
+Method & ~ & AUC & ~ & ~\\
+~ & Churn & Appetency & Upselling & Score\\
+\hline
+NBC & 0.529 & 0.497 & 0.658 & 0.561\\
+Lazy IBK & 0.532  & 0.525 & 0.619 & 0.558\\
+DTC & 0.53 & 0.5 & 0.757 & 0.595\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}
+[!t]
+\centering
+\caption{Small dataset with full preprocessed values}
+\label{tab:small-dataset-2}
+\begin{tabular}
+{ccccc}
+\toprule
+Method & ~ & AUC & ~ & ~\\
+~ & Churn & Appetency & Upselling & Score\\
+\hline
+NBC & 0.568 & 0.523 & 0.682 & 0.591\\
+Lazy IBK & 0.533  & 0.5 & 0.564 & 0.532\\
+DTC & 0.53 & 0.5 & 0.756 & 0.595\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+
+
+
 
 
 
@@ -936,14 +1071,25 @@ $0.991667$ prediction, we suppose that overfitting is one possible explanation.
 
 \section{Results and Conclusion}
 \label{sec:result-conclusion}
-Right now we have several predictions made on the base models. We are
-still running our scripts so that the final result would come later.
+For the implementation of our blueprint that was discussed in our
+midterm report, we, as a solid team of two, have tried our best to
+obtain results using ensemble selection technique. Our results with
+large dataset are far from being satisfactory and we plan to have some
+discussions with course lecturer to figure out possible reasons.
 \par
-Contribution. For the final part, our team of two tried our best to
-find solutions for effective solutions for ensemble selection with
-limited computational power. Results so far are not up to our
-expectation. We plan to have a meeting with Dr.\ Woon on practical
-make-ups. 
+We set off at an early time for this final project, but neither team
+member has sufficient technical background in this field to solve this
+project ``safe and sound''. We are a team of two but each other did
+the following things:
+\begin{itemize}
+\item Yanan Xiao. He tried various methods to tackle large dataset and
+  wanted to stick to the team's initial plan, i.e.\ ensemble selection
+  with around 300 base classifiers. He is in charge of the report
+  typesetting in IEEE template with \LaTeX2e{}.
+\item Aziza Al Sawafi. She came up with the small dataset workaround
+  and successfully got some results. She also tried to solve this
+  classification problem using MATLAB and LIBSVM.\@
+\end{itemize}
 
 
 
@@ -1073,6 +1219,52 @@ make-ups.
 We enlist our partial source codes here. The complete project is at
 Github CIS501
 repository\footnote{\url{https://github.com/ProfessorX/CIS501}}. 
+
+\subsection{Preprocessing}
+\label{sec:preprocessing-1}
+\begin{verbatim}
+%-----Recode--------%
+Recode={};
+for i=14703:14962
+    value=unique(Train(:,i));
+    value(value==0)=[];
+    if ~isempty(value)
+    value(:,2)=0;
+    for j=1:size(value,1)
+        value(j,2)=sum(Train(:,i)==
+        value(j,1))/50000;
+    end
+    [~,lev]=sort(value(:,2),'descend');
+    value=value(lev,:);
+    if length(value)>10
+    value=value(1:10,:);
+    end
+    end
+    Recode{1,i-14702}=value;
+    value1=unique(Test(:,i));
+    value1(value1==0)=[];
+    if ~isempty(value1)
+    value1(:,2)=0;
+    for j=1:size(value1,1)
+        value1(j,2)=sum(Test(:,i)==
+        value1(j,1))/50000;
+    end
+    [~,lev]=sort(value1(:,2),'descend');
+    value1=value1(lev,:);
+    if length(value1)>10
+    value1=value1(1:10,:);
+    end
+    end
+    Recode{2,i-14702}=value1;   
+end
+\end{verbatim}
+
+
+
+\subsection{Automatic Shell Scripts for Building Models}
+\label{sec:autom-shell-scripts}
+
+
 \begin{verbatim}
 #!/bin/bash
 festlearn -c 3 -n 0.1 -p 0.5 -t 300 
@@ -1105,7 +1297,7 @@ train-raw-ap-rf-64.data.model &&
 \section*{Acknowledgment}
 
 
-The authors would like to thank Dr. Wei Lee for giving high quality data mining lectures and selecting this challenging but rewarding topic as this semester's project. They would like give more gratitude to Masdar Institute for the studying and researching environment.
+The authors would like to thank Dr.\ Wei Lee for giving high quality data mining lectures and selecting this challenging but rewarding topic as this semester's project. They would like give more gratitude to Masdar Institute for the studying and researching environment.
 
 
 % Can use something like this to put references on a page
