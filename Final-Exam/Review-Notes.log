@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.7)  14 DEC 2013 17:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.7)  14 DEC 2013 22:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -307,9 +307,7 @@ Package pdftex.def Info: falsetrue.jpg used on input line 90.
  [1
 
 {/home/abrahamx91/Programs/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdfte
-x.map} <./falsetrue.jpg>] [2
-
-] (./Review-Notes.aux) ) 
+x.map} <./falsetrue.jpg>] [2] (./Review-Notes.aux) ) 
 Here is how much of TeX's memory you used:
  2849 strings out of 493315
  39802 string characters out of 6131250
@@ -318,23 +316,23 @@ Here is how much of TeX's memory you used:
  5993 words of font info for 24 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  37i,7n,32p,245b,284s stack positions out of 5000i,500n,10000p,200000b,80000s
-</home/abrahamx91/Programs/texlive/2013/texmf-dist/font
-s/type1/public/amsfonts/cm/cmbx10.pfb></home/abrahamx91/Programs/texlive/2013/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/abrahamx91/Programs/
-texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></home/ab
-rahamx91/Programs/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10
+</home/abrahamx91/Programs/
+texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/abraha
+mx91/Programs/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></home/abrahamx91/Programs/texlive/2013/texmf-dist/fonts/type1/public/amsfonts
+/cmextra/cmex7.pfb></home/abrahamx91/Programs/texlive/2013/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi10.pfb></home/abrahamx91/Programs/texlive/2013/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></home/abrahamx91/Programs/texliv
+e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/abrahamx91/Pr
+ograms/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/
+abrahamx91/Programs/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5
 .pfb></home/abrahamx91/Programs/texlive/2013/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi5.pfb></home/abrahamx91/Programs/texlive/2013/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmi7.pfb></home/abrahamx91/Programs/texlive/2013/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/abrahamx91/Programs/texlive/
-2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/abrahamx91/Progr
-ams/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/abra
-hamx91/Programs/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb></home/abrahamx91/Programs/texlive/2013/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy5.pfb></home/abrahamx91/Programs/texlive/2013/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy7.pfb></home/abrahamx91/Programs/texlive/2013/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Review-Notes.pdf (2 pages, 480545 bytes).
+onts/cm/cmr7.pfb></home/abrahamx91/Programs/texlive/2013/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb></home/abrahamx91/Programs/texlive/2013/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy5.pfb></home/abrahamx91/Programs/texlive/
+2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/abrahamx91/Prog
+rams/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Review-Notes.pdf (2 pages, 490060 bytes).
 PDF statistics:
  64 PDF objects out of 1000 (max. 8388607)
  45 compressed objects within 1 object stream

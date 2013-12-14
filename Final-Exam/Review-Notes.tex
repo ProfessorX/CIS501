@@ -148,5 +148,52 @@
   each cluster. For groups of the same interest, get as close as
   possible. And vice versa. Eg:
   $C=\frac{S-S_{\min}}{S_{\max}-S_{\min}}$. Smaller!
+\item K-centers clustering has a better outlier resistance. 
+\item \textbf{K-means} uses a two-phase iterative algorithm. \#1,
+  \emph{batch updates}. Reassigning each point to it's nearest cluster
+  centroid; recalculation of cluster centroids. \#2, \emph{online
+    updates}. Points are individually reassigned if doing so will
+  reduce the sum of distances and cluster centroids are recomputed
+  after each assignment. Also called \emph{K-center}.
+\item \textbf{PCA} generates a new set of components, called
+  \emph{principle components}. Each is a linear combination of
+  original variables. All are orthogonal to each other, so there is no
+  redundant information. The first principle component is \emph{a
+    single axis} in space, when you project each observation on that
+  axis, the resulting values form a new variable. And the variance of
+  this variable is the maximum among choices of the first axis.
+\item Self-Organizing Map. Strategy: Embed a string of markers or
+  nodes along the axis; optimize the position of nodes so that each
+  approximates position of nearby nodes; projection, points attached
+  to closest node.
+\item \textbf{SOM}. Weight update equation:
+  $V^{t+1}=V^{t}+\eta^{t}\Theta^{t}(X^{t}-V^{t})$. $V^{t}$, position
+  of the node at time $t$. $\eta^{t}$, learning rate. $X^{t}$, input
+  vector selected at time $t$. In SOM, it first learn the topological
+  structure of the data; smaller $\eta^{t}$ and $\Theta^{t}$ values
+  allow ``fine-tuning'' so that nodes match data distribution. 
+\item UPGMA.\@ Input: Distance matrix between all pairs of
+  node. \emph{In fact this is yet another ``greedy''
+    algorithm}. Steps: combine nearest pairs of nodes; recalculate new
+  distances between all nodes and clustering ($\frac{1}{|A||B|}\cdot
+  \sum_{x\in A}\sum_{y\in B}d(x,y)$). The formula requires to
+  calculate average distance between all pairs of points in two groups
+  (clusters); generate new distance matrix. In another algorithm
+  called neighbor joining, it tries to minimize the \emph{total branch
+  length in the tree}.
+\item Unsupervised algorithms tend to be more descriptive in nature
+  rather than prescriptive, also more ``exploratory''. 
+\item A simple neuron model. $Output=f(a)=f(\sum_{i=1}^{n}w_{i}\cdot
+  x_{i}+b)$. $x_{i}$, input vector. $w_{i}$, weight vector. $b$, bias
+  term to adjust threshold. 
+\item \textbf{Perceptron}. In this simplest class of feedforward
+  network, function $f()$ is a \emph{step function}. Input weights
+  $w_{1},w_{2}, \ldots, w_{n}$ defines a direction in the input
+  space. The primitive perceptron \textbf{only works} with data that
+  are \emph{linearly separable}.
+\item \textbf{Gradient Descent} is an iterative parameter optimization
+  technique. Steps: Initial value $x_{0}$; update $x_{n}$ at each
+  iteration so the gradient \emph{is} descending. Update is the form:
+  $x(n+1)=x(n)-\frac{\eta dE(x)}{dx}$
 \end{itemize}
 \end{document}
