@@ -8,7 +8,11 @@
 
 % Packages
 % \usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage[margin=10mm]{geometry}
+\usepackage{graphicx}
+
 
 
 % Housekeeping
@@ -62,6 +66,63 @@
   contains the same amount of points. (If you do want to ``imagine''
   what point is like, in hyper space.) It's analogous to \emph{k-NN}
   approach. 
-\item \textbf{Fuzzy Discretization}.
+% Always be self-motivating. Will you?
+\item \textbf{Fuzzy Discretization}. Form $k$ equally spaced bins; the
+  corresponding likelihood includes contributions from \emph{every
+    training instance}.
+\item \textbf{Lazy Discretization}. The determination of $p(x|c)$ is
+  postponed. When query $x$ is presented, place it at \emph{center} of
+  the bin. The bin scale thus equals to
+  $[x-\delta,x+\delta]$. $p(x|c)$ is then proportional to the number
+  of instances within the specific scale. 
+% Life is a bitch. Fuck it or leave it, choose ONE.
+\item Non-disjoint discretization. Bins are set in advance, but are
+  overlapping. The actual bin for a query point is $i-1$, $i$ and
+  $i+1$. 
+\item To avoid overfitting, as top scientists and engineers, we always
+  prefer simpler models than complex ones.
+\item Type 1 and Type 2 errors. A type 1 error is the incorrect
+  rejection of a true null hypothesis. It is a false positive. Usually
+  a type 1 error leads one to conclude that a supposed effect or
+  relationship exists \emph{when in fact it doesn't}.
+  \begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.5]{falsetrue}
+  \end{figure}
+\item $(1,1)$ True positive. $(1,0)$ False negative. $(0,1)$ False
+  positive. $(0,0)$ True negative. The first element $1$ means
+  \emph{you do have it}.
+\item False positive. A result indicating that a given condition is
+  present when it actually it not.
+\item False negative. It's failing to assert what is present. It could
+  also be regarded where a test result indicates that a condition
+  failed, \emph{while actually it was successful}.
+\item One word to describe False Negative? Miss Jessie.
+\item Precision: $\frac{TP}{TP+FP}$. Recall: $\frac{TP}{TP+FN}$.
+\item When we say that we are encouraging \emph{overfitting}, we are
+  saying the ``generalization'' of the models we build, sucks. 
+\item Another explanation. Precision: $\frac{\sum
+    True~Positive}{\sum Test~Outcome~Positive}$ Recall: $\frac{\sum
+    True~Positive}{\sum Condition~Positive}$
+\item Data Mining methods are always intrinsic probabilistic, why? One
+  explanation given by Dr.\ Woon is that real world data \emph{is
+    always noisy}.
+\item \textbf{Top down inductive tree}. Select a feature to split on;
+  Sort examples into subsets based on the values of feature, one for
+  each \emph{value}; Branch the tree by creating new nodes (aka, new
+  subtrees) foe each subset; \emph{recurse} until a complete tree is
+  obtained. 
+\item \textbf{Entropy}. In Information Theory, we define entropy as
+  follows: $H(x)=-\sum_{i=1}^{n}p(x_{i})\ln p(x_{i})$
+\item Information Gain. In general terms, the expected information
+  gain is the \emph{change} in information entropy from \textbf{a
+    prior state} to a state that takes some information as given:
+  $IG(T,a)=H(T)-H(T|a)$.
+\item Gain Ratio. Normalize information gain with respect to \emph{the
+  number of values} that a feature can take.
+\item Gini impurity index. It's the probability that a randomly
+  selected instance is wrongly classified based on a label randomly
+  sampled from that subset. $I_{G}(f)=\sum_{1}^{m}f_{i}(1-f_{i})$.
+\item Post pruning. 
 \end{itemize}
 \end{document}
