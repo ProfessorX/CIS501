@@ -78,7 +78,7 @@
 % Life is a bitch. Fuck it or leave it, choose ONE.
 \item Non-disjoint discretization. Bins are set in advance, but are
   overlapping. The actual bin for a query point is $i-1$, $i$ and
-  $i+1$. 
+  $i+1$. \textbf{Query point is always close to the center}.
 \item To avoid overfitting, as top scientists and engineers, we always
   prefer simpler models than complex ones.
 \item Type 1 and Type 2 errors. A type 1 error is the incorrect
@@ -194,6 +194,32 @@
 \item \textbf{Gradient Descent} is an iterative parameter optimization
   technique. Steps: Initial value $x_{0}$; update $x_{n}$ at each
   iteration so the gradient \emph{is} descending. Update is the form:
-  $x(n+1)=x(n)-\frac{\eta dE(x)}{dx}$
+  $x(n+1)=x(n)-\frac{\eta dE(x)}{dx}$. Latter is called
+  \textbf{update term}. 
+\item Gradient descent with momentum. Modified update equation:
+  $w(n+1)=w(n)-\triangle_{w}'E$, and the error equation is
+  $\triangle_{w}'E=\frac{\eta dE(x)}{dx}-\mu(w(n)-w(n-1))$. Trans: a
+  portion of previous update term is added to the current one at
+  \emph{each step}. This technique helps ``overshoot'' local minimal
+  locations, and also helps enforce consistent update directions.
+\item Non-disjoint discretization would possibly help most if you
+  insist on sticking to histogram approximation of some data.
+\item Deleting nodes where information gain fails to exceed a
+  particular threshold \textbf{will not help prune the tree} built.
+\item \textbf{Perceptron Classification}. In Dr.\ Woon's tricks, $x$
+  axis is usually named $x_{1}$, and $y$ axis named
+  $x_{2}$. Remembering this, the ``transfer function'', i.e.\ the
+  linear expression of $f(x)$ using $x_{1}$, $x_{2}$ and $w_{1}$,
+  $w_{2}$ would \emph{never} be difficult to understand. One more
+  thing, this $f(x)$ function is used to ``predict'' the output,
+  whereas the \textbf{decision boundary} is perpendicular to
+  $f(x)$. Mathematically, \emph{slope of the decision boundary} is
+  $(-1\cdot \frac{w_{1}}{w_{2}})$. Too young; Too simple.
+\item Hebbian Learning. A form of learning where only parameters
+  related to large inputs and erroneous outputs are changed. 
+\item K-means does \emph{not} provide visualization capabilities.
+\item LM algorithm works by trying to find zeros in the gradient
+  space. One more thing: the second order gradient of error function
+  \emph{defines the ``shape'' of} the corresponding function.
 \end{itemize}
 \end{document}
