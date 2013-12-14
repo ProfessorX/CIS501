@@ -123,6 +123,30 @@
 \item Gini impurity index. It's the probability that a randomly
   selected instance is wrongly classified based on a label randomly
   sampled from that subset. $I_{G}(f)=\sum_{1}^{m}f_{i}(1-f_{i})$.
-\item Post pruning. 
+\item Post pruning. Each node to which \emph{only leaves are attached}
+  is considered for pruning. The idea is to evaluate combined
+  (\emph{weighted}) error rate and compare that of the father
+  node. Core idea is that a compact tree with \emph{good} prediction.
+\item Decision trees with continuous variables. Treat $N$ values in
+  the training set as $N$ separate features, and choose the split
+  point with highest \emph{Information Gain} or any other criterion
+  that's reasonable. Split between points w.\ different labels.
+\item In decision tree classification, there are usually two ways to
+  avoid overfitting: limit tree depth; reduced error pruning.
+\item Decision Tree. Disadvantages: learning process is heuristic thus
+  often results in overfitting; closeness to boundary, confidence
+  intervals\ldots are ignored.
+\item \textbf{K-means Clustering}. Generate $k$ initial cluster
+  centroids; Assign each point to the closest centroid; recompute the
+  location of each centroid using existing class memberships; iterate
+  untill convergence criterion is met.
+\item Dunn Index. $DI(c)=\min_{i,j\in c:i\neq j}\{\frac{\delta
+    (A_{i},A_{j})}{\max_{k\in c}(\triangle (A_{k}))}\}$. We want to
+  see a larger DI when build clusters.
+\item Cluster Quality metrics. As with clustering algorithms, we want
+  to see \textbf{compact} clusters and long \textbf{distances} between
+  each cluster. For groups of the same interest, get as close as
+  possible. And vice versa. Eg:
+  $C=\frac{S-S_{\min}}{S_{\max}-S_{\min}}$. Smaller!
 \end{itemize}
 \end{document}
