@@ -119,3 +119,7 @@ in your workstation.)
 1. Finish the data format step and start the random forest.
 2. Run one tree (be time permitting) and see if you get good result.
 3. Build your model. Classify your model. As simple as that.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/ProfessorX/cis501/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
